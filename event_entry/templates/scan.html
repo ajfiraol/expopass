@@ -5,30 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://unpkg.com/html5-qrcode"></script>
   <style>
-    body{background:#020617;color:#fff;text-align:center;font-family:Arial;padding:24px}
-    #reader{width:320px;margin:auto}
-    .card{max-width:420px;margin:12px auto}
+    body {
+      background: #020617;
+      color: #fff;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding: 24px;
+    }
+    #reader {
+      width: 320px;
+      margin: auto;
+    }
+    .card {
+      max-width: 420px;
+      margin: 12px auto;
+    }
+    #status {
+      margin-top: 12px;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
   <div class="card">
     <h2>Scan Entrance QR</h2>
     <div id="reader"></div>
-    <p id="status"></p>
+    <p id="status">Initializing scanner...</p>
   </div>
 
   <script>
     const status = document.getElementById('status');
     const scanner = new Html5Qrcode('reader');
-    scanner.start({ facingMode: 'environment' }, { fps: 10, qrbox: 250 },
+
+    scanner.start(
+      { facingMode: 'environment' },
+      { fps: 10, qrbox: 250 },
       qrCodeMessage => {
         status.textContent = 'Scanned: ' + qrCodeMessage;
-        window.location.href = '/verify/' + qrCodeMessage;
+
+        // Parse QR code (format: PASS|<pass_id>|<staff_code>)
+        const parts = qrCodeMessage.split('|');
+        if (parts.length >= 2 && parts[0] === 'PASS') {
+          const passId = parts[1]; // Extract UUID
+          // Redirect to verify URL
+          window.location.href = '/verify/' + passId + '/';
+        } else {
+          status.textContent = 'Invalid QR code format!';
+        }
       },
       errorMessage => {
-        // ignore decode errors
+        // Ignore decode errors silently
       }
-    ).catch(err => { status.textContent = 'Camera error: ' + err; });
+    ).catch(err => {
+      status.textContent = 'Camera error: ' + err;
+    });
   </script>
 </body>
 </html>
