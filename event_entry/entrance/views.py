@@ -1,5 +1,6 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect
+
 def admin_redirect(request):
     return redirect('dashboard')
 from .models import Pass, Staff
@@ -23,5 +24,4 @@ def scan_qr(request):
 
 def verify_pass(request, pass_id):
     p = get_object_or_404(Pass, id=pass_id)
-    # For multi-day, just return valid (or add logic as needed)
-    return JsonResponse({'status': 'valid'})
+    return redirect('pass', pass_id=p.id)
