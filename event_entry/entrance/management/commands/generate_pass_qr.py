@@ -1,138 +1,47 @@
-import csv
-import os
 from django.core.management.base import BaseCommand
-from django.core.files import File
-from django.conf import settings
-from entrance.models import Staff
-from entrance.utils import generate_qr  # Make sure you have this utility function
-from datetime import datetime
-import uuid
+from django.utils import timezone
+from entrance.models import Staff, Pass
+import qrcode
+from django.core.files.base import ContentFile
+from io import BytesIO
 
 
 class Command(BaseCommand):
-    help = 'Import staff data from CSV and generate QR codes for each staff member'
-
-    def add_arguments(self, parser):
-        parser.add_argument(
-            'csv_file',
-            type=str,
-            help='Path to the CSV file'
-        )
+    help = "Automatically generate Pass records from Staff members"
 
     def handle(self, *args, **options):
-        csv_file_path = options['csv_file']
-        
-        if not os.path.exists(csv_file_path):
-            self.stdout.write(self.style.ERROR(f'CSV file not found: {csv_file_path}'))
-            return
-
-        # Create QR code directory if it doesn't exist
-        qr_dir = os.path.join(settings.MEDIA_ROOT, 'staff_qr')
-        os.makedirs(qr_dir, exist_ok=True)
-
-        # Counters for reporting
+        today = timezone.now().date()
         created_count = 0
-        updated_count = 0
-        error_count = 0
 
-        with open(csv_file_path, 'r', encoding='utf-8') as file:
-            reader = csv.DictReader(file)
-            
-            for row_num, row in enumerate(reader, 1):
-                try:
-                    # Extract data from CSV row
-                    name = row.get('Name', '').strip()
-                    booth_id = row.get('Booth ID', '').strip()
-                    phone_no = row.get('Phone no', '').strip()
-                    staff_code = row.get('Staff Code', '').strip()
-                    location = row.get('Location', '').strip()
-                    staff_type = row.get('Staff Type', '').strip()
-                    
-                    # Skip empty rows
-                    if not name and not staff_code:
-                        self.stdout.write(f'Skipping row {row_num}: No name or staff code')
-                        continue
-                    
-                    # Validate required fields
-                    if not staff_code:
-                        self.stdout.write(self.style.WARNING(f'Row {row_num}: Missing staff code, skipping'))
-                        error_count += 1
-                        continue
-                    
-                    # Prepare location (convert '1p' to '1p', etc.)
-                    if location in ['1p', '2p', '3p', '4p', 'O']:
-                        location_value = location
-                    else:
-                        # Default to '1p' if location is invalid
-                        location_value = '1p'
-                    
-                    # Prepare staff type (VIP or Sales)
-                    if staff_type in ['VIP', 'Sales']:
-                        staff_type_value = staff_type
-                    else:
-                        # Default based on staff code (V for VIP, S for Sales)
-                        if 'V' in staff_code.upper():
-                            staff_type_value = 'VIP'
-                        elif 'S' in staff_code.upper():
-                            staff_type_value = 'Sales'
-                        else:
-                            staff_type_value = 'VIP'  # Default to VIP
-                    
-                    # Create or update staff record
-                    staff, created = Staff.objects.update_or_create(
-                        staff_code=staff_code,
-                        defaults={
-                            'name': name if name else f'Staff {staff_code}',
-                            'booth_id': booth_id if booth_id else None,
-                            'phone_number': phone_no if phone_no else None,
-                            'location': location_value,
-                            'staff_type': staff_type_value,
-                        }
-                    )
-                    
-                    if created:
-                        self.stdout.write(self.style.SUCCESS(f'Created: {staff_code} - {name}'))
-                        created_count += 1
-                    else:
-                        self.stdout.write(f'Updated: {staff_code} - {name}')
-                        updated_count += 1
-                    
-                    # Generate QR code for staff ID
-                    try:
-                        # Generate QR code using staff's ID
-                        qr_path = generate_qr(str(staff.id))
-                        
-                        # Save QR code to the staff model
-                        if os.path.exists(qr_path):
-                            with open(qr_path, 'rb') as f:
-                                # Generate unique filename
-                                qr_filename = f'staff_{staff.id}_{staff.staff_code}_qr.png'
-                                staff.qr_code_image.save(qr_filename, File(f), save=True)
-                            
-                            self.stdout.write(f'  ✓ QR generated for {staff_code}')
-                            
-                            # Clean up temporary file if your generate_qr creates one
-                            if os.path.exists(qr_path) and not qr_path.startswith(settings.MEDIA_ROOT):
-                                os.remove(qr_path)
-                        else:
-                            self.stdout.write(self.style.WARNING(f'  ✗ QR file not created for {staff_code}'))
-                    
-                    except Exception as qr_error:
-                        self.stdout.write(self.style.WARNING(f'  ✗ QR generation failed for {staff_code}: {qr_error}'))
-                
-                except Exception as e:
-                    self.stdout.write(self.style.ERROR(f'Error processing row {row_num}: {str(e)}'))
-                    error_count += 1
-                    continue
+        for staff in Staff.objects.all():
 
-        # Summary
-        self.stdout.write(self.style.SUCCESS('\n' + '='*50))
-        self.stdout.write(self.style.SUCCESS('IMPORT SUMMARY'))
-        self.stdout.write(self.style.SUCCESS('='*50))
-        self.stdout.write(self.style.SUCCESS(f'Total rows processed: {row_num}'))
-        self.stdout.write(self.style.SUCCESS(f'Created: {created_count}'))
-        self.stdout.write(self.style.SUCCESS(f'Updated: {updated_count}'))
-        self.stdout.write(self.style.ERROR(f'Errors: {error_count}'))
-        
-        if error_count > 0:
-            self.stdout.write(self.style.WARNING('Some records had errors. Check the output above.'))
+            # Prevent duplicate pass for same staff & day
+            if Pass.objects.filter(staff=staff, day_entered=today).exists():
+                continue
+
+            pass_obj = Pass.objects.create(
+                full_name=staff.name or "Staff Member",
+                phone_number=staff.phone_number or "",
+                booth_id=staff.booth_id or "N/A",
+                staff=staff,
+                day_entered=today,
+            )
+
+            # Generate QR content
+            qr_data = f"PASS|{pass_obj.id}|{staff.staff_code}"
+            qr = qrcode.make(qr_data)
+
+            buffer = BytesIO()
+            qr.save(buffer, format="PNG")
+
+            pass_obj.qr_code_image.save(
+                f"pass_{pass_obj.id}.png",
+                ContentFile(buffer.getvalue()),
+                save=True
+            )
+
+            created_count += 1
+
+        self.stdout.write(
+            self.style.SUCCESS(f"✅ {created_count} passes generated successfully")
+        )

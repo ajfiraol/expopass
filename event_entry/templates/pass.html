@@ -1,20 +1,153 @@
+<!-- templates/staff_detail.html -->
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Event Pass</title>
+  <title>Staff Verification</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body{font-family:Arial;background:#0f172a;color:#fff;text-align:center;padding:24px}
-    .card{max-width:420px;margin:24px auto;padding:18px;border-radius:8px;background:linear-gradient(180deg,#111827, #0b1220)}
-    img{border-radius:8px}
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #fff;
+      text-align: center;
+      padding: 24px;
+      margin: 0;
+    }
+    .container {
+      max-width: 420px;
+      margin: 24px auto;
+    }
+    .card {
+      background: linear-gradient(180deg, #111827, #0b1220);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .status-badge {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+    .status-vip {
+      background: linear-gradient(135deg, #f59e0b, #d97706);
+      color: white;
+    }
+    .status-sales {
+      background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+      color: white;
+    }
+    .qr-code {
+      width: 250px;
+      height: 250px;
+      margin: 20px auto;
+      border-radius: 8px;
+      overflow: hidden;
+      background: white;
+      padding: 10px;
+    }
+    .qr-code img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 20px;
+      text-align: left;
+    }
+    .info-item {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 12px;
+      border-radius: 8px;
+    }
+    .info-label {
+      font-size: 12px;
+      color: #94a3b8;
+      margin-bottom: 4px;
+    }
+    .info-value {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .verified-badge {
+      background: linear-gradient(135deg, #10b981, #059669);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      margin: 20px 0;
+      display: inline-block;
+    }
+    .back-button {
+      display: inline-block;
+      background: #374151;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+    .back-button:hover {
+      background: #4b5563;
+    }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h2>Booth: {{ pass_obj.booth_id }}</h2>
-    <p>{{ pass_obj.full_name }}</p>
-    <img src="/media/qr_{{ pass_obj.id }}.png" width="250" alt="QR code">
-    <p style="font-size:12px;opacity:0.8">Pass ID: {{ pass_obj.id }}</p>
+  <div class="container">
+    <div class="verified-badge">
+      ✅ VERIFIED STAFF MEMBER
+    </div>
+    
+    <div class="card">
+      <div class="status-badge {% if staff.staff_type == 'VIP' %}status-vip{% else %}status-sales{% endif %}">
+        {{ staff.get_staff_type_display }}
+      </div>
+      
+      <h2>{{ staff.name|default:"Unnamed Staff" }}</h2>
+      
+      <div class="qr-code">
+        {% if staff.qr_code_image %}
+          <img src="{{ staff.qr_code_image.url }}" alt="Staff QR Code">
+        {% else %}
+          <div style="color: #666; padding: 20px;">No QR Code</div>
+        {% endif %}
+      </div>
+      
+      <div class="info-grid">
+        <div class="info-item">
+          <div class="info-label">STAFF CODE</div>
+          <div class="info-value">{{ staff.staff_code }}</div>
+        </div>
+        
+        <div class="info-item">
+          <div class="info-label">BOOTH ID</div>
+          <div class="info-value">{{ staff.booth_id|default:"N/A" }}</div>
+        </div>
+        
+        <div class="info-item">
+          <div class="info-label">LOCATION</div>
+          <div class="info-value">{{ staff.get_location_display }}</div>
+        </div>
+        
+        <div class="info-item">
+          <div class="info-label">PHONE</div>
+          <div class="info-value">{{ staff.phone_number|default:"N/A" }}</div>
+        </div>
+      </div>
+      
+      <div style="margin-top: 24px; font-size: 14px; color: #94a3b8;">
+        Verified at: {% now "F j, Y, g:i a" %}
+      </div>
+    </div>
+    
+    <a href="{% url 'dashboard' %}" class="back-button">← Back to Dashboard</a>
   </div>
 </body>
 </html>
