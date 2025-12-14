@@ -1,12 +1,12 @@
+# entrance/management/commands/import_staff.py
 import csv
 import os
 from django.core.management.base import BaseCommand
 from django.core.files import File
 from django.conf import settings
 from entrance.models import Staff
-from entrance.utils import generate_qr  # Make sure you have this utility function
-from datetime import datetime
-import uuid
+from entrance.utils import generate_qr  # This should work now
+from pathlib import Path
 
 
 class Command(BaseCommand):
@@ -22,23 +22,32 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         csv_file_path = options['csv_file']
         
+        # Convert to absolute path if relative
+        if not os.path.isabs(csv_file_path):
+            csv_file_path = os.path.join(os.getcwd(), csv_file_path)
+        
         if not os.path.exists(csv_file_path):
             self.stdout.write(self.style.ERROR(f'CSV file not found: {csv_file_path}'))
+            self.stdout.write(f'Current working directory: {os.getcwd()}')
             return
 
+        self.stdout.write(self.style.SUCCESS(f'Importing from: {csv_file_path}'))
+        
         # Create QR code directory if it doesn't exist
-        qr_dir = os.path.join(settings.MEDIA_ROOT, 'staff_qr')
-        os.makedirs(qr_dir, exist_ok=True)
+        qr_dir = Path(settings.MEDIA_ROOT) / 'staff_qr'
+        qr_dir.mkdir(parents=True, exist_ok=True)
 
         # Counters for reporting
         created_count = 0
         updated_count = 0
         error_count = 0
+        total_rows = 0
 
         with open(csv_file_path, 'r', encoding='utf-8') as file:
             reader = csv.DictReader(file)
             
             for row_num, row in enumerate(reader, 1):
+                total_rows += 1
                 try:
                     # Extract data from CSV row
                     name = row.get('Name', '').strip()
@@ -59,24 +68,21 @@ class Command(BaseCommand):
                         error_count += 1
                         continue
                     
-                    # Prepare location (convert '1p' to '1p', etc.)
+                    # Prepare location
                     if location in ['1p', '2p', '3p', '4p', 'O']:
                         location_value = location
                     else:
-                        # Default to '1p' if location is invalid
-                        location_value = '1p'
+                        location_value = '1p'  # Default
                     
-                    # Prepare staff type (VIP or Sales)
+                    # Prepare staff type
                     if staff_type in ['VIP', 'Sales']:
                         staff_type_value = staff_type
                     else:
-                        # Default based on staff code (V for VIP, S for Sales)
-                        if 'V' in staff_code.upper():
-                            staff_type_value = 'VIP'
-                        elif 'S' in staff_code.upper():
-                            staff_type_value = 'Sales'
-                        else:
-                            staff_type_value = 'VIP'  # Default to VIP
+                        staff_type_value = 'VIP'  # Default
+                    
+                    # Clean phone number
+                    if phone_no:
+                        phone_no = ''.join(filter(str.isdigit, phone_no))
                     
                     # Create or update staff record
                     staff, created = Staff.objects.update_or_create(
@@ -91,34 +97,28 @@ class Command(BaseCommand):
                     )
                     
                     if created:
-                        self.stdout.write(self.style.SUCCESS(f'Created: {staff_code} - {name}'))
+                        self.stdout.write(self.style.SUCCESS(f'[{row_num}] Created: {staff_code} - {name}'))
                         created_count += 1
                     else:
-                        self.stdout.write(f'Updated: {staff_code} - {name}')
+                        self.stdout.write(f'[{row_num}] Updated: {staff_code} - {name}')
                         updated_count += 1
                     
-                    # Generate QR code for staff ID
+                    # Generate QR code
                     try:
-                        # Generate QR code using staff's ID
                         qr_path = generate_qr(str(staff.id))
                         
-                        # Save QR code to the staff model
                         if os.path.exists(qr_path):
                             with open(qr_path, 'rb') as f:
-                                # Generate unique filename
-                                qr_filename = f'staff_{staff.id}_{staff.staff_code}_qr.png'
+                                qr_filename = f'staff_{staff.staff_code}_qr.png'
                                 staff.qr_code_image.save(qr_filename, File(f), save=True)
                             
                             self.stdout.write(f'  ✓ QR generated for {staff_code}')
-                            
-                            # Clean up temporary file if your generate_qr creates one
-                            if os.path.exists(qr_path) and not qr_path.startswith(settings.MEDIA_ROOT):
-                                os.remove(qr_path)
                         else:
                             self.stdout.write(self.style.WARNING(f'  ✗ QR file not created for {staff_code}'))
                     
                     except Exception as qr_error:
                         self.stdout.write(self.style.WARNING(f'  ✗ QR generation failed for {staff_code}: {qr_error}'))
+                        error_count += 1
                 
                 except Exception as e:
                     self.stdout.write(self.style.ERROR(f'Error processing row {row_num}: {str(e)}'))
@@ -129,9 +129,9 @@ class Command(BaseCommand):
         self.stdout.write(self.style.SUCCESS('\n' + '='*50))
         self.stdout.write(self.style.SUCCESS('IMPORT SUMMARY'))
         self.stdout.write(self.style.SUCCESS('='*50))
-        self.stdout.write(self.style.SUCCESS(f'Total rows processed: {row_num}'))
-        self.stdout.write(self.style.SUCCESS(f'Created: {created_count}'))
-        self.stdout.write(self.style.SUCCESS(f'Updated: {updated_count}'))
+        self.stdout.write(self.style.SUCCESS(f'Total rows in CSV: {total_rows}'))
+        self.stdout.write(self.style.SUCCESS(f'Successfully created: {created_count}'))
+        self.stdout.write(self.style.SUCCESS(f'Successfully updated: {updated_count}'))
         self.stdout.write(self.style.ERROR(f'Errors: {error_count}'))
         
         if error_count > 0:

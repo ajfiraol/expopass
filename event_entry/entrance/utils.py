@@ -1,3 +1,4 @@
+# entrance/utils.py
 import qrcode
 from django.conf import settings
 from pathlib import Path

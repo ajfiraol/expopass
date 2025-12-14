@@ -1,16 +1,55 @@
 from django.db import models
 import uuid
+from django.utils import timezone
 
 
-# New Staff model with QR code
 class Staff(models.Model):
+    STAFF_TYPE_CHOICES = [
+        ('VIP', 'VIP (Owner)'),
+        ('Sales', 'Sales Staff'),
+    ]
+    
+    LOCATION_CHOICES = [
+        ('1p', 'Pavilion 1'),
+        ('2p', 'Pavilion 2'),
+        ('3p', 'Pavilion 3'),
+        ('4p', 'Pavilion 4'),
+        ('O', 'Outdoor'),
+    ]
+    
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    name = models.CharField(max_length=200)
-    phone_number = models.CharField(max_length=20)
+    name = models.CharField(max_length=200, blank=True, null=True)
+    phone_number = models.CharField(max_length=20, blank=True, null=True)
+    booth_id = models.CharField(max_length=10, blank=True, null=True)
+    
+    # Remove unique=True for now, we'll add it later after importing data
+    staff_code = models.CharField(
+        max_length=20, 
+        default='TEMP_CODE'  # Simple default for migration
+    )
+    
+    staff_type = models.CharField(
+        max_length=10, 
+        choices=STAFF_TYPE_CHOICES,
+        default='VIP'
+    )
+    
+    location = models.CharField(
+        max_length=10, 
+        choices=LOCATION_CHOICES,
+        default='1p'
+    )
+    
     qr_code_image = models.ImageField(upload_to='staff_qr/', blank=True, null=True)
-
+    created_at = models.DateTimeField(default=timezone.now)
+    
+    class Meta:
+        ordering = ['staff_code']
+        verbose_name_plural = "Staff Members"
+    
     def __str__(self):
-        return self.name
+        return f"{self.staff_code} - {self.name or 'Unnamed'}"
+
 
 class Pass(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
