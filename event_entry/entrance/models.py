@@ -20,6 +20,7 @@ class Pass(models.Model):
     staff = models.ForeignKey(Staff, on_delete=models.CASCADE, related_name='passes')
     day_entered = models.DateField()
     created_at = models.DateTimeField(auto_now_add=True)
+    qr_code_image = models.ImageField(upload_to='pass_qr/', blank=True, null=True)
 
     def __str__(self):
         return f"{self.full_name} - Booth: {self.booth_id} - Day: {self.day_entered}"
