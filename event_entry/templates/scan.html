@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scan Ticket</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://unpkg.com/html5-qrcode"></script>
+  <style>
+    body{background:#020617;color:#fff;text-align:center;font-family:Arial;padding:24px}
+    #reader{width:320px;margin:auto}
+    .card{max-width:420px;margin:12px auto}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Scan Entrance QR</h2>
+    <div id="reader"></div>
+    <p id="status"></p>
+  </div>
+
+  <script>
+    const status = document.getElementById('status');
+    const scanner = new Html5Qrcode('reader');
+    scanner.start({ facingMode: 'environment' }, { fps: 10, qrbox: 250 },
+      qrCodeMessage => {
+        status.textContent = 'Scanned: ' + qrCodeMessage;
+        window.location.href = '/verify/' + qrCodeMessage;
+      },
+      errorMessage => {
+        // ignore decode errors
+      }
+    ).catch(err => { status.textContent = 'Camera error: ' + err; });
+  </script>
+</body>
+</html>

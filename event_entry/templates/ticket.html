@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Ticket</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body{font-family:Arial;background:#0f172a;color:#fff;text-align:center;padding:24px}
+    .card{max-width:420px;margin:24px auto;padding:18px;border-radius:8px;background:linear-gradient(180deg,#111827, #0b1220)}
+    img{border-radius:8px}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>{{ ticket.event_name }}</h2>
+    <p>{{ ticket.full_name }}</p>
+    <img src="/media/qr_{{ ticket.id }}.png" width="250" alt="QR code">
+    <p style="font-size:12px;opacity:0.8">Ticket ID: {{ ticket.id }}</p>
+  </div>
+</body>
+</html>
