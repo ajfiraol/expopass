@@ -1,21 +1,16 @@
 from django.core.management.base import BaseCommand
 from django.utils import timezone
 from entrance.models import Staff, Pass
-import qrcode
-from django.core.files.base import ContentFile
-from io import BytesIO
-
 
 class Command(BaseCommand):
-    help = "Automatically generate Pass records from Staff members"
+    help = "Automatically generate Pass records from Staff members using staff QR"
 
     def handle(self, *args, **options):
         today = timezone.now().date()
         created_count = 0
 
         for staff in Staff.objects.all():
-
-            # Prevent duplicate pass for same staff & day
+            # Skip if Pass already exists for today
             if Pass.objects.filter(staff=staff, day_entered=today).exists():
                 continue
 
@@ -27,18 +22,13 @@ class Command(BaseCommand):
                 day_entered=today,
             )
 
-            # Generate QR content
-            qr_data = f"PASS|{pass_obj.id}|{staff.staff_code}"
-            qr = qrcode.make(qr_data)
-
-            buffer = BytesIO()
-            qr.save(buffer, format="PNG")
-
-            pass_obj.qr_code_image.save(
-                f"pass_{pass_obj.id}.png",
-                ContentFile(buffer.getvalue()),
-                save=True
-            )
+            # Copy staff QR code to pass
+            if staff.qr_code_image:
+                pass_obj.qr_code_image.save(
+                    staff.qr_code_image.name.split('/')[-1],  # keep the filename
+                    staff.qr_code_image.file,
+                    save=True
+                )
 
             created_count += 1
 

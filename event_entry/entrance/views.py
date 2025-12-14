@@ -17,8 +17,7 @@ from django.http import JsonResponse
 
 def pass_detail(request, pass_id):
     p = get_object_or_404(Pass, id=pass_id)
-    return render(request, 'pass.html', {'pass_obj': p})
-
+    return render(request, 'pass.html', {'pass_obj': p, 'staff': p.staff})
 def scan_qr(request):
     return render(request, 'scan.html')
 
