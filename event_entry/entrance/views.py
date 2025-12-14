@@ -1,6 +1,6 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect
-
+from django.utils import timezone
 def admin_redirect(request):
     return redirect('dashboard')
 from .models import Pass, Staff
@@ -22,5 +22,18 @@ def scan_qr(request):
     return render(request, 'scan.html')
 
 def verify_pass(request, pass_id):
-    p = get_object_or_404(Pass, id=pass_id)
+    """
+    pass_id here is actually STAFF ID (from QR)
+    """
+    staff = get_object_or_404(Staff, id=pass_id)
+
+    today = timezone.now().date()
+
+    # Find today's pass for this staff
+    p = get_object_or_404(
+        Pass,
+        staff=staff,
+        day_entered=today
+    )
+
     return redirect('pass', pass_id=p.id)
