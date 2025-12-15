@@ -1,8 +1,0 @@
-Location: 2p
-Booth ID: 3
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-4fccf793-e5e7-4803-bb9f-9882a0a020d0,ዶ/ር ብሩክ ለማ,0910853089,VIP
-ed28a12e-8f68-4857-8937-b657f45942f8,ዶ/ር ብሩክ ለማ,0910853089,Staff
-4687e3c5-3c74-4630-baf6-07dcd0ab8752,ዶ/ር ብሩክ ለማ,0910853089,Staff

@@ -1,8 +1,0 @@
-Location: 2p
-Booth ID: 20
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-b8290fd9-5fed-4dfb-8088-6220b05e37e4,ጀማል ከድር (ልብስ ጋርመንት),0911132782,VIP
-eae70c3b-0bd8-44b7-a8a0-1016a98574d6,ጀማል ከድር (ልብስ ጋርመንት),0911132782,Staff
-ef93e2fc-5086-4cf0-ba23-1b5959fd35b8,ጀማል ከድር (ልብስ ጋርመንት),0911132782,Staff

@@ -1,8 +1,0 @@
-Location: 1p
-Booth ID: 46
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-f66fa708-618f-4d17-a49f-8ab19ba7cc7e,ሙና ያሲን,N/A,VIP
-130084e4-b212-4a2a-adbf-406a29214a53,ሙና ያሲን,N/A,Staff
-c3acf983-38b1-4c7c-81fc-c31fdca0f1c2,ሙና ያሲን,N/A,Staff

@@ -1,9 +1,0 @@
-Location: 3p
-Booth ID: 47
-Total staff: 4
-
-staff_code,name,phone_number,staff_type
-db5639df-def7-4355-8d09-c190f1da0935,ሃብታሙ ጎሹ,962616165,VIP
-0f4e1619-ae76-4040-a2f0-3eb95f17489d,ሃብታሙ ጎሹ,962616165,Staff
-404a6a33-caf4-47d1-9a10-3847b8b72125,ሃብታሙ ጎሹ,962616165,Staff
-dac10dd4-ee3c-43a4-9bad-df4e05c7166d,ሃብታሙ ጎሹ,962616165,Staff

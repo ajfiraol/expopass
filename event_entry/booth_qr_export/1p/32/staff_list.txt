@@ -1,8 +1,0 @@
-Location: 1p
-Booth ID: 32
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-75a51576-339e-48d9-b30a-3d76c8cc95d9,ብላቱ ወርቁ/አልባሳት,0923861811,VIP
-04314bf8-d567-45c1-84cc-7b70c453ab8c,ብላቱ ወርቁ/አልባሳት,0923861811,Staff
-f9562e5e-0041-4dce-96bc-030ebe2ab9d9,ብላቱ ወርቁ/አልባሳት,0923861811,Staff

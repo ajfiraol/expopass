@@ -1,8 +1,0 @@
-Location: 1p
-Booth ID: 26
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-feb2ae8d-b636-41e3-b461-8b4575e459c9,ቢንያም ከበደ,979798433,VIP
-576d5374-301b-4ae9-b88a-62fd6765f3c4,ቢንያም ከበደ,979798433,Staff
-a3f92f83-c269-42df-a028-168456b7c963,ቢንያም ከበደ,979798433,Staff

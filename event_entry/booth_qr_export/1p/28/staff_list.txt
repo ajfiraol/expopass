@@ -1,8 +1,0 @@
-Location: 1p
-Booth ID: 28
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-5fc79ba8-77a8-48e0-8ae4-9c7484c47522,ነጃት መሃዲ ከማል,940105218,VIP
-526fc997-08f9-493d-b4e7-5c79962ec619,ነጃት መሃዲ ከማል,940105218,Staff
-e463c489-b7ea-4e03-a36c-a416f1174459,ነጃት መሃዲ ከማል,940105218,Staff

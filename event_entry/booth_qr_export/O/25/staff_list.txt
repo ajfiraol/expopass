@@ -1,8 +1,0 @@
-Location: O
-Booth ID: 25
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-aac0872f-71c0-4abc-bbb1-6da5370ae416,dawit,N/A,VIP
-57094446-0ba1-4c3f-98bb-ca83c04acc4d,dawit,N/A,Staff
-d4f6f03b-9041-40af-b753-2a0e4e2f9fa1,dawit,N/A,Staff

@@ -1,9 +1,0 @@
-Location: 1p
-Booth ID: 12
-Total staff: 4
-
-staff_code,name,phone_number,staff_type
-550c24ae-5427-49ca-a295-1f81eca92f53,ሰራዊት አድማሱ (12ካሬ) L,0911868624,VIP
-0008a77b-0f5a-4936-bc6e-b0e02491d801,ሰራዊት አድማሱ (12ካሬ) L,0911868624,Staff
-a544d10c-a075-480c-b079-e90c6d569bb1,ሰራዊት አድማሱ (12ካሬ) L,0911868624,Staff
-a180ca36-b2ed-4e67-a85e-d4438dd444ec,ሰራዊት አድማሱ (12ካሬ) L,0911868624,Staff

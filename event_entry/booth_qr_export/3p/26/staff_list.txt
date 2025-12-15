@@ -1,9 +1,0 @@
-Location: 3p
-Booth ID: 26
-Total staff: 4
-
-staff_code,name,phone_number,staff_type
-40b46e07-1d38-41ea-928f-5f36d3277172,ትዕግስትገ/ማርያም,913003350,VIP
-76566ed8-4c71-47f1-aaed-57a98cca59d4,ትዕግስትገ/ማርያም,913003350,Staff
-77cecabc-5fdc-4fe7-b1d1-50bd29585395,ትዕግስትገ/ማርያም,913003350,Staff
-5900510d-2d9a-4119-ad79-453e925eb3fa,ትዕግስትገ/ማርያም,913003350,Staff

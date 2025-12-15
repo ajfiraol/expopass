@@ -1,8 +1,0 @@
-Location: 2p
-Booth ID: 12
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-94a4c017-ab3f-4325-b31e-c020ed2da0a9,Abdurahman Beshir,914150403,VIP
-9e13dffe-8620-47f2-8ca7-06bcec1938b1,Abdurahman Beshir,914150403,Staff
-efc848c7-7fde-4951-9d5c-b4c6c315cb19,Abdurahman Beshir,914150403,Staff

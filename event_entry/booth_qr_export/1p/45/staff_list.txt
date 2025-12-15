@@ -1,9 +1,0 @@
-Location: 1p
-Booth ID: 45
-Total staff: 4
-
-staff_code,name,phone_number,staff_type
-7dc704cc-37f2-4bf1-bad8-457a3d3f2f2f,እመቤት አሸኔ/የ ልጆች ስም/,N/A,VIP
-4ec589aa-d1a0-4258-83a8-db1a6b69fc43,እመቤት አሸኔ/የ ልጆች ስም/,N/A,Staff
-66b6f073-21e8-4b20-9e19-6f8ad95dd0a0,እመቤት አሸኔ/የ ልጆች ስም/,N/A,Staff
-26aeb801-63a3-4dbf-bc5f-f898abc8fc43,እመቤት አሸኔ/የ ልጆች ስም/,N/A,Staff

@@ -1,8 +1,0 @@
-Location: O
-Booth ID: 1
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-fb2aa455-cd4a-4feb-a257-debe124ffa0f,ሳራ አየለ,910435808,VIP
-08d917cc-a05b-4dd2-b4b6-e55cbc65d43e,ሳራ አየለ,910435808,Staff
-0d401bfe-6503-42bd-97d3-68f35aae3237,ሳራ አየለ,910435808,Staff

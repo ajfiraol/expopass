@@ -1,8 +1,0 @@
-Location: 1p
-Booth ID: 5
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-03f5baf8-c29d-49bd-bf5b-ba98733a0f26,ነስረዲን እንድሪስ/ቤተልሄም/,0912238300,VIP
-fbae5432-2625-4ebd-a48d-7fd4f16c5f9d,ነስረዲን እንድሪስ/ቤተልሄም/,0912238300,Staff
-44cae53e-9378-42ab-9984-680467e22a66,ነስረዲን እንድሪስ/ቤተልሄም/,0912238300,Staff

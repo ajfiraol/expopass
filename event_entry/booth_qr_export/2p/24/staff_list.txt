@@ -1,8 +1,0 @@
-Location: 2p
-Booth ID: 24
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-9689426f-ddfd-4dd2-907e-21251f86c5b4,ዜናወርቅ እንድሪያስ (ልብስ),0913667745,VIP
-b34febfe-4fe0-4957-ae35-d940d3512d2b,ዜናወርቅ እንድሪያስ (ልብስ),0913667745,Staff
-f75a441c-cea7-44eb-82ba-da6a4bd07fdc,ዜናወርቅ እንድሪያስ (ልብስ),0913667745,Staff

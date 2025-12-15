@@ -1,8 +1,0 @@
-Location: 1p
-Booth ID: 35
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-04a237d9-1b9f-4ff9-96c0-b6489f5dc18e,dashen,N/A,VIP
-499947c0-3fde-418b-aa9b-9e555e992d36,dashen,N/A,Staff
-be353d0f-fcc3-425b-b2f5-bf48f6138c16,dashen,N/A,Staff

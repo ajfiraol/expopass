@@ -1,9 +1,0 @@
-Location: O
-Booth ID: 135
-Total staff: 4
-
-staff_code,name,phone_number,staff_type
-8d43ef9a-e8a5-476a-99e6-a2f8d4d887c8,ናትናኤል አዳነ,N/A,VIP
-71ca9969-6282-4302-87c2-7e333166aa88,ናትናኤል አዳነ,N/A,Staff
-ef38ed4b-5003-4c44-9651-0dc3c7e29b41,ናትናኤል አዳነ,N/A,Staff
-3186a822-ada8-4092-8920-80cc2f93b0e9,ናትናኤል አዳነ,N/A,Staff

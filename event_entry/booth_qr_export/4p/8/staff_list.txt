@@ -1,8 +1,0 @@
-Location: 4p
-Booth ID: 8
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-d7068bc1-b769-4c7a-ba82-c630acc89956,Unknown,N/A,VIP
-05e09528-55c8-4cca-a80a-4ad3e7c49b9d,Unknown,N/A,Staff
-1bb932e8-d631-47f2-abb0-ca6e7337c3da,Unknown,N/A,Staff

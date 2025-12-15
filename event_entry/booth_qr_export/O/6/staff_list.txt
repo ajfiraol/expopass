@@ -1,8 +1,0 @@
-Location: O
-Booth ID: 6
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-7535efc8-8f34-4357-bdb0-8599c9ab0464,ዶቃ/እፀገነት መለስ/,970711251,VIP
-d78a535a-6d09-47f5-8336-e9c0e5d92242,ዶቃ/እፀገነት መለስ/,970711251,Staff
-ebf19760-4d6f-4d2e-98f8-f2c1a296943b,ዶቃ/እፀገነት መለስ/,970711251,Staff

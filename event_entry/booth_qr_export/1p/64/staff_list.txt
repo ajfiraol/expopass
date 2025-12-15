@@ -1,9 +1,0 @@
-Location: 1p
-Booth ID: 64
-Total staff: 4
-
-staff_code,name,phone_number,staff_type
-332adfdf-08de-47ae-bdee-b4765fafda24,ሳምራዊት ሀይሉ (Mixed with outdoor-005 ),N/A,VIP
-02f4a901-7e49-41f3-b317-faf01ccb075e,ሳምራዊት ሀይሉ (Mixed with outdoor-005 ),N/A,Staff
-a5ab1115-3c12-4b76-a640-8e7ff07366be,ሳምራዊት ሀይሉ (Mixed with outdoor-005 ),N/A,Staff
-48673c05-ee43-416f-8c7a-3b23570cd2f2,ሳምራዊት ሀይሉ (Mixed with outdoor-005 ),N/A,Staff

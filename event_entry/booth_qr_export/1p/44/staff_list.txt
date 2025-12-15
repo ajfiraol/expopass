@@ -1,9 +1,0 @@
-Location: 1p
-Booth ID: 44
-Total staff: 4
-
-staff_code,name,phone_number,staff_type
-335c5061-1995-4d81-9c2f-ff23a209e3e6,ኑሪያ ተስፋ/ኮሌክሽን/,N/A,VIP
-3be61950-62b1-47ae-82e5-b49fb5fc91fd,ኑሪያ ተስፋ/ኮሌክሽን/,N/A,Staff
-fa16c6b2-51ce-4357-b135-dd76595ca963,ኑሪያ ተስፋ/ኮሌክሽን/,N/A,Staff
-14f41820-8644-438a-b1b8-6dcd9d431f54,ኑሪያ ተስፋ/ኮሌክሽን/,N/A,Staff

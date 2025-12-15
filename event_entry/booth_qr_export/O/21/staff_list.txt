@@ -1,8 +1,0 @@
-Location: O
-Booth ID: 21
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-4365ada8-3f98-480b-b7f7-89d2523511db,ሰኢዳ አብደላ/ኮሌክሽን/,N/A,VIP
-61a23d5d-72f2-4f32-9ad1-cf04595f40d0,ሰኢዳ አብደላ/ኮሌክሽን/,N/A,Staff
-76347c1c-706c-4852-9d5f-183ec0f4abc9,ሰኢዳ አብደላ/ኮሌክሽን/,N/A,Staff

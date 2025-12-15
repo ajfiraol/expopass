@@ -1,9 +1,0 @@
-Location: O
-Booth ID: 138
-Total staff: 4
-
-staff_code,name,phone_number,staff_type
-c1705445-687d-46b3-85cd-426881f412aa,The ጵink ocean trading,936306533,VIP
-fc62256b-47bd-476f-a7ab-035c825e3455,The ጵink ocean trading,936306533,Staff
-bc715cf7-5901-4ae8-bbe5-a3a7e7ce7232,The ጵink ocean trading,936306533,Staff
-80055932-fdc4-4a4a-a3e3-5518aab8ea0e,The ጵink ocean trading,936306533,Staff

@@ -1,8 +1,0 @@
-Location: O
-Booth ID: 5
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-ec1af5da-8acb-45f4-be36-d6c4ae7243e7,ሳምራዊት ሀይሉ (Mixed with pav-1 ),N/A,VIP
-5d02a957-5130-4974-8cc6-19454bb6d9c0,ሳምራዊት ሀይሉ (Mixed with pav-1 ),N/A,Staff
-27c0812e-ad67-4a97-8ce4-d2e7555ea7a5,ሳምራዊት ሀይሉ (Mixed with pav-1 ),N/A,Staff

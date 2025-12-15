@@ -1,9 +1,0 @@
-Location: 2p
-Booth ID: 13
-Total staff: 4
-
-staff_code,name,phone_number,staff_type
-462f4da6-5bcf-40c7-b97c-19e2b2a9692a,አብዱራህማን በሽር (15 ካሬ),N/A,VIP
-321eb1fd-d1af-4df7-bd56-a6464cf8a825,አብዱራህማን በሽር (15 ካሬ),N/A,Staff
-4a46e7b4-d5d6-4daf-914e-5a684a23dc0a,አብዱራህማን በሽር (15 ካሬ),N/A,Staff
-4fabc72d-6667-4502-8239-fed29ea8e520,አብዱራህማን በሽር (15 ካሬ),N/A,Staff

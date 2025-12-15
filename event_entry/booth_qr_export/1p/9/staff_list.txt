@@ -1,8 +1,0 @@
-Location: 1p
-Booth ID: 9
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-a4521892-12c1-46ca-9525-4348330380e2,ሄኖክ ልዑል,911692818,VIP
-984774b9-d7f1-4aa1-b1ae-7b25e7330cb1,ሄኖክ ልዑል,911692818,Staff
-e27d5c95-d1b6-4545-adfb-f623c8edf33f,ሄኖክ ልዑል,911692818,Staff

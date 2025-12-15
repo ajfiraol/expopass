@@ -1,9 +1,0 @@
-Location: 1p
-Booth ID: 68
-Total staff: 4
-
-staff_code,name,phone_number,staff_type
-03e0ee48-2031-4094-aa8b-19914ce6e0f7,ጥላሁን ፈለቀ/ኮሌክሽን,0911396407,VIP
-f2a7138b-0d35-453d-b168-28359bb63753,ጥላሁን ፈለቀ/ኮሌክሽን,0911396407,Staff
-af4773d8-d01e-4367-87c2-d68e1934c4af,ጥላሁን ፈለቀ/ኮሌክሽን,0911396407,Staff
-1994d978-295f-4764-af25-a705a2c3a152,ጥላሁን ፈለቀ/ኮሌክሽን,0911396407,Staff

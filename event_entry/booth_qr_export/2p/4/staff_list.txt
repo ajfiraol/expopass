@@ -1,8 +1,0 @@
-Location: 2p
-Booth ID: 4
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-2828e1b0-c220-4657-91b3-f3078cb3059c,ሮሆቦት ቅመማ ቅመም,0913102393,VIP
-d485a70a-4119-48c0-ba42-127774395ad9,ሮሆቦት ቅመማ ቅመም,0913102393,Staff
-22fe4097-948f-4a58-92c2-31df469975c6,ሮሆቦት ቅመማ ቅመም,0913102393,Staff

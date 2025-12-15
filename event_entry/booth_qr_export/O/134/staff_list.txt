@@ -1,8 +1,0 @@
-Location: O
-Booth ID: 134
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-5ec0af04-d7b8-4127-9c04-c4f15f842229,ህሊና(ገንቢ ምግብ),944036594,VIP
-6948d7c2-fba3-4726-b9d8-dcd2eb23ce92,ህሊና(ገንቢ ምግብ),944036594,Staff
-88d774f6-900b-47a7-8878-df3ff898bba0,ህሊና(ገንቢ ምግብ),944036594,Staff

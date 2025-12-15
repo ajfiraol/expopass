@@ -1,8 +1,0 @@
-Location: 2p
-Booth ID: 34
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-d945928b-ae1b-4c1c-b3e9-49b4e80fd4a4,Hiwot mulatu,911643862,VIP
-bd127dc3-fa42-4e64-b063-31e1811548c0,Hiwot mulatu,911643862,Staff
-5c6c6d2d-c350-4c04-b0a8-5cad95dba774,Hiwot mulatu,911643862,Staff

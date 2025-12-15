@@ -1,8 +1,0 @@
-Location: 1p
-Booth ID: 7
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-5faffde8-a6f4-4d75-9f25-4aa91916031f,እዮብ አሰፈ/ አሰፋ ገብሩ,N/A,VIP
-02f724e0-5f75-4695-8c6d-55bf027a68b2,እዮብ አሰፈ/ አሰፋ ገብሩ,N/A,Staff
-9e8358eb-05bd-4503-a019-fd03ab6696c1,እዮብ አሰፈ/ አሰፋ ገብሩ,N/A,Staff

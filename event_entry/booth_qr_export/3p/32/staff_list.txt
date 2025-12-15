@@ -1,9 +1,0 @@
-Location: 3p
-Booth ID: 32
-Total staff: 4
-
-staff_code,name,phone_number,staff_type
-6fc279cc-307c-4f74-aff0-24b2f6394c42,Unknown,N/A,VIP
-ae7effdd-24a7-4375-8b21-c5b10c28199c,Unknown,N/A,Staff
-6de12b2f-097d-473d-93bb-d8aa2c8b81fe,Unknown,N/A,Staff
-1261ed9e-bb9e-45d1-8b6f-c25e0766479d,Unknown,N/A,Staff

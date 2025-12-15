@@ -1,9 +1,0 @@
-Location: 1p
-Booth ID: 57
-Total staff: 4
-
-staff_code,name,phone_number,staff_type
-a6135537-e423-48e2-a743-f375f0a6b77b,መሰረት ከበደ /ኮሌክሽን/,0936648341,VIP
-fd116611-b0a2-44bc-bbac-99f7376960d1,መሰረት ከበደ /ኮሌክሽን/,0936648341,Staff
-1e025a3e-483c-4789-a17a-ff3853cd85f0,መሰረት ከበደ /ኮሌክሽን/,0936648341,Staff
-2b15c984-20c4-4d54-a7ef-c0c8aa1ad512,መሰረት ከበደ /ኮሌክሽን/,0936648341,Staff

@@ -1,8 +1,0 @@
-Location: O
-Booth ID: 69
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-b93d7e2f-c5fa-4ba6-a694-f2b014f57c98,ሰለሞን ማሞ(ፋስት ፉድ),911002440,VIP
-42a1ce5d-0afe-4d13-a20a-ded0b8e5d1e3,ሰለሞን ማሞ(ፋስት ፉድ),911002440,Staff
-52268c04-02a7-4515-80fa-723c3c159252,ሰለሞን ማሞ(ፋስት ፉድ),911002440,Staff

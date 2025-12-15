@@ -1,9 +1,0 @@
-Location: O
-Booth ID: 112
-Total staff: 4
-
-staff_code,name,phone_number,staff_type
-dee517f8-1839-4307-ae83-761a17bfa1a4,እዝቅያስ ደጉ (mixed with pav1- 60/61/84),N/A,VIP
-e858d1eb-51e6-4bec-a9f0-802c7beee1a6,እዝቅያስ ደጉ (mixed with pav1- 60/61/84),N/A,Staff
-ba98aed8-8687-4970-a6c8-75167013ce4d,እዝቅያስ ደጉ (mixed with pav1- 60/61/84),N/A,Staff
-a36c6016-a577-4d43-84b1-03b0ca27478a,እዝቅያስ ደጉ (mixed with pav1- 60/61/84),N/A,Staff

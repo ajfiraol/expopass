@@ -1,8 +1,0 @@
-Location: 2p
-Booth ID: 2
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-720777fa-c787-42f2-a4ec-2e5952a6b8aa,NIB Chocolate,0911668338,VIP
-ae14732d-1403-4f95-a32a-ba42254ffc44,NIB Chocolate,0911668338,Staff
-f0f773ea-bbd2-4ac7-b678-6b857bee753c,NIB Chocolate,0911668338,Staff

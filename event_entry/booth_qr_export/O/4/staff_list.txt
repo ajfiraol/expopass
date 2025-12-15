@@ -1,8 +1,0 @@
-Location: O
-Booth ID: 4
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-0ed22fd9-8307-4937-8401-c7293e136981,ፈርሃ አብዱልሰማይ,N/A,VIP
-441586d1-2ed6-4ddd-b950-cca9868b02cd,ፈርሃ አብዱልሰማይ,N/A,Staff
-b43eaa58-44cc-4694-85cb-0e5dcc39d32f,ፈርሃ አብዱልሰማይ,N/A,Staff

@@ -1,8 +1,0 @@
-Location: O
-Booth ID: 71
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-d27cc52e-0639-447c-a1f2-81f63422e7fa,ሜሮን ግዜ/ኮሌክሽን 2*2ካሬ 71 ቁጥር,N/A,VIP
-952bdc1a-1a70-48c0-b9ae-25680390c755,ሜሮን ግዜ/ኮሌክሽን 2*2ካሬ 71 ቁጥር,N/A,Staff
-487fbbca-602e-4d2d-9158-7377ff68738e,ሜሮን ግዜ/ኮሌክሽን 2*2ካሬ 71 ቁጥር,N/A,Staff

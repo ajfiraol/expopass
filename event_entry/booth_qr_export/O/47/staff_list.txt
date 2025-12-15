@@ -1,8 +1,0 @@
-Location: O
-Booth ID: 47
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-23fc8a2a-f7af-49d8-b6f4-68efab72a129,ጀማል አወል,911616117,VIP
-c7cb604f-58bd-404b-a854-7fc9f09ec2fe,ጀማል አወል,911616117,Staff
-0731fb61-2ec7-41c3-98c9-2e9e2776cb2b,ጀማል አወል,911616117,Staff

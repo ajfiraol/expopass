@@ -1,8 +1,0 @@
-Location: 1p
-Booth ID: 74
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-bf1806a1-7c10-4e78-822e-a947944a5863,ቤተልሄም ጎሹ,921540125,VIP
-d4afa191-ebde-4ff2-8aa9-2eb6f8489899,ቤተልሄም ጎሹ,921540125,Staff
-786fb4a3-7e8e-4d91-b276-74c7a1b9b051,ቤተልሄም ጎሹ,921540125,Staff

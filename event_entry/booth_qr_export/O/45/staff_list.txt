@@ -1,8 +1,0 @@
-Location: O
-Booth ID: 45
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-87278fd9-ed64-4f51-996f-e55f41945d9e,አሃዱ ግርማ,911827304,VIP
-b9de5cdf-1790-4f06-b86c-642ed25f691e,አሃዱ ግርማ,911827304,Staff
-e1a53d55-044b-4ebc-9d15-f8012cc62437,አሃዱ ግርማ,911827304,Staff

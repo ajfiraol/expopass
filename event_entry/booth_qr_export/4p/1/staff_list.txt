@@ -1,8 +1,0 @@
-Location: 4p
-Booth ID: 1
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-470c0efc-027d-41e6-b980-79c85c541768,Amrot mola,934060052,VIP
-00f86829-3e67-4e66-972b-e3839e38a363,Amrot mola,934060052,Staff
-17ee6857-466d-472b-b819-584084822d0c,Amrot mola,934060052,Staff

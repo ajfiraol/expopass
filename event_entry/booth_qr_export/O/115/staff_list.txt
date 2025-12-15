@@ -1,8 +1,0 @@
-Location: O
-Booth ID: 115
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-b7cba71d-c074-4cde-bad5-12a7061bf092,ኢኮ ክሎዝ/መንሱር ከማል/ ( mixed with pav1- 34),N/A,VIP
-f15d560a-bf60-4d14-a797-c89b04e39f64,ኢኮ ክሎዝ/መንሱር ከማል/ ( mixed with pav1- 34),N/A,Staff
-40aee501-d0cf-442f-a820-17a99af96514,ኢኮ ክሎዝ/መንሱር ከማል/ ( mixed with pav1- 34),N/A,Staff

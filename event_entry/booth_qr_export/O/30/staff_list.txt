@@ -1,8 +1,0 @@
-Location: O
-Booth ID: 30
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-a8a258aa-2d05-45f1-b366-c8327fb3e54f,ጠይባ ሰመድ(ኦሌክሽን),911346077,VIP
-1304aaf9-c025-43d6-b568-72fe28335a82,ጠይባ ሰመድ(ኦሌክሽን),911346077,Staff
-e3b63735-d911-437f-a94d-63a08eed8e70,ጠይባ ሰመድ(ኦሌክሽን),911346077,Staff

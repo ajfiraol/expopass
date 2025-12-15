@@ -1,8 +1,0 @@
-Location: O
-Booth ID: 16
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-037e4bcd-8321-4f20-ab87-046a824265a0,ሃና ጥላሁን,N/A,VIP
-610bbccd-3577-4872-bb92-c14a3fdaf765,ሃና ጥላሁን,N/A,Staff
-172a4ff9-7a30-4e27-98f1-471b410d0027,ሃና ጥላሁን,N/A,Staff

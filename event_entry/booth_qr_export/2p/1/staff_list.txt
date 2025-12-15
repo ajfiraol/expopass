@@ -1,8 +1,0 @@
-Location: 2p
-Booth ID: 1
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-94eb6ffa-7730-445f-a6ae-265be5fdb9e3,M &M T-shirt,0913008162,VIP
-cb118af6-7ab2-4c37-9141-5be106f0c977,M &M T-shirt,0913008162,Staff
-2bb058f2-2f37-4ee0-b6fc-ca42149870ae,M &M T-shirt,0913008162,Staff

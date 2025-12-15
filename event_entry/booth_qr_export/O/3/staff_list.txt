@@ -1,8 +1,0 @@
-Location: O
-Booth ID: 3
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-3ceded86-cbfc-4617-933f-5e3802ac7848,ብርሃኑ ጎሳዬ/ አስቴር ደመላሽ,N/A,VIP
-ce6a1a4a-202b-4c67-975a-3b7c81ef2bdb,ብርሃኑ ጎሳዬ/ አስቴር ደመላሽ,N/A,Staff
-01a67482-7389-4f6f-b3d1-d5405a4bff00,ብርሃኑ ጎሳዬ/ አስቴር ደመላሽ,N/A,Staff

@@ -1,8 +1,0 @@
-Location: O
-Booth ID: 10
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-421608d0-b00c-4283-8cb4-9d6e5f450bf7,ዘይኑ ሽኩረላ,911827766,VIP
-c8d78247-7d44-4a88-8782-a0ac14829557,ዘይኑ ሽኩረላ,911827766,Staff
-8a65fef5-da9b-4ba0-88ac-5c05c3740ca6,ዘይኑ ሽኩረላ,911827766,Staff

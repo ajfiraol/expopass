@@ -1,8 +1,0 @@
-Location: 1p
-Booth ID: 10
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-67b3e474-5ad9-45a2-a674-e77a47978e73,ናትናኤል ምክሩ,0911884183,VIP
-05faa670-202f-494b-b9d4-4a497e114daa,ናትናኤል ምክሩ,0911884183,Staff
-b14da6d4-a2d9-4f15-9bb6-fff9f348adbf,ናትናኤል ምክሩ,0911884183,Staff

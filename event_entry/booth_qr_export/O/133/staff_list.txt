@@ -1,8 +1,0 @@
-Location: O
-Booth ID: 133
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-7a10e761-f58c-40f9-9d2b-6aa42ef92b9b,አቤል ሙሉጌታ,N/A,VIP
-223114fc-dc44-4be7-8e33-6923b1d2a29b,አቤል ሙሉጌታ,N/A,Staff
-8c98ffe1-bd0e-4d30-aba5-1d827bd28beb,አቤል ሙሉጌታ,N/A,Staff

@@ -1,9 +1,0 @@
-Location: 1p
-Booth ID: 37
-Total staff: 4
-
-staff_code,name,phone_number,staff_type
-dcb0cd15-74f0-464e-9d2b-7ea20e2719fe,አዲል ማሩ/ጌጣጌጥ,0911737373,VIP
-04238937-9894-4cdf-9271-fffccc7e4a53,አዲል ማሩ/ጌጣጌጥ,0911737373,Staff
-0552370e-9510-4fac-8cbe-c67925df5303,አዲል ማሩ/ጌጣጌጥ,0911737373,Staff
-2f6cdff7-e9c1-4d84-a3e0-a26570f27a08,አዲል ማሩ/ጌጣጌጥ,0911737373,Staff

@@ -1,9 +1,0 @@
-Location: 1p
-Booth ID: 40
-Total staff: 4
-
-staff_code,name,phone_number,staff_type
-d8223a83-1c66-4537-9c85-8415c9f5fef5,ታደሰ ለማ/ኮሌክሽን/,N/A,VIP
-4d7a3542-a989-4d30-b90f-08f632759440,ታደሰ ለማ/ኮሌክሽን/,N/A,Staff
-479c6459-48f5-4794-99ce-c7ce551700ca,ታደሰ ለማ/ኮሌክሽን/,N/A,Staff
-d6c252b9-a82a-4fab-bf8d-1a174ae62cfb,ታደሰ ለማ/ኮሌክሽን/,N/A,Staff

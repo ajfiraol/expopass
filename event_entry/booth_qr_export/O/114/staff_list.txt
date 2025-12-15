@@ -1,8 +1,0 @@
-Location: O
-Booth ID: 114
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-47055937-4c34-4373-b6e9-d1fa28f12b50,ናታን ተረፈ(አቢስንያ ሽቶ),911141375,VIP
-7bdf3571-6539-481e-bcf0-6447eabe9bc1,ናታን ተረፈ(አቢስንያ ሽቶ),911141375,Staff
-5a934eea-5731-4f1c-94ce-1f579bc13274,ናታን ተረፈ(አቢስንያ ሽቶ),911141375,Staff

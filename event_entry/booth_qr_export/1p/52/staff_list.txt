@@ -1,9 +1,0 @@
-Location: 1p
-Booth ID: 52
-Total staff: 4
-
-staff_code,name,phone_number,staff_type
-80d78566-df66-4b10-8909-076d9b209c38,ባንቺወሰን ሰሎሞን,N/A,VIP
-5377bd1d-1b76-4ee2-b55b-962da95b4abd,ባንቺወሰን ሰሎሞን,N/A,Staff
-4fec918e-e3d0-4fc1-9bb8-d67dc0226884,ባንቺወሰን ሰሎሞን,N/A,Staff
-8968e59b-983f-44d0-ba6a-0ed42a687b91,ባንቺወሰን ሰሎሞን,N/A,Staff

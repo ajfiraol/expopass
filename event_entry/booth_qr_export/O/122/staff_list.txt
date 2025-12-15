@@ -1,8 +1,0 @@
-Location: O
-Booth ID: 122
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-1c975551-094c-49bd-b1f1-9878946f6068,ቅርጫንሼ ግሩፕ,902010038,VIP
-9e786408-a994-4a52-ac1f-fd67ef2cbf44,ቅርጫንሼ ግሩፕ,902010038,Staff
-8cb602c4-8911-4b1b-a8d2-9404013b7531,ቅርጫንሼ ግሩፕ,902010038,Staff

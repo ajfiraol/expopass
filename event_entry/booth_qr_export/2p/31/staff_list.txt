@@ -1,8 +1,0 @@
-Location: 2p
-Booth ID: 31
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-7b13f155-1ece-4bb9-be85-c715e070dc40,ሄላዝ ቢውቲ,0900799056,VIP
-07493780-39c6-4286-bb99-bf4363e857a6,ሄላዝ ቢውቲ,0900799056,Staff
-37b285a2-945f-407a-87e6-034dcadafa7f,ሄላዝ ቢውቲ,0900799056,Staff

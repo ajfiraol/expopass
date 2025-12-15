@@ -1,8 +1,0 @@
-Location: 2p
-Booth ID: 18
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-538c3993-6178-43ba-a4e7-efe87f227639,ገነት ጌታቸው,0912214745,VIP
-46d83431-c7df-40b3-97d0-b868c1e7a888,ገነት ጌታቸው,0912214745,Staff
-02d70dd3-5c3f-411d-8ee7-6d2f6b813a3e,ገነት ጌታቸው,0912214745,Staff

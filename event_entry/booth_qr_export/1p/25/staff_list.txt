@@ -1,9 +1,0 @@
-Location: 1p
-Booth ID: 25
-Total staff: 4
-
-staff_code,name,phone_number,staff_type
-162d63cf-384f-493f-8249-1fa504714f4f,ሃደራ ተስፋ/ኮሌክሽን/,N/A,VIP
-70b1f860-6b52-4a06-96b4-5c12f82e73f8,ሃደራ ተስፋ/ኮሌክሽን/,N/A,Staff
-d67decab-372b-47b7-8abd-270245372126,ሃደራ ተስፋ/ኮሌክሽን/,N/A,Staff
-a41d159a-f48f-4fa1-a155-72997714e606,ሃደራ ተስፋ/ኮሌክሽን/,N/A,Staff

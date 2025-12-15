@@ -1,8 +1,0 @@
-Location: O
-Booth ID: 31
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-37396e3c-e931-4017-9d6c-49fe4343edd6,Unknown,N/A,VIP
-300f8b86-1934-4f2d-befe-e011fab17bc8,Unknown,N/A,Staff
-4b6bba56-0e57-418a-8f2c-abd7cd86e11b,Unknown,N/A,Staff

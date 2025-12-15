@@ -1,8 +1,0 @@
-Location: 1p
-Booth ID: 30
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-4f0c04b6-7b61-4d87-856b-171af55039cb,በረከት አበበ/ቺያ ሲድ/,0993183989,VIP
-312ea357-5b2f-4ef5-a43e-2b0e35cc2f0a,በረከት አበበ/ቺያ ሲድ/,0993183989,Staff
-a797e2b4-e3f9-42f0-b138-b80a749ed6fb,በረከት አበበ/ቺያ ሲድ/,0993183989,Staff

@@ -1,9 +1,0 @@
-Location: 2p
-Booth ID: 30
-Total staff: 4
-
-staff_code,name,phone_number,staff_type
-5d6876ae-e5a6-474d-be34-d3d929634b3f,አሚኑ ነስሩ,N/A,VIP
-bc28b57e-6dc3-484a-8708-6f959146a619,አሚኑ ነስሩ,N/A,Staff
-d61f9e79-df2a-4ff3-bf03-335e66654e1e,አሚኑ ነስሩ,N/A,Staff
-efe3f7ec-146f-4942-bb22-a2ff197d29b0,አሚኑ ነስሩ,N/A,Staff

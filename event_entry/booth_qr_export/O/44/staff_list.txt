@@ -1,8 +1,0 @@
-Location: O
-Booth ID: 44
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-49792ed9-f0d7-4ea0-8d24-af0f8ef11895,በረከት አገሬ አጽብሃ,933481212,VIP
-8a2fb528-0eb9-4c72-a1c9-063b183ed8a5,በረከት አገሬ አጽብሃ,933481212,Staff
-d44d69b5-9871-491a-9e33-790e00ca40cb,በረከት አገሬ አጽብሃ,933481212,Staff

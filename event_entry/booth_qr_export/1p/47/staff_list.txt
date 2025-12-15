@@ -1,8 +1,0 @@
-Location: 1p
-Booth ID: 47
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-606534f6-e9d0-4fa5-a88b-e3a0798b001c,ነስረዲን እንድሪስ/ኮስሞ/,N/A,VIP
-b0f9f8d0-fc00-4973-bddc-a11fa261b4e5,ነስረዲን እንድሪስ/ኮስሞ/,N/A,Staff
-afaef4f5-ac7b-4a74-b626-a83d030af996,ነስረዲን እንድሪስ/ኮስሞ/,N/A,Staff

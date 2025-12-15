@@ -1,8 +1,0 @@
-Location: O
-Booth ID: 9
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-57626ffc-9fe2-4a90-ad11-52d691fa7b77,ሬድዋን ሙሰማ,983176959,VIP
-5ae20e18-d61f-4cd3-9d24-5d8576272287,ሬድዋን ሙሰማ,983176959,Staff
-1292cce7-535e-4fa1-83af-3b9e5dcc9c35,ሬድዋን ሙሰማ,983176959,Staff

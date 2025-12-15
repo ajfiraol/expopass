@@ -1,9 +1,0 @@
-Location: O
-Booth ID: 149
-Total staff: 4
-
-staff_code,name,phone_number,staff_type
-eb92022b-7cad-4dbf-8847-f80680d0e77a,ብሩክ ገበየሁ,N/A,VIP
-8246b339-26e0-410a-bb65-484fbf8b2b63,ብሩክ ገበየሁ,N/A,Staff
-ca14e2ca-c562-4b18-8889-fe1dafbbd1ce,ብሩክ ገበየሁ,N/A,Staff
-23fda79b-db35-460a-8d6c-60668286b9b2,ብሩክ ገበየሁ,N/A,Staff

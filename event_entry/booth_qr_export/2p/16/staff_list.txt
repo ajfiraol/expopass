@@ -1,8 +1,0 @@
-Location: 2p
-Booth ID: 16
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-85ddb9fe-9b3f-497b-9408-2c8ee9a4fb6b,ትዘታ መንበሩ,0935008338,VIP
-87a926e9-bd2d-48db-85f3-e354d3ea7c79,ትዘታ መንበሩ,0935008338,Staff
-5b9d91cc-cf7d-4a93-afdf-6a7be5040a28,ትዘታ መንበሩ,0935008338,Staff

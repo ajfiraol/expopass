@@ -1,8 +1,0 @@
-Location: 2p
-Booth ID: 5
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-ae67ff36-dae3-4b0a-bd54-ee4bcf10ee4b,ሳምያ ኡስማን,0911405330,VIP
-3aaae9e4-148e-4770-a744-a422afe9e153,ሳምያ ኡስማን,0911405330,Staff
-5d0b4cd3-52c3-4781-8d27-738d59432a06,ሳምያ ኡስማን,0911405330,Staff

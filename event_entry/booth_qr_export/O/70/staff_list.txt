@@ -1,9 +1,0 @@
-Location: O
-Booth ID: 70
-Total staff: 4
-
-staff_code,name,phone_number,staff_type
-8a6c6f55-21ff-4aa1-94bd-93cad5544793,Hageri minale (hana minale),N/A,VIP
-9cc5d625-de92-40da-b4b5-47172b7cba2e,Hageri minale (hana minale),N/A,Staff
-f31003e5-8957-438a-b756-7e3299b1bb57,Hageri minale (hana minale),N/A,Staff
-fc07683a-9c93-4736-8a68-34319b844c9a,Hageri minale (hana minale),N/A,Staff

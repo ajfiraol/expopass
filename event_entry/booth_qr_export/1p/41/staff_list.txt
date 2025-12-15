@@ -1,9 +1,0 @@
-Location: 1p
-Booth ID: 41
-Total staff: 4
-
-staff_code,name,phone_number,staff_type
-0eefa3b8-83a1-4659-a2bd-7ec8960fa55e,ነፃነት ተሸመ/ኮሌክሽን/,N/A,VIP
-57e5586f-8c19-4279-9b37-90180a386d25,ነፃነት ተሸመ/ኮሌክሽን/,N/A,Staff
-7d3290da-d494-44f5-ba08-38d5e565ec78,ነፃነት ተሸመ/ኮሌክሽን/,N/A,Staff
-76d1035f-1b08-4580-a128-2f7907dfc1f7,ነፃነት ተሸመ/ኮሌክሽን/,N/A,Staff

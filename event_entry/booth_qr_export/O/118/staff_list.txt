@@ -1,8 +1,0 @@
-Location: O
-Booth ID: 118
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-0c4483db-071d-4ce7-921f-14aee8896fab,ሄቨን ዮሃንስ/ገላግሌ/,N/A,VIP
-d66c1720-ef29-41e4-8119-fae10a0a0db7,ሄቨን ዮሃንስ/ገላግሌ/,N/A,Staff
-b7807e6c-7ecb-470f-a912-3c68a1287e80,ሄቨን ዮሃንስ/ገላግሌ/,N/A,Staff

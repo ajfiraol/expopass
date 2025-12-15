@@ -1,9 +1,0 @@
-Location: 1p
-Booth ID: 53
-Total staff: 4
-
-staff_code,name,phone_number,staff_type
-6e887685-6946-4968-8fa6-7efad43b99b4,አብረሃም አለባቸው,0912303149,VIP
-01d12de3-df02-4712-bb09-aed2ed28790a,አብረሃም አለባቸው,0912303149,Staff
-74aa1ad9-0dd7-42bc-8653-487c9f9df60f,አብረሃም አለባቸው,0912303149,Staff
-512a267a-2174-4022-971a-0d900f319047,አብረሃም አለባቸው,0912303149,Staff

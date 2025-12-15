@@ -1,8 +1,0 @@
-Location: 2p
-Booth ID: 33
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-b55d34c8-7b04-4550-9ead-e3df66c9fca2,Eleni Girma,902597777,VIP
-1f9b85c8-0f99-4f34-ae99-756c0fbe4329,Eleni Girma,902597777,Staff
-151e79a4-4380-4801-aa20-1149bd623a3a,Eleni Girma,902597777,Staff

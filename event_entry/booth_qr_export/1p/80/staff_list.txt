@@ -1,9 +1,0 @@
-Location: 1p
-Booth ID: 80
-Total staff: 4
-
-staff_code,name,phone_number,staff_type
-b9a0e4cd-3c3e-408d-aad0-568849f1d0fa,ኬርመንት,N/A,VIP
-0d88c50c-a5be-4083-9ce1-2cf36f0572dd,ኬርመንት,N/A,Staff
-6fb1030d-5e20-44f0-9a8a-6375da8f726a,ኬርመንት,N/A,Staff
-1cedf846-4105-41a5-b89f-9858b7e8d8e0,ኬርመንት,N/A,Staff

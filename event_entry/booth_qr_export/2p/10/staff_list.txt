@@ -1,8 +1,0 @@
-Location: 2p
-Booth ID: 10
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-c107176d-eed4-433b-bf8a-e3a81e3eedf3,ቤዛዊት አንዳርጌ,921777018,VIP
-0fccf219-08d8-4b1b-9bb2-4b1175f9ec32,ቤዛዊት አንዳርጌ,921777018,Staff
-3667ffe7-c046-4e1b-99d1-c3a5b5ddee8e,ቤዛዊት አንዳርጌ,921777018,Staff

@@ -1,9 +1,0 @@
-Location: 1p
-Booth ID: 56
-Total staff: 4
-
-staff_code,name,phone_number,staff_type
-ba11b729-7073-4cd2-b9f0-8d36dc8fc77e,ዘይድ በረከት,0913742168,VIP
-b1f53c14-0ea6-4d40-9fa0-eb5acb19fdfb,ዘይድ በረከት,0913742168,Staff
-af915a1e-7b5c-42cf-8914-9f49ccc00708,ዘይድ በረከት,0913742168,Staff
-8499e072-083d-4f47-9b3e-b3d0da0d30f4,ዘይድ በረከት,0913742168,Staff

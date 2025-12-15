@@ -1,9 +1,0 @@
-Location: 1p
-Booth ID: 11
-Total staff: 4
-
-staff_code,name,phone_number,staff_type
-584f72ab-52b7-4684-bf22-49ff76039f99,ዮሃንስ ብርሃኑ (12ካሬ) L,N/A,VIP
-16a28096-3e7e-4f0e-8f33-b58c6c707a53,ዮሃንስ ብርሃኑ (12ካሬ) L,N/A,Staff
-589f9342-755e-4579-9a01-d794f3545729,ዮሃንስ ብርሃኑ (12ካሬ) L,N/A,Staff
-63857b2b-ebc9-4162-aa19-2545f9b917ab,ዮሃንስ ብርሃኑ (12ካሬ) L,N/A,Staff

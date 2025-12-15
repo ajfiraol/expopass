@@ -1,8 +1,0 @@
-Location: O
-Booth ID: 26
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-a031a95f-21f6-436c-b4a7-ed2c7b2dfe78,ሃና ተሰማ ፈረጃ,911738856,VIP
-fe17b8f0-e8f6-42f4-8b2d-55623ccd9b04,ሃና ተሰማ ፈረጃ,911738856,Staff
-b8c51bee-77fe-45dd-ae00-819ec53ca960,ሃና ተሰማ ፈረጃ,911738856,Staff

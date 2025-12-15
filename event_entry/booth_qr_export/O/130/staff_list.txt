@@ -1,8 +1,0 @@
-Location: O
-Booth ID: 130
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-ce34aed2-980b-41b9-a4be-bdee9444c5af,ወሊድ ቶፊቅ,911340727,VIP
-8a3bcee0-b6df-45ce-8799-de7c8160aeca,ወሊድ ቶፊቅ,911340727,Staff
-35a1d234-282e-4108-b558-28160436968b,ወሊድ ቶፊቅ,911340727,Staff

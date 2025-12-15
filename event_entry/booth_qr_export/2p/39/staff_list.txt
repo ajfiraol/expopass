@@ -1,9 +1,0 @@
-Location: 2p
-Booth ID: 39
-Total staff: 4
-
-staff_code,name,phone_number,staff_type
-beaec123-c486-499c-b2b0-3b92748e2bf6,አቤል ኢታና,N/A,VIP
-3c481a64-f385-4dde-a91c-83deca8da1ac,አቤል ኢታና,N/A,Staff
-30f94077-a470-408a-9e80-94aa54da39ec,አቤል ኢታና,N/A,Staff
-68413c0b-e203-4f2c-9624-611503fed2b1,አቤል ኢታና,N/A,Staff

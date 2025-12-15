@@ -1,8 +1,0 @@
-Location: 1p
-Booth ID: 29
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-9bd701bd-70b9-47be-83a2-c59479d5b262,አቤኔዘር ፀዳሉ/አልባሳት,0913094077,VIP
-81c993be-236b-47c2-8cac-1d21db084328,አቤኔዘር ፀዳሉ/አልባሳት,0913094077,Staff
-6d528c77-4424-48bd-8442-af9e2244b1f3,አቤኔዘር ፀዳሉ/አልባሳት,0913094077,Staff

@@ -1,8 +1,0 @@
-Location: O
-Booth ID: 48
-Total staff: 3
-
-staff_code,name,phone_number,staff_type
-33086fc9-8d0a-4750-9b79-e7c75948a135,ቶፊክ  ምሰማ,N/A,VIP
-741604d3-bbdc-4834-847d-d043717dee00,ቶፊክ  ምሰማ,N/A,Staff
-de0fba8e-b6c7-4f30-928e-d2adf9ffb9da,ቶፊክ  ምሰማ,N/A,Staff
