@@ -32,8 +32,19 @@
         <option value="4p" {% if location_filter|default:'' == "4p" %}selected{% endif %}>Pavilion 4</option>
         <option value="O" {% if location_filter|default:'' == "O" %}selected{% endif %}>Outdoor</option>
       </select>
+      Status:
+      <select name="status">
+        <option value="all" {% if status_filter == "all" %}selected{% endif %}>All</option>
+        <option value="printed" {% if status_filter == "printed" %}selected{% endif %}>Printed</option>
+        <option value="not_printed" {% if status_filter == "not_printed" %}selected{% endif %}>Not Printed</option>
+      </select>
       <button type="submit">Filter</button>
     </form>
+    <p>
+      Total: {{ total_count }} |
+      Printed: {{ printed_count }} |
+      Not Printed: {{ not_printed_count }}
+    </p>
   </div>
 
   <table>
