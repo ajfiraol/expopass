@@ -8,7 +8,7 @@ class Staff(models.Model):
         ('VIP', 'VIP (Owner)'),
         ('Sales', 'Sales Staff'),
     ]
-    
+
     LOCATION_CHOICES = [
         ('1p', 'Pavilion 1'),
         ('2p', 'Pavilion 2'),
@@ -16,50 +16,70 @@ class Staff(models.Model):
         ('4p', 'Pavilion 4'),
         ('O', 'Outdoor'),
     ]
-    
+
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+
     name = models.CharField(max_length=200, blank=True, null=True)
     phone_number = models.CharField(max_length=20, blank=True, null=True)
-    booth_id = models.CharField(max_length=10, blank=True, null=True)
-    
-    # Remove unique=True for now, we'll add it later after importing data
+    booth_id = models.CharField(max_length=20, blank=True, null=True)
+
+    # 🔑 STABLE IDENTIFIER (QR IS BASED ON THIS)
     staff_code = models.CharField(
-        max_length=20, 
-        default='TEMP_CODE'  # Simple default for migration
+        max_length=20,
+        unique=True,
+        db_index=True
     )
-    
+
     staff_type = models.CharField(
-        max_length=10, 
+        max_length=10,
         choices=STAFF_TYPE_CHOICES,
         default='VIP'
     )
-    
+
     location = models.CharField(
-        max_length=10, 
+        max_length=10,
         choices=LOCATION_CHOICES,
         default='1p'
     )
-    
-    qr_code_image = models.ImageField(upload_to='staff_qr/', blank=True, null=True)
+
+    qr_code_image = models.ImageField(
+        upload_to='staff_qr/',
+        blank=True,
+        null=True
+    )
+
     created_at = models.DateTimeField(default=timezone.now)
-    
+
     class Meta:
         ordering = ['staff_code']
         verbose_name_plural = "Staff Members"
-    
+
     def __str__(self):
         return f"{self.staff_code} - {self.name or 'Unnamed'}"
 
 
 class Pass(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+
+    staff = models.ForeignKey(
+        Staff,
+        on_delete=models.CASCADE,
+        related_name='passes'
+    )
+
     full_name = models.CharField(max_length=200)
     phone_number = models.CharField(max_length=20)
     booth_id = models.CharField(max_length=100)
-    staff = models.ForeignKey(Staff, on_delete=models.CASCADE, related_name='passes')
+
     day_entered = models.DateField()
     created_at = models.DateTimeField(auto_now_add=True)
-    qr_code_image = models.ImageField(upload_to='pass_qr/', blank=True, null=True)
+
+    # copied from staff QR (optional display)
+    qr_code_image = models.ImageField(
+        upload_to='pass_qr/',
+        blank=True,
+        null=True
+    )
 
     def __str__(self):
-        return f"{self.full_name} - Booth: {self.booth_id} - Day: {self.day_entered}"
+        return f"{self.full_name} | {self.staff.staff_code} | {self.day_entered}"
