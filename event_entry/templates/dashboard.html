@@ -1,54 +1,96 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Custom Admin Dashboard</title>
+  <title>Event Admin Dashboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body{font-family:Arial;background:#0f172a;color:#fff;padding:24px}
-    h1{margin-bottom:24px}
-    .section{background:#1e293b;padding:18px;margin-bottom:24px;border-radius:8px}
-    table{width:100%;border-collapse:collapse;margin-top:12px}
-    th,td{padding:8px 12px;border-bottom:1px solid #334155;text-align:left}
-    th{background:#334155}
-    tr:last-child td{border-bottom:none}
-    .staff-list{margin-bottom:24px}
+    body {font-family:Arial;background:#0f172a;color:#fff;padding:24px}
+    h1,h2{margin-bottom:12px}
+    table {width:100%;border-collapse:collapse;margin-top:12px}
+    th,td {padding:8px 12px;border-bottom:1px solid #334155;text-align:left}
+    th {background:#334155}
+    tr:last-child td {border-bottom:none}
+    input[type=checkbox]{width:18px;height:18px}
+    .filter {margin-bottom:24px}
+    a.button {color:#fff;text-decoration:none;background:#2563eb;padding:4px 8px;border-radius:4px}
+    .printed-row {background-color:#065f46 !important;} /* green highlight for printed */
   </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
   <h1>Event Admin Dashboard</h1>
-  <div class="section staff-list">
-    <h2>Staff</h2>
-    <table>
-      <tr><th>Name</th><th>Phone</th><th>QR Code</th></tr>
-      {% for s in staff %}
-      <tr>
-        <td>{{ s.name }}</td>
-        <td>{{ s.phone_number }}</td>
-        <td>{% if s.qr_code_image %}<img src="{{ s.qr_code_image.url }}" width="60">{% else %}No QR{% endif %}</td>
-      </tr>
-      {% empty %}
-      <tr><td colspan="3">No staff found.</td></tr>
-      {% endfor %}
-    </table>
+
+  <div class="filter">
+    <form method="get">
+      Booth ID: <input type="text" name="booth_id" value="{{ booth_filter }}">
+      Location:
+      <select name="location">
+        <option value="">All</option>
+        <option value="1p" {% if location_filter|default:'' == "1p" %}selected{% endif %}>Pavilion 1</option>
+        <option value="2p" {% if location_filter|default:'' == "2p" %}selected{% endif %}>Pavilion 2</option>
+        <option value="3p" {% if location_filter|default:'' == "3p" %}selected{% endif %}>Pavilion 3</option>
+        <option value="4p" {% if location_filter|default:'' == "4p" %}selected{% endif %}>Pavilion 4</option>
+        <option value="O" {% if location_filter|default:'' == "O" %}selected{% endif %}>Outdoor</option>
+      </select>
+      <button type="submit">Filter</button>
+    </form>
   </div>
-  <div class="section">
-    <h2>Recent Passes</h2>
-    <table>
-      <tr><th>Name</th><th>Phone</th><th>Booth</th><th>Staff</th><th>Day</th><th>Created</th></tr>
-      {% for p in passes %}
-      <tr>
-        <td>{{ p.full_name }}</td>
-        <td>{{ p.phone_number }}</td>
-        <td>{{ p.booth_id }}</td>
-        <td>{{ p.staff.name }}</td>
-        <td>{{ p.day_entered }}</td>
-        <td>{{ p.created_at }}</td>
-      </tr>
-      {% empty %}
-      <tr><td colspan="6">No passes found.</td></tr>
-      {% endfor %}
-    </table>
-  </div>
-  <a href="/">Back to Home</a>
+
+  <table>
+    <tr>
+      <th>Booth ID</th>
+      <th>Location</th>
+      <th>Staff Type</th>
+      <th>Name</th>
+      <th>Phone</th>
+      <th>QR Code</th>
+      <th>Printed</th>
+    </tr>
+    {% for s in staff_list %}
+    <tr class="{% if s.printed %}printed-row{% endif %}" data-id="{{ s.id }}">
+      <td>{{ s.booth_id }}</td>
+      <td>{{ s.get_location_display }}</td>
+      <td>{{ s.staff_type }}</td>
+      <td>{{ s.name }}</td>
+      <td>{{ s.phone_number }}</td>
+      <td>
+        {% if s.qr_code_image %}
+          <a href="{% url 'download_qr' s.id %}" class="button">Download QR</a>
+        {% else %}
+          No QR
+        {% endif %}
+      </td>
+      <td>
+        <input type="checkbox" class="printed-toggle" data-id="{{ s.id }}" {% if s.printed %}checked{% endif %}>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+
+  <script>
+    $(document).ready(function(){
+      $('.printed-toggle').change(function(){
+        var checkbox = $(this);
+        var staffId = checkbox.data('id');
+        $.post('/toggle-printed/' + staffId + '/', {
+          'csrfmiddlewaretoken':'{{ csrf_token }}'
+        }, function(data){
+          if(data.success){
+            var row = $('tr[data-id="'+staffId+'"]');
+            if(data.printed){
+              row.addClass('printed-row');
+              checkbox.prop('checked', true);
+            } else {
+              row.removeClass('printed-row');
+              checkbox.prop('checked', false);
+            }
+          } else {
+            alert('Error toggling printed');
+          }
+        });
+      });
+    });
+  </script>
+
 </body>
 </html>

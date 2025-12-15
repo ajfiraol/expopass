@@ -13,6 +13,13 @@ class PassAdmin(admin.ModelAdmin):
 		return "No QR"
 	qr_preview.short_description = "QR Code"
 
-@admin.register(Staff)
 class StaffAdmin(admin.ModelAdmin):
-	list_display = ("name", "phone_number", "qr_code_image")
+    list_display = ('name', 'phone_number', 'staff_type', 'location', 'booth_id', 'qr_code_image', 'printed_status')
+
+    def printed_status(self, obj):
+        # Checks if this staff has any Pass with printed=True
+        return obj.passes.filter(printed=True).exists()
+    printed_status.boolean = True  # shows as a checkmark
+    printed_status.short_description = 'Printed'
+admin.site.register(Staff, StaffAdmin)
+
