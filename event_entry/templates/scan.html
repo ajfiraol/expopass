@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Scan Ticket</title>
+  <title>Scan Staff QR</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://unpkg.com/html5-qrcode"></script>
   <style>
@@ -16,50 +16,31 @@
       width: 320px;
       margin: auto;
     }
-    .card {
-      max-width: 420px;
-      margin: 12px auto;
-    }
-    #status {
-      margin-top: 12px;
-      font-weight: bold;
-    }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h2>Scan Entrance QR</h2>
-    <div id="reader"></div>
-    <p id="status">Initializing scanner...</p>
-  </div>
+
+  <h2>Scan Staff QR</h2>
+  <div id="reader"></div>
+  <p id="status"></p>
 
   <script>
     const status = document.getElementById('status');
-    const scanner = new Html5Qrcode('reader');
+
+    const scanner = new Html5Qrcode("reader");
 
     scanner.start(
-      { facingMode: 'environment' },
+      { facingMode: "environment" },
       { fps: 10, qrbox: 250 },
-      qrCodeMessage => {
-        status.textContent = 'Scanned: ' + qrCodeMessage;
+      (qrCodeMessage) => {
+        const staffCode = qrCodeMessage.trim();
+        status.innerText = "Scanned: " + staffCode;
 
-        // The QR now contains just the UUID (pass_id)
-        const passId = qrCodeMessage.trim();
-
-        // Validate UUID format (basic check)
-        const uuidRegex = /^[0-9a-fA-F-]{36}$/;
-        if (uuidRegex.test(passId)) {
-          window.location.href = '/verify/' + passId + '/';
-        } else {
-          status.textContent = 'Invalid QR code!';
-        }
-      },
-      errorMessage => {
-        // ignore decode errors silently
+        // redirect directly using staff_code
+        window.location.href = "/verify/" + encodeURIComponent(staffCode) + "/";
       }
-    ).catch(err => {
-      status.textContent = 'Camera error: ' + err;
-    });
+    );
   </script>
+
 </body>
 </html>
