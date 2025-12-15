@@ -1,0 +1,23 @@
+Location: O
+Booth ID: 158
+Total staff: 18
+
+staff_code,name,phone_number,staff_type
+074b58b4-8510-49b9-ae51-1713759fba75,አብርሃም ምስጋናው fast food,N/A,VIP
+23af6f2e-bda9-4452-a5d2-c26897a94d9c,አብርሃም ምስጋናው fast food,N/A,Staff
+3666f6b0-51f5-4af7-a09d-805b0fbee3db,አብርሃም ምስጋናው fast food,N/A,Staff
+34b4d976-0ad9-40f2-ba11-6133eecf2dd4,አብርሃም ምስጋናው fast food,N/A,Staff
+f5c95146-f4aa-4de6-aa4f-bebaff85e225,አብርሃም ምስጋናው fast food,N/A,Staff
+fa6889cf-e9bf-42d4-bf3a-4db356cf96d1,አብርሃም ምስጋናው fast food,N/A,Staff
+5af8c842-fdff-4db7-8fd8-a2cbc2f113d5,አብርሃም ምስጋናው fast food,N/A,Staff
+c05f33f2-e950-46a3-af9a-73a2ca756940,አብርሃም ምስጋናው fast food,N/A,Staff
+ad471ad7-bedb-4a91-b02f-0205b1066057,አብርሃም ምስጋናው fast food,N/A,Staff
+78126c6c-6579-4f03-b954-41281beb2da5,አብርሃም ምስጋናው fast food,N/A,Staff
+179c0948-261f-4326-a180-d75a7fc840dd,አብርሃም ምስጋናው fast food,N/A,Staff
+8d6debe7-66d8-4a36-9357-916260d9033b,አብርሃም ምስጋናው fast food,N/A,Staff
+facc7607-c733-4110-9e1c-ee8577a4603d,አብርሃም ምስጋናው fast food,N/A,Staff
+36720d11-c4e6-4761-b94b-f7dc97555acf,አብርሃም ምስጋናው fast food,N/A,Staff
+9fe7ab4a-5888-4ced-a610-83d17911e490,አብርሃም ምስጋናው fast food,N/A,Staff
+f0952827-49f1-47bc-acb4-60678f335a31,አብርሃም ምስጋናው fast food,N/A,Staff
+63205ca2-3a51-4e8f-a868-7d955a09cece,አብርሃም ምስጋናው fast food,N/A,Staff
+fe3fc1a2-83f1-482b-b03b-917709513f77,አብርሃም ምስጋናው fast food,N/A,Staff

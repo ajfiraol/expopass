@@ -1,0 +1,9 @@
+Location: O
+Booth ID: 125
+Total staff: 4
+
+staff_code,name,phone_number,staff_type
+4b9ffc3b-4508-43c9-9b3e-a4d0206d7dbe,በትረ ሀ/ፅዮን/ትራስ,0911669908,VIP
+a9335938-8cc9-492c-8be5-a65ca5ecfaae,በትረ ሀ/ፅዮን/ትራስ,0911669908,Staff
+cc0f499a-eda1-41e5-a9dd-9157425892c5,በትረ ሀ/ፅዮን/ትራስ,0911669908,Staff
+f90ad1e1-2988-402b-941d-6747fc7be1df,በትረ ሀ/ፅዮን/ትራስ,0911669908,Staff

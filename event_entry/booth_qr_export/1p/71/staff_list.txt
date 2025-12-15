@@ -1,0 +1,8 @@
+Location: 1p
+Booth ID: 71
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+1db3da06-9b1b-4ae0-abe6-9053f61a2e69,ትርሲት አያለው,N/A,VIP
+6665eae7-f972-4797-b3d4-e5574a521247,ትርሲት አያለው,N/A,Staff
+42554916-1423-4dff-983a-2cfd9d8253f9,ትርሲት አያለው,N/A,Staff

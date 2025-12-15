@@ -1,0 +1,8 @@
+Location: 1p
+Booth ID: 75
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+4b21d782-cc92-4f12-b4c8-a00b5f5f187b,ሚሚ አደም,916581916,VIP
+9cdf974d-c8fd-4c4b-8a47-02b66afe7879,ሚሚ አደም,916581916,Staff
+e14ab8ce-4836-4cb2-92db-1e2caa3ea7a5,ሚሚ አደም,916581916,Staff

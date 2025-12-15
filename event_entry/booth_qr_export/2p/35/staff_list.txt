@@ -1,0 +1,8 @@
+Location: 2p
+Booth ID: 35
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+35983bde-f87e-4842-8c38-81310a24d13d,Samrawit Mulugeta,937839576,VIP
+dc1e7d9a-88b6-4f7e-a267-2c45e34d4b1e,Samrawit Mulugeta,937839576,Staff
+47521b7b-3095-4879-8686-920179154603,Samrawit Mulugeta,937839576,Staff

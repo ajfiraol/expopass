@@ -1,0 +1,9 @@
+Location: 1p
+Booth ID: 49
+Total staff: 4
+
+staff_code,name,phone_number,staff_type
+78e88a99-6179-41f4-9c3c-8052bf3280de,ሀናን/ ዙልፋ ሙደሲር,0961290444,VIP
+4c584c62-3635-4269-b3c7-1970e3043296,ሀናን/ ዙልፋ ሙደሲር,0961290444,Staff
+ee8b7786-7377-4f12-a829-4d277bf36e4d,ሀናን/ ዙልፋ ሙደሲር,0961290444,Staff
+5fded5d5-3e36-4c42-8f08-34e78cc1c552,ሀናን/ ዙልፋ ሙደሲር,0961290444,Staff

@@ -1,0 +1,9 @@
+Location: 1p
+Booth ID: 33
+Total staff: 4
+
+staff_code,name,phone_number,staff_type
+b6474151-9874-49a7-99ee-7da06aac7fec,ሼሩ/ኮሪኣ/,N/A,VIP
+06fa864c-c1ac-4668-a395-f31a4a429dd1,ሼሩ/ኮሪኣ/,N/A,Staff
+ff9819ab-5454-422b-90c0-79e7caba1557,ሼሩ/ኮሪኣ/,N/A,Staff
+0229a89c-626b-4e47-87da-0aae33b8e9b6,ሼሩ/ኮሪኣ/,N/A,Staff

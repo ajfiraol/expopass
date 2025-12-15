@@ -1,0 +1,8 @@
+Location: 1p
+Booth ID: 6
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+a4b92a69-c59c-471a-8a10-d348b9c67ea3,ይስሀቅ አንተነህ /ኮሌክሽን/ (,N/A,VIP
+4e1b795e-473a-4119-8941-849f736c94c7,ይስሀቅ አንተነህ /ኮሌክሽን/ (,N/A,Staff
+49535db1-a673-49b5-9de6-a09e510c7a50,ይስሀቅ አንተነህ /ኮሌክሽን/ (,N/A,Staff

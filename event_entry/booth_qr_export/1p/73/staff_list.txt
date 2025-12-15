@@ -1,0 +1,9 @@
+Location: 1p
+Booth ID: 73
+Total staff: 4
+
+staff_code,name,phone_number,staff_type
+f350f574-b2ac-4cdf-a2b4-8babee130c60,በሃይሉ ሃይሉ,911694576,VIP
+a97616dd-a0e0-47be-a1e2-3be3375adbd9,በሃይሉ ሃይሉ,911694576,Staff
+641f0dac-cf1e-4c30-93f6-98e7cb603862,በሃይሉ ሃይሉ,911694576,Staff
+9adba609-84ac-4eb4-809d-518cbbad7c51,በሃይሉ ሃይሉ,911694576,Staff

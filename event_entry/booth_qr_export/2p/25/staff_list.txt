@@ -1,0 +1,9 @@
+Location: 2p
+Booth ID: 25
+Total staff: 4
+
+staff_code,name,phone_number,staff_type
+70c39f92-2faf-4926-9bd3-2e86eb33b2c7,ወንደሰን አለሙ,N/A,VIP
+92cbdad2-6bc0-473a-85dc-5145897a06a0,ወንደሰን አለሙ,N/A,Staff
+c175eed2-6b82-4e07-a753-57e60d28abfb,ወንደሰን አለሙ,N/A,Staff
+01fb31ba-7469-4a59-be03-8f11e30016d2,ወንደሰን አለሙ,N/A,Staff

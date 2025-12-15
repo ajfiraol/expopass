@@ -1,0 +1,9 @@
+Location: 1p
+Booth ID: 69
+Total staff: 4
+
+staff_code,name,phone_number,staff_type
+a8db6c0d-8609-4f45-bc0c-271a26acb9fc,ሳሙኤል ገ/ፀሐይ /የቤት እቃ/,N/A,VIP
+f836da17-f4f1-41a2-9bbc-b5fd89127cde,ሳሙኤል ገ/ፀሐይ /የቤት እቃ/,N/A,Staff
+e6915623-3dc1-4da5-b13a-6c5b0aedc921,ሳሙኤል ገ/ፀሐይ /የቤት እቃ/,N/A,Staff
+4bd942f6-9208-4cb0-abb7-03a66867dc1c,ሳሙኤል ገ/ፀሐይ /የቤት እቃ/,N/A,Staff

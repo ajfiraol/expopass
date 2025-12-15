@@ -1,0 +1,8 @@
+Location: O
+Booth ID: 28
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+d836554c-dee9-4df2-af94-d9725ae772ea,መሃመድ ሙሰማ,924539532,VIP
+959ee3bf-4b2a-45f5-8728-565478edf3c8,መሃመድ ሙሰማ,924539532,Staff
+db22046a-0203-429a-8aad-95c6422c5c51,መሃመድ ሙሰማ,924539532,Staff

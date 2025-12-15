@@ -1,0 +1,8 @@
+Location: 1p
+Booth ID: 67
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+3e9152f9-6a4e-4aeb-b486-e787906a6075,አዚዛ ሽብሩ/ኮሌክሽን,0910156691,VIP
+825f253d-fcf1-44a1-9dea-f4371daa8364,አዚዛ ሽብሩ/ኮሌክሽን,0910156691,Staff
+4f6009fa-6093-4f5d-9f2c-af872d519f08,አዚዛ ሽብሩ/ኮሌክሽን,0910156691,Staff

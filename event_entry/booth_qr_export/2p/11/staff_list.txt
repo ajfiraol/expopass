@@ -1,0 +1,8 @@
+Location: 2p
+Booth ID: 11
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+6e5f1cb1-f177-4acf-9728-ffe4875d2362,አብዱራህማን አብራር,0911972498,VIP
+dced4869-4e5c-4aba-a1fe-f44445cd5990,አብዱራህማን አብራር,0911972498,Staff
+16d864d8-c88c-4b16-8192-50fc35a30b13,አብዱራህማን አብራር,0911972498,Staff

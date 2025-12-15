@@ -1,0 +1,9 @@
+Location: 3p
+Booth ID: 15
+Total staff: 4
+
+staff_code,name,phone_number,staff_type
+159cc148-965e-414f-bc4d-ac4a9ad36b8a,አብዱልቃድር ሀሰን,929150305,VIP
+fdf189f2-121c-4c20-84a0-64ce49a0ab08,አብዱልቃድር ሀሰን,929150305,Staff
+026c1242-2711-48e4-9a74-8c444f928394,አብዱልቃድር ሀሰን,929150305,Staff
+a4cc98dd-1b43-4cec-8273-2916c2a3a96f,አብዱልቃድር ሀሰን,929150305,Staff

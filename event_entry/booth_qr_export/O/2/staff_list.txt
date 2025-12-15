@@ -1,0 +1,8 @@
+Location: O
+Booth ID: 2
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+c3207af4-316b-4df5-82ff-0379a13232cf,መለስ,912683165,VIP
+7efe7da5-fc3b-463f-bd65-9bd60b9fe40a,መለስ,912683165,Staff
+ff458690-4a7f-4ddb-afba-41673133d34d,መለስ,912683165,Staff

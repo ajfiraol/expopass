@@ -1,0 +1,8 @@
+Location: O
+Booth ID: 43
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+08b74714-56bb-47fe-b3a8-54ef8719ddaa,አሚና ሙዘይን,985562026,VIP
+95b4ff3d-9bbe-4ee9-a6cb-91365b64da15,አሚና ሙዘይን,985562026,Staff
+e82e23a4-33a2-4e74-a801-37ffa8d30d94,አሚና ሙዘይን,985562026,Staff

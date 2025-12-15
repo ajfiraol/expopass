@@ -1,0 +1,8 @@
+Location: 2p
+Booth ID: 23
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+60a59eaf-81bc-419d-afe5-c70df73fef29,Enat Mewelweya(Robel Gebru),925279999,VIP
+93b9c731-a5be-4197-bad9-014541a346b1,Enat Mewelweya(Robel Gebru),925279999,Staff
+4e68ee4a-e6ac-4cf1-9be5-9585527a8d2f,Enat Mewelweya(Robel Gebru),925279999,Staff

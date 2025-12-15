@@ -1,0 +1,8 @@
+Location: O
+Booth ID: 27
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+c9f50dcb-6a27-496f-bdba-3c877de0cf64,ፋጡማ ነስሮ,912007381,VIP
+62f88213-b5c5-4436-9417-248e167e0301,ፋጡማ ነስሮ,912007381,Staff
+17f9b601-e70d-42a8-84ad-dcf61e2822a3,ፋጡማ ነስሮ,912007381,Staff

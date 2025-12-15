@@ -1,0 +1,12 @@
+Location: 1p
+Booth ID: 116 )(12ካሬ)
+Total staff: 7
+
+staff_code,name,phone_number,staff_type
+e2e2a3b1-2f84-484f-9a8e-04909197b1a7,ኢኮ ክሎዝ/መንሱር ከማል/ (outdoor- 115,1114,Staff
+bde3ec92-8f0c-4e82-a169-a5052af62470,ኢኮ ክሎዝ/መንሱር ከማል/ (outdoor- 115,1115,Staff
+ae161545-dcd4-45ab-8329-6fc6504d30f3,ኢኮ ክሎዝ/መንሱር ከማል/ (outdoor- 115,1116,Staff
+c6e09783-16a6-459c-a7c2-4df45d84700a,ኢኮ ክሎዝ/መንሱር ከማል/ (outdoor- 115,1117,Staff
+d1e874ac-4dde-4b7a-baa4-776d0171c6f5,ኢኮ ክሎዝ/መንሱር ከማል/ (outdoor- 115,1118,Staff
+0f334130-92f2-49c0-b3bc-3a04a60e3c98,ኢኮ ክሎዝ/መንሱር ከማል/ (outdoor- 115,1119,Staff
+5156ca00-9e73-4ad9-94f2-8dd82e3d67a3,ኢኮ ክሎዝ/መንሱር ከማል/ (outdoor- 115,1120,Staff

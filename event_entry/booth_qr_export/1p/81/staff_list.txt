@@ -1,0 +1,9 @@
+Location: 1p
+Booth ID: 81
+Total staff: 4
+
+staff_code,name,phone_number,staff_type
+0cd2b9af-8393-4e33-a1fb-3a80d6b40538,Memnon treading,0935007373,VIP
+aa321bfa-d469-4688-a42d-bfd0d487daa2,Memnon treading,0935007373,Staff
+585f8c46-479c-452b-b1c5-6988a6b205a0,Memnon treading,0935007373,Staff
+c987591a-4039-4c49-bddb-7a42f54e2c0c,Memnon treading,0935007373,Staff

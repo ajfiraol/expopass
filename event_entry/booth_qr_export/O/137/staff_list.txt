@@ -1,0 +1,18 @@
+Location: O
+Booth ID: 137
+Total staff: 13
+
+staff_code,name,phone_number,staff_type
+b9db9d98-3aa0-4cd8-83fc-2d45f89539da,ሰኢድ ከማል,911437121,VIP
+6c827aa8-4db7-4374-ba41-e17094e2eed5,ሰኢድ ከማል,911437121,Staff
+694a61ed-befd-4f78-8f7c-5ffa49ee342d,ሰኢድ ከማል,911437121,Staff
+089aadde-5758-4523-8c38-e019f67be998,ሰኢድ ከማል,911437121,Staff
+38973096-b7e9-4768-85a6-a05cd78d0e7d,ሰኢድ ከማል,911437121,Staff
+c72ec510-cbac-4773-b740-3835c3b43b10,ሰኢድ ከማል,911437121,Staff
+de134c07-1ed9-4ea2-8a35-d4c85fe433f8,ሰኢድ ከማል,911437121,Staff
+b7d84743-0c3e-4b75-8fc9-6d5476ce4af3,ሰኢድ ከማል,911437121,Staff
+54f7452b-b680-4b38-9fc7-27e2807a3c86,ሰኢድ ከማል,911437121,Staff
+0e7a8960-7368-412c-80f5-f95f3b5a8467,ሰኢድ ከማል,911437121,Staff
+c8648363-6e60-43dc-b6c4-060ebe693818,ሰኢድ ከማል,911437121,Staff
+e3ed16fa-e2ba-4dcd-abb2-5df5853974c5,ሰኢድ ከማል,911437121,Staff
+05e20c2a-26c2-48f0-8435-30cefc461c73,ሰኢድ ከማል,911437121,Staff

@@ -1,0 +1,9 @@
+Location: 3p
+Booth ID: 31
+Total staff: 4
+
+staff_code,name,phone_number,staff_type
+576967c5-df77-4670-b745-301394437d53,ሄለን ጉታ,911678705,VIP
+a60b06c4-e009-4f10-9ba7-8afe58f992d0,ሄለን ጉታ,911678705,Staff
+45ec6e52-6dc7-41c0-9ade-ca6dc1c14eb7,ሄለን ጉታ,911678705,Staff
+8b43410a-265a-4bad-aeca-284937bb957b,ሄለን ጉታ,911678705,Staff

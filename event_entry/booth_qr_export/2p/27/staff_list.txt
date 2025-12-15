@@ -1,0 +1,8 @@
+Location: 2p
+Booth ID: 27
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+c5e38888-1824-4217-8653-6be4b46e75d2,ያዘዉ ተሻለ,0932086884,VIP
+47a65bfa-87ae-477b-989d-3186a931ff5a,ያዘዉ ተሻለ,0932086884,Staff
+4fdb9a92-e189-431a-875d-589b7e39e7bb,ያዘዉ ተሻለ,0932086884,Staff

@@ -1,0 +1,8 @@
+Location: O
+Booth ID: 132
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+c4d4b92c-3014-4a68-94fc-00b34cebce9f,ጥላ ጂም,974169678,VIP
+d2172684-52b1-4c85-81b3-57c7a979feb0,ጥላ ጂም,974169678,Staff
+4863871d-ad83-42a5-80fd-6c2b9f4f64f8,ጥላ ጂም,974169678,Staff

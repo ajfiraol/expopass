@@ -1,0 +1,8 @@
+Location: O
+Booth ID: 52
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+e9653496-59f2-4f28-a3c1-2cbb6ccbe2ca,እትዮ ጋሪ ቢዝነስ ግሩፕ,N/A,VIP
+8cbb2172-54c4-48a9-a00a-290aa492ba36,እትዮ ጋሪ ቢዝነስ ግሩፕ,N/A,Staff
+a0b3f8e1-bf32-4a05-943d-cb323ad9632e,እትዮ ጋሪ ቢዝነስ ግሩፕ,N/A,Staff

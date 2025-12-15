@@ -1,0 +1,8 @@
+Location: O
+Booth ID: 113
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+0aa92a43-3599-461b-a78c-a80b1308f454,ሱራፌል መስፍን/ኮሌክሽን (mixed with pav 2-17 and pav-1) & 7,N/A,VIP
+ce7d51d0-037d-4a36-bc22-3254892839f1,ሱራፌል መስፍን/ኮሌክሽን (mixed with pav 2-17 and pav-1) & 7,N/A,Staff
+9142baa0-dda9-4706-b693-fc34b39cf2c9,ሱራፌል መስፍን/ኮሌክሽን (mixed with pav 2-17 and pav-1) & 7,N/A,Staff

@@ -1,0 +1,8 @@
+Location: O
+Booth ID: 29
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+52333de3-ec23-41f1-8c01-b500fb3b87e6,ሩት አበበ,915953575,VIP
+5040001f-5053-4216-ade2-6bd43e46a662,ሩት አበበ,915953575,Staff
+38b7c0a3-6a51-4a0e-8b6a-86179b1466ac,ሩት አበበ,915953575,Staff

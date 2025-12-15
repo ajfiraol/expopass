@@ -20,6 +20,10 @@
 <body>
   <h1>Event Admin Dashboard</h1>
 
+  <p>
+    <a href="{% url 'booth_files' %}" class="button">View Booth QR Folders</a>
+  </p>
+
   <div class="filter">
     <form method="get">
       Booth ID: <input type="text" name="booth_id" value="{{ booth_filter }}">

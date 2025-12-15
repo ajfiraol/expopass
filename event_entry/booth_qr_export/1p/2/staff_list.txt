@@ -1,0 +1,8 @@
+Location: 1p
+Booth ID: 2
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+342dacc8-7af6-4180-8180-8dc6a99c595d,ኤም ኬ /ሽቶ/,095555555,VIP
+c51d02a0-de38-4815-819e-ee65ff1ff178,ኤም ኬ /ሽቶ/,095555555,Staff
+b2dbf73f-ea64-4b60-82ef-619d4ea4d589,ኤም ኬ /ሽቶ/,095555555,Staff

@@ -1,0 +1,8 @@
+Location: 2p
+Booth ID: 32
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+19090fa0-2570-49bf-a5cf-5a91f809f1ac,መሃመድ ላሎ,913569855,VIP
+95c7e23c-5dab-4c7d-a3c1-e70589acfc7a,መሃመድ ላሎ,913569855,Staff
+87fc6c01-c53e-4c46-8e23-ffd77769647d,መሃመድ ላሎ,913569855,Staff

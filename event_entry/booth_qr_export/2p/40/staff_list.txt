@@ -1,0 +1,8 @@
+Location: 2p
+Booth ID: 40
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+217ce088-f552-46bb-b424-56e7bb062544,ወሰን አለማየሁ,N/A,VIP
+084611be-f550-4759-aa3d-76a4ae488374,ወሰን አለማየሁ,N/A,Staff
+7dafef92-7b24-4890-b83c-192e0f2bebd5,ወሰን አለማየሁ,N/A,Staff

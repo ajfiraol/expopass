@@ -6,6 +6,8 @@ from django.http import JsonResponse, FileResponse
 from django.views.decorators.http import require_POST
 from django.shortcuts import get_object_or_404
 from django.core.files import File
+from django.conf import settings
+from pathlib import Path
 from .models import Staff, Pass
 from .utils import generate_qr
 import os
@@ -207,3 +209,125 @@ def verify_staff(request, staff_code):
 
 
 # Use Django's built-in auth views for login/logout, wired in urls.py
+
+
+@login_required
+def booth_files(request):
+    """
+    Show the folder structure created by export_booth_qr:
+    BOOTH_QR_EXPORT_ROOT / <location> / <booth_id> / files
+    Interactive file browser with expand/collapse, add/delete staff.
+    """
+    base_dir = Path(getattr(settings, "BOOTH_QR_EXPORT_ROOT", settings.BASE_DIR / "booth_qr_export"))
+    locations = []
+
+    # Get unique locations and booths from database (more reliable than filesystem)
+    location_set = set(Staff.objects.values_list('location', flat=True).distinct())
+    
+    for loc_code in sorted(location_set):
+        if not loc_code:
+            continue
+        loc_display = dict(Staff.LOCATION_CHOICES).get(loc_code, loc_code)
+        booths = []
+        booth_set = set(Staff.objects.filter(location=loc_code).values_list('booth_id', flat=True).distinct())
+        
+        for booth_id in sorted(booth_set):
+            if not booth_id:
+                continue
+            staff_count = Staff.objects.filter(location=loc_code, booth_id=booth_id).count()
+            booths.append({
+                "name": booth_id,
+                "staff_count": staff_count,
+            })
+        
+        if booths:
+            locations.append({
+                "code": loc_code,
+                "name": loc_display,
+                "booths": booths,
+            })
+
+    context = {
+        "base_dir": str(base_dir),
+        "locations": locations,
+    }
+    return render(request, "booth_files.html", context)
+
+
+@login_required
+def booth_staff_list(request, location, booth_id):
+    """
+    AJAX endpoint: Get all staff for a specific booth+location combo.
+    """
+    staff_list = Staff.objects.filter(location=location, booth_id=booth_id).order_by('name')
+    data = []
+    for staff in staff_list:
+        data.append({
+            'id': str(staff.id),
+            'name': staff.name,
+            'phone': staff.phone_number,
+            'staff_type': staff.staff_type,
+            'staff_code': staff.staff_code,
+            'qr_url': staff.qr_code_image.url if staff.qr_code_image else None,
+        })
+    return JsonResponse({'staff': data})
+
+
+@login_required
+@require_POST
+def booth_add_staff(request, location, booth_id):
+    """
+    AJAX endpoint: Add a new staff member to a booth+location.
+    """
+    name = request.POST.get('name', '').strip() or 'Unknown'
+    phone = request.POST.get('phone_number', '').strip() or 'N/A'
+    staff_type = request.POST.get('staff_type', 'Staff').strip()
+
+    if staff_type not in ['VIP', 'Staff']:
+        staff_type = 'Staff'
+
+    new_staff = Staff.objects.create(
+        name=name,
+        phone_number=phone,
+        booth_id=booth_id,
+        location=location,
+        staff_type=staff_type,
+    )
+
+    # Generate QR code
+    qr_path = generate_qr(new_staff.staff_code)
+    with open(qr_path, 'rb') as f:
+        new_staff.qr_code_image.save(
+            f'staff_{new_staff.staff_code}.png',
+            File(f),
+            save=True
+        )
+
+    return JsonResponse({
+        'success': True,
+        'staff': {
+            'id': str(new_staff.id),
+            'name': new_staff.name,
+            'phone': new_staff.phone_number,
+            'staff_type': new_staff.staff_type,
+            'staff_code': new_staff.staff_code,
+            'qr_url': new_staff.qr_code_image.url if new_staff.qr_code_image else None,
+        }
+    })
+
+
+@login_required
+@require_POST
+def booth_delete_staff(request, staff_id):
+    """
+    AJAX endpoint: Delete a staff member.
+    """
+    staff = get_object_or_404(Staff, id=staff_id)
+    location = staff.location
+    booth_id = staff.booth_id
+    staff.delete()
+    return JsonResponse({
+        'success': True,
+        'location': location,
+        'booth_id': booth_id,
+    })

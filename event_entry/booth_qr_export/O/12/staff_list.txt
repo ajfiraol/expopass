@@ -1,0 +1,8 @@
+Location: O
+Booth ID: 12
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+7cc71638-04fa-46dd-8d18-ed4aa10d9ce8,በህርያ ሽኩር,913430367,VIP
+d0de8d34-4fb8-4059-9468-db2bd93939f7,በህርያ ሽኩር,913430367,Staff
+d0884a45-3804-43a4-ab64-f20da59593bb,በህርያ ሽኩር,913430367,Staff

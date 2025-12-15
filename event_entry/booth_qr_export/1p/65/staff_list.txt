@@ -1,0 +1,9 @@
+Location: 1p
+Booth ID: 65
+Total staff: 4
+
+staff_code,name,phone_number,staff_type
+f4d79b69-81b4-40dd-8f74-4f8ad3e60b98,ታሪኩ ገላን/ኮለክሽን/,N/A,VIP
+80a7cb86-ce09-4845-a612-e815eefdee6f,ታሪኩ ገላን/ኮለክሽን/,N/A,Staff
+9145bb38-0da9-4c8a-ae8d-161deede8f4e,ታሪኩ ገላን/ኮለክሽን/,N/A,Staff
+10edf5f9-c58d-43da-871e-0e4642322f4b,ታሪኩ ገላን/ኮለክሽን/,N/A,Staff

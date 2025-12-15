@@ -1,0 +1,8 @@
+Location: O
+Booth ID: 55
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+6e08eddf-fa66-471b-8fa5-454256453226,ሃድያወርቅ ተስፋዬ,N/A,VIP
+17cb0492-c325-4e05-9813-a4fc8741bd1b,ሃድያወርቅ ተስፋዬ,N/A,Staff
+87ec5d7d-0bcb-49de-a41a-3f7c1385c28b,ሃድያወርቅ ተስፋዬ,N/A,Staff

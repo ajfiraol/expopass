@@ -1,0 +1,9 @@
+Location: 2p
+Booth ID: 38
+Total staff: 4
+
+staff_code,name,phone_number,staff_type
+f1e50358-2f0b-4eaf-9685-6b0e089705b3,ኑሪያ ተስፋ,N/A,VIP
+347522b3-8410-4d61-9e30-d1bcef402677,ኑሪያ ተስፋ,N/A,Staff
+9ee523ec-3c16-4481-865c-8bb873e810dd,ኑሪያ ተስፋ,N/A,Staff
+a97e247f-c41a-44dc-a545-5c05ffac4a18,ኑሪያ ተስፋ,N/A,Staff

@@ -1,0 +1,8 @@
+Location: O
+Booth ID: 146
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+aa6caf66-c95c-41ba-b305-d84efdb8c601,ታደሰ ፍለታ,N/A,VIP
+1d1f6525-c120-4f3d-9fd8-93ce58b71310,ታደሰ ፍለታ,N/A,Staff
+9c54510d-6bed-412c-b9e4-1e880071bcab,ታደሰ ፍለታ,N/A,Staff

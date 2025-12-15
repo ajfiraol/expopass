@@ -1,0 +1,8 @@
+Location: 2p
+Booth ID: 46
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+1bd61be0-8e6b-4fbd-976c-c024f0140f3a,Tila Gym,974169678,VIP
+dbb9eb1c-1cb5-4be1-a8ec-c199cf26e8f9,Tila Gym,974169678,Staff
+1e32f955-391f-414d-a5ba-36607597eb5c,Tila Gym,974169678,Staff

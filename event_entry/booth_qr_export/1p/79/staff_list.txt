@@ -1,0 +1,8 @@
+Location: 1p
+Booth ID: 79
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+c9c981b5-a735-4aee-8121-c7488309f4fd,ኬርመንት,N/A,VIP
+b2f68836-b7b6-4c77-9a86-50bb550cb264,ኬርመንት,N/A,Staff
+0158cd11-b610-40b1-b357-0472630895ca,ኬርመንት,N/A,Staff

@@ -90,3 +90,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Auth redirects
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'dashboard'
+
+# Default root for exported booth QR folders (used by export_booth_qr and UI)
+BOOTH_QR_EXPORT_ROOT = BASE_DIR / 'booth_qr_export'

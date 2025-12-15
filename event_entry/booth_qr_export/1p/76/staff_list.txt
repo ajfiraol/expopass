@@ -1,0 +1,9 @@
+Location: 1p
+Booth ID: 76
+Total staff: 4
+
+staff_code,name,phone_number,staff_type
+6489fa20-9367-4923-ab6c-009ef151510a,አህመድ ሲራጅ /ኮንፈርት/,N/A,VIP
+9ce55a38-69cb-4626-82ea-e211985d4016,አህመድ ሲራጅ /ኮንፈርት/,N/A,Staff
+3b458eb4-a854-49e1-bcc5-3c1436a955c0,አህመድ ሲራጅ /ኮንፈርት/,N/A,Staff
+6708ba32-dae3-4ec6-8e19-3a93edf9731c,አህመድ ሲራጅ /ኮንፈርት/,N/A,Staff

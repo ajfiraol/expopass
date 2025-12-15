@@ -1,0 +1,8 @@
+Location: O
+Booth ID: 129
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+abf45304-964d-4705-8775-91c989c06247,ኤፍሬም ተክሌ,922224920,VIP
+a033415f-d782-4bc4-86da-753e3d4461b9,ኤፍሬም ተክሌ,922224920,Staff
+ca618f9b-80cf-4151-a298-f96e674809b3,ኤፍሬም ተክሌ,922224920,Staff

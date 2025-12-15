@@ -1,0 +1,8 @@
+Location: 2p
+Booth ID: 9
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+4eddeaca-ad60-4056-a69d-8798adcf30ed,ፈትያ መሃመድ (የልጅ ልብስ),0914723392,VIP
+dec3ab3d-0d8f-4803-adb0-1e8f6817673d,ፈትያ መሃመድ (የልጅ ልብስ),0914723392,Staff
+9f94a468-dc31-4bcd-8e63-44411d43dde4,ፈትያ መሃመድ (የልጅ ልብስ),0914723392,Staff

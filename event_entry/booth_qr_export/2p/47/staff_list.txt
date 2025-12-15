@@ -1,0 +1,9 @@
+Location: 2p
+Booth ID: 47
+Total staff: 4
+
+staff_code,name,phone_number,staff_type
+a216c127-d8bf-4272-bac3-22f216adc9a0,ራሔል,N/A,VIP
+ec5869f2-7776-42aa-9292-7e0ce09aaee3,ራሔል,N/A,Staff
+8434a7fa-ff5c-4ec8-befd-3c45fb1716bc,ራሔል,N/A,Staff
+4fb5c19b-632e-4160-8fc6-230cf3a0b3d7,ራሔል,N/A,Staff

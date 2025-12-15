@@ -1,0 +1,8 @@
+Location: O
+Booth ID: 8
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+becca453-815f-47de-b5a7-d7a78483aeeb,አብዱል ሙኢን አማን(ጫማ),913311787,VIP
+3ea12bc9-cb3f-4cae-a46f-8195b5b72a0b,አብዱል ሙኢን አማን(ጫማ),913311787,Staff
+f8785655-c2e8-468d-aeb6-9562fb4ffe00,አብዱል ሙኢን አማን(ጫማ),913311787,Staff

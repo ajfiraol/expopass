@@ -1,0 +1,8 @@
+Location: O
+Booth ID: 101
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+c6110282-0ba9-4118-b015-056d48977c70,አለፈ ሀ/ማርያም,N/A,VIP
+eef68096-e45c-44c1-b1d4-9904d0206a13,አለፈ ሀ/ማርያም,N/A,Staff
+a15fc346-a1d3-4724-80f9-fa844fc1a007,አለፈ ሀ/ማርያም,N/A,Staff

@@ -1,0 +1,8 @@
+Location: 2p
+Booth ID: 21
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+720bb7e8-befd-4b04-b829-7e6daa2dc9d2,Unknown,N/A,VIP
+b4b0271e-ccdc-4bcd-a57e-130b64ce78af,Unknown,N/A,Staff
+3d0df0b6-a049-4425-bac5-46064e3c42b3,Unknown,N/A,Staff

@@ -1,0 +1,9 @@
+Location: O
+Booth ID: 120
+Total staff: 4
+
+staff_code,name,phone_number,staff_type
+6a34bc60-a32a-4dee-96bc-62e03d15b2b7,ሳሮን ገንዘቤ(ቡና ሰሃን),912710775,VIP
+31edc159-0cd8-4bd7-b9db-19e56bd174bb,ሳሮን ገንዘቤ(ቡና ሰሃን),912710775,Staff
+8b680de1-70ec-4980-bf25-be092bc109af,ሳሮን ገንዘቤ(ቡና ሰሃን),912710775,Staff
+6a5692b9-4d1a-4de7-80f3-7d311a2dfe80,ሳሮን ገንዘቤ(ቡና ሰሃን),912710775,Staff

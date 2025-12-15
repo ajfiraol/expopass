@@ -1,0 +1,8 @@
+Location: 1p
+Booth ID: 83
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+91bbef44-e0c1-4bb6-a42e-4511472e713d,ሳላህ/ሽቶ/,0912658622,VIP
+62889de1-c4df-4373-a6cb-29f2376c4dd2,ሳላህ/ሽቶ/,0912658622,Staff
+f3d082e8-b7a5-4e50-bbc7-8b6ec8711e4d,ሳላህ/ሽቶ/,0912658622,Staff

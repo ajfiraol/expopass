@@ -1,0 +1,9 @@
+Location: 1p
+Booth ID: 48
+Total staff: 4
+
+staff_code,name,phone_number,staff_type
+bedcd6d4-409e-4f57-8788-d622480b18f4,ዘውድነሽ/ካሳሁን/ፂዮን,N/A,VIP
+621bc181-9fc4-4a69-9776-2a2db5cad800,ዘውድነሽ/ካሳሁን/ፂዮን,N/A,Staff
+418ff2f8-d7bd-4442-ac8c-0012a1a9e286,ዘውድነሽ/ካሳሁን/ፂዮን,N/A,Staff
+c9b045ab-3f7d-4d75-88a6-0e7ce17ab26d,ዘውድነሽ/ካሳሁን/ፂዮን,N/A,Staff

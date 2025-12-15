@@ -1,0 +1,8 @@
+Location: 1p
+Booth ID: 62
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+41e68f44-6ec6-41ab-a6c3-947ff327a268,ቴዎድሮስ በርሄ/ መክሊት,N/A,VIP
+2f2cc8e5-67fe-480f-85f9-a46b93d3557b,ቴዎድሮስ በርሄ/ መክሊት,N/A,Staff
+b6af326f-3b50-40fc-89e9-cadf08afce3f,ቴዎድሮስ በርሄ/ መክሊት,N/A,Staff

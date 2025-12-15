@@ -1,0 +1,8 @@
+Location: 2p
+Booth ID: 41
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+09e5bfa7-f5d3-4632-88dc-e3c9a656b64c,ሳሙኤል ወርቁ,913688028,VIP
+1b01379e-1f1e-4663-955f-819cc4c1c9cd,ሳሙኤል ወርቁ,913688028,Staff
+5a3d1982-6950-46c6-bbe3-fafd0466e0ba,ሳሙኤል ወርቁ,913688028,Staff

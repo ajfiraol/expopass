@@ -1,0 +1,8 @@
+Location: 1p
+Booth ID: 21
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+e8183ac3-e86f-4419-9006-303f18168830,እስራኤል/ አፍራ መሀመድ,N/A,VIP
+8691cfdc-d6ad-4e0a-9062-25ccd19d9653,እስራኤል/ አፍራ መሀመድ,N/A,Staff
+7ff4d641-4fea-44b6-b84e-984d9f83b64f,እስራኤል/ አፍራ መሀመድ,N/A,Staff

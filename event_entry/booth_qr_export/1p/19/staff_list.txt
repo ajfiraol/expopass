@@ -1,0 +1,9 @@
+Location: 1p
+Booth ID: 19
+Total staff: 4
+
+staff_code,name,phone_number,staff_type
+842692d0-da40-4295-bf03-c6d911fd3f12,አማረ ጌትነት/ኮሌክሽን,N/A,VIP
+6f18b99a-255d-444b-9a06-4eb8c6c9888c,አማረ ጌትነት/ኮሌክሽን,N/A,Staff
+1ce6cfff-9cc7-413d-a6e3-18c366df9ab4,አማረ ጌትነት/ኮሌክሽን,N/A,Staff
+21c9ea07-8759-4817-8e3a-6c4df84d97a9,አማረ ጌትነት/ኮሌክሽን,N/A,Staff

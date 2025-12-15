@@ -1,0 +1,9 @@
+Location: O
+Booth ID: 124
+Total staff: 4
+
+staff_code,name,phone_number,staff_type
+d1f9ec14-3de3-4b8d-946b-c23286201c78,ሜሮን ግዜ/ኮሌክሽን,N/A,VIP
+96e944d9-38d6-4730-a123-e38fcb319e78,ሜሮን ግዜ/ኮሌክሽን,N/A,Staff
+ca78e329-fe5f-4790-98c9-e3127fbe013f,ሜሮን ግዜ/ኮሌክሽን,N/A,Staff
+fc7e5edc-72b1-4bb0-884a-722842a0c97b,ሜሮን ግዜ/ኮሌክሽን,N/A,Staff

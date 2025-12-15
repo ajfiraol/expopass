@@ -1,0 +1,9 @@
+Location: 2p
+Booth ID: 15
+Total staff: 4
+
+staff_code,name,phone_number,staff_type
+dd1e2e84-bdef-48ab-ad8a-c03b46e8f6b0,ፍፁም በላይነህ በቀለ,N/A,VIP
+9aab4d3c-a797-4f1a-bcd3-cad5467b31df,ፍፁም በላይነህ በቀለ,N/A,Staff
+d4e7d92e-6021-4cbc-8e48-4d4a6f8a8837,ፍፁም በላይነህ በቀለ,N/A,Staff
+1b91c9bc-26b4-474d-b939-8aeed7254efb,ፍፁም በላይነህ በቀለ,N/A,Staff

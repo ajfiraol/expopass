@@ -1,0 +1,8 @@
+Location: O
+Booth ID: 17
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+fe20a784-4cc7-4246-9dd6-d53de752c7fd,ቃለአብ በልሁ,982044194,VIP
+f8489888-19f8-4902-9054-650a3900a0d7,ቃለአብ በልሁ,982044194,Staff
+aee10d33-34af-4d3a-8987-0697efbf4258,ቃለአብ በልሁ,982044194,Staff

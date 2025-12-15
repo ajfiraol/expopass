@@ -1,0 +1,12 @@
+Location: 1p
+Booth ID: 3
+Total staff: 7
+
+staff_code,name,phone_number,staff_type
+1790bc26-d6e9-4d70-bea2-d1ada1ded590,ናትናኤል (21ካሬ),0930033858,VIP
+8aab061f-7f2f-48c0-b877-e7794a46d2bc,ናትናኤል (21ካሬ),0930033858,Staff
+6234940f-af79-46fb-a9e5-97b42e8933c2,ናትናኤል (21ካሬ),0930033858,Staff
+63cb1390-3221-4f13-af70-7e64c41b8814,ናትናኤል (21ካሬ),0930033858,Staff
+8bb25b22-5f4f-44af-b048-c492eb6a18b0,ናትናኤል (21ካሬ),0930033858,Staff
+0edfc8ed-a0dc-46f3-840a-ea4ac5bb2fcf,ናትናኤል (21ካሬ),0930033858,Staff
+1eb1549b-ecc7-46dc-8bce-62b253c36bdc,ናትናኤል (21ካሬ),0930033858,Staff

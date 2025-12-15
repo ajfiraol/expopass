@@ -1,0 +1,8 @@
+Location: 1p
+Booth ID: 54
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+02fb4dcc-2be7-44bb-a19d-2e09a6011157,(ha(hagerie minale )ሃና መናለ (outdoor-70A)gerie minale ),0922535995,VIP
+8253696e-d497-46e5-a421-0a187fa786cf,(ha(hagerie minale )ሃና መናለ (outdoor-70A)gerie minale ),0922535995,Staff
+7ee50364-f4c9-4e61-8781-ee805e6be694,(ha(hagerie minale )ሃና መናለ (outdoor-70A)gerie minale ),0922535995,Staff

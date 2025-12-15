@@ -1,0 +1,12 @@
+Location: 1p
+Booth ID: 16
+Total staff: 7
+
+staff_code,name,phone_number,staff_type
+7a4f6230-9bcd-409c-9a5c-eb6085699350,ፍቅረማርያም /ኮሌክሽን/,N/A,VIP
+55c598f6-374a-4224-bcf3-d3f258620aa6,ፍቅረማርያም /ኮሌክሽን/,N/A,Staff
+73ce5bd3-ae73-4870-9ccd-8467fc94c120,ፍቅረማርያም /ኮሌክሽን/,N/A,Staff
+540d4c6e-3c93-4e6d-8130-18477ee74e63,ፍቅረማርያም /ኮሌክሽን/,N/A,Staff
+75301ca4-d17c-43cf-8130-9f67e6468d52,ፍቅረማርያም /ኮሌክሽን/,N/A,Staff
+93a12c9f-9d33-45d3-808d-fbea3ca15b62,ፍቅረማርያም /ኮሌክሽን/,N/A,Staff
+54eef0b5-a302-4292-a968-e3fa44bd5348,ፍቅረማርያም /ኮሌክሽን/,N/A,Staff

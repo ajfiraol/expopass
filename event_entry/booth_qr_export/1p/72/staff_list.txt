@@ -1,0 +1,9 @@
+Location: 1p
+Booth ID: 72
+Total staff: 4
+
+staff_code,name,phone_number,staff_type
+42ab867e-95e0-4d00-b106-c87b337c6eb5,መሃመድ አህመድ,N/A,VIP
+8a678dd9-f79d-47cb-9ac9-8f07d5dc97b3,መሃመድ አህመድ,N/A,Staff
+d32b1b4f-43a8-4dc7-8ba5-d99ddff85384,መሃመድ አህመድ,N/A,Staff
+97017f83-9e1a-4b3d-9609-bf03f358d2b1,መሃመድ አህመድ,N/A,Staff

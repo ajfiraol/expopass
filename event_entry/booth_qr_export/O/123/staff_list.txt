@@ -1,0 +1,9 @@
+Location: O
+Booth ID: 123
+Total staff: 4
+
+staff_code,name,phone_number,staff_type
+bbb01ffb-c1bc-4fc9-a599-9eab8ead8b99,ዳግማዊት አስፋው/ኮሌክሽን/,N/A,VIP
+b0f56771-5431-4fd5-bc32-6ae5fa3044ad,ዳግማዊት አስፋው/ኮሌክሽን/,N/A,Staff
+c59ea689-3288-4f0c-884f-0014e54509e7,ዳግማዊት አስፋው/ኮሌክሽን/,N/A,Staff
+c9c67157-4ff7-4107-9fab-74df554ea0af,ዳግማዊት አስፋው/ኮሌክሽን/,N/A,Staff

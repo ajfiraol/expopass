@@ -1,0 +1,8 @@
+Location: 1p
+Booth ID: 27
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+6d99aaaa-54f1-4d71-a657-0cad9fba2f2f,ገነት ደጀኔ /ሚሚ ጋርመንት/,0912617657,VIP
+7dcdb9d9-78b8-4008-877d-9940c7e30064,ገነት ደጀኔ /ሚሚ ጋርመንት/,0912617657,Staff
+f5b5aead-a170-4661-8e60-c70746757c2d,ገነት ደጀኔ /ሚሚ ጋርመንት/,0912617657,Staff

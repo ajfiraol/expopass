@@ -1,0 +1,8 @@
+Location: 1p
+Booth ID: 50
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+155fedcd-4f23-475b-a185-62acb31d8286,ሙጅብ ሰፉ,N/A,VIP
+bd44ad14-a9ce-4e9d-bd13-2cdbed45bd1a,ሙጅብ ሰፉ,N/A,Staff
+b03c9ad0-dc78-4383-bc7f-97556f200ac8,ሙጅብ ሰፉ,N/A,Staff

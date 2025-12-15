@@ -1,0 +1,8 @@
+Location: 1p
+Booth ID: 42
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+0221c1d5-d030-4099-b176-e8e2672fca70,ቅድስት አታላይ,N/A,VIP
+c67f7ec3-a729-4e97-a023-099e98b5ab56,ቅድስት አታላይ,N/A,Staff
+6b228f0e-e1eb-47e7-b43e-069efceed8dc,ቅድስት አታላይ,N/A,Staff

@@ -1,0 +1,8 @@
+Location: 3p
+Booth ID: 14
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+e2f6c3b8-b2ea-4606-bde9-557cb540126a,ያሬድ ጌታቸው(ትርሲት),939637349,VIP
+680e0f4e-e0a7-4e96-9700-1711bd87d4e7,ያሬድ ጌታቸው(ትርሲት),939637349,Staff
+10d39f8f-a0b5-4c0e-a48e-1bdc372da3e6,ያሬድ ጌታቸው(ትርሲት),939637349,Staff

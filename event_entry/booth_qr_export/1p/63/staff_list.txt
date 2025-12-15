@@ -1,0 +1,8 @@
+Location: 1p
+Booth ID: 63
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+62c4da8e-33ae-4db0-be41-d67361c389fb,ሄቨን አሳዩ,0929838087,VIP
+3b039335-165f-41f4-9da7-4bd84ceea403,ሄቨን አሳዩ,0929838087,Staff
+6627dc6a-92bd-4226-be75-d3ba3f8ad9d7,ሄቨን አሳዩ,0929838087,Staff

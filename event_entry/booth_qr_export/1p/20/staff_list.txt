@@ -1,0 +1,8 @@
+Location: 1p
+Booth ID: 20
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+7467c88c-2be5-4989-820e-2762b91e3ae9,ሲቲ ተስፋ /ኮሌክሽን/,0907662403,VIP
+e30838fe-2361-4dee-9e65-3c1373b1511d,ሲቲ ተስፋ /ኮሌክሽን/,0907662403,Staff
+a545445f-1dc1-47ce-87ff-0c1fe1843553,ሲቲ ተስፋ /ኮሌክሽን/,0907662403,Staff

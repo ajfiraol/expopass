@@ -1,0 +1,8 @@
+Location: 2p
+Booth ID: 8
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+db80716c-98f0-46cd-9af4-de8ac2dcc09f,ዳዊት አዳባሽ,N/A,VIP
+7931bcf0-4e92-452d-b6f0-4fac0a750f79,ዳዊት አዳባሽ,N/A,Staff
+85f0d7f9-c7ff-436e-9d4b-64caaa6995c7,ዳዊት አዳባሽ,N/A,Staff

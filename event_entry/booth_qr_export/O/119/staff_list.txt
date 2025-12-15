@@ -1,0 +1,9 @@
+Location: O
+Booth ID: 119
+Total staff: 4
+
+staff_code,name,phone_number,staff_type
+a6a04f46-c580-4fb6-adb7-92bb85bea27b,ፀጋዬ  ብርሃነ ( mixed with pav1-1),N/A,VIP
+a7bd8cd0-4c6b-4d12-a8b0-fdaf582622ea,ፀጋዬ  ብርሃነ ( mixed with pav1-1),N/A,Staff
+8a962bb2-600f-4354-b842-fcbbb50d0b60,ፀጋዬ  ብርሃነ ( mixed with pav1-1),N/A,Staff
+02544bf4-6c66-4299-b2b3-c5d8578dede2,ፀጋዬ  ብርሃነ ( mixed with pav1-1),N/A,Staff

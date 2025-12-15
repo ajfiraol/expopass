@@ -1,0 +1,8 @@
+Location: O
+Booth ID: 15
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+d35dc103-bbcb-49d0-bb5d-cf3eea6c881f,ሃና ጥላሁን,911354956,VIP
+a40255c7-a197-42e1-b624-3d009c87294a,ሃና ጥላሁን,911354956,Staff
+de2d2335-dcb8-4a9d-b954-0d8c7ad49d2b,ሃና ጥላሁን,911354956,Staff

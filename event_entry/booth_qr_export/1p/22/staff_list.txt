@@ -1,0 +1,8 @@
+Location: 1p
+Booth ID: 22
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+d8448f48-496b-4a83-9a95-d3920c28855f,እዩ/ሚኪያስ/ሲኒ,0995033390,VIP
+cda08591-cdd2-46de-82a5-10382de2583f,እዩ/ሚኪያስ/ሲኒ,0995033390,Staff
+ac5a0ce7-b30d-4956-8553-4116f7329912,እዩ/ሚኪያስ/ሲኒ,0995033390,Staff

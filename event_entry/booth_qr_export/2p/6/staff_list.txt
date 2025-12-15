@@ -1,0 +1,8 @@
+Location: 2p
+Booth ID: 6
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+6e901418-22b5-43e1-aab1-3763718298ab,ኤልሳ ተክሉ ደስታ,N/A,VIP
+b166ce60-bfb1-48fb-8f40-1486e524cdb6,ኤልሳ ተክሉ ደስታ,N/A,Staff
+372856dd-4fa4-4d06-aac3-0de69af22f22,ኤልሳ ተክሉ ደስታ,N/A,Staff

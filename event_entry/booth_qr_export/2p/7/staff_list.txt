@@ -1,0 +1,8 @@
+Location: 2p
+Booth ID: 7
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+ca90c858-fb01-439e-aa96-4572e05d5b2c,ዳንኤል ግርማ,911365035,VIP
+19bcae51-efe2-44c1-b1b2-b981aca47e54,ዳንኤል ግርማ,911365035,Staff
+15b274fb-e9f0-47e1-b4e1-97897c32b859,ዳንኤል ግርማ,911365035,Staff

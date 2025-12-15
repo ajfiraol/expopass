@@ -1,0 +1,8 @@
+Location: O
+Booth ID: 121
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+759696e6-8a70-4603-9e7e-b6b9ef162334,ቆንጆ ፉድስ ፒኤል ሲ,926323313,VIP
+701aad02-e963-4c42-b584-b1f5144bb29b,ቆንጆ ፉድስ ፒኤል ሲ,926323313,Staff
+860cab5b-6bcf-488e-a62f-7416b55b8659,ቆንጆ ፉድስ ፒኤል ሲ,926323313,Staff

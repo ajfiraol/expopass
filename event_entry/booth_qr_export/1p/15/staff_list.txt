@@ -1,0 +1,9 @@
+Location: 1p
+Booth ID: 15
+Total staff: 4
+
+staff_code,name,phone_number,staff_type
+c2a50558-2676-4e4e-b8ed-62094ffc7144,እየሩሳሌም ወንድም አገኘሁ /ጫማ/ (12ካሬ) L,0912385821,VIP
+8f7a6cd9-039d-482b-a76b-5f7067853fe2,እየሩሳሌም ወንድም አገኘሁ /ጫማ/ (12ካሬ) L,0912385821,Staff
+3f42d633-a833-4c20-8de6-263081d7521a,እየሩሳሌም ወንድም አገኘሁ /ጫማ/ (12ካሬ) L,0912385821,Staff
+c9f133de-d308-41b4-b3e4-b15f7cc9a4b0,እየሩሳሌም ወንድም አገኘሁ /ጫማ/ (12ካሬ) L,0912385821,Staff

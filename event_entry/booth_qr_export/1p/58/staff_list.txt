@@ -1,0 +1,8 @@
+Location: 1p
+Booth ID: 58
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+3825d257-8062-4680-b9f8-beba76cf766a,ዳግም በላይ,N/A,VIP
+fae81780-1fe5-450e-b469-3a8b1e7beeeb,ዳግም በላይ,N/A,Staff
+5b7b55b4-1966-4134-b14b-9b783bb4995e,ዳግም በላይ,N/A,Staff

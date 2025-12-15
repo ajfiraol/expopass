@@ -1,0 +1,8 @@
+Location: O
+Booth ID: 51
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+98639343-f6b5-480e-8e40-089fabf1f037,መኩ መኮንን,913573693,VIP
+6d400e89-f041-4138-8967-aa3fb9a6c1b4,መኩ መኮንን,913573693,Staff
+56db25d0-e889-4dc6-8aeb-ffaab69aa0e5,መኩ መኮንን,913573693,Staff

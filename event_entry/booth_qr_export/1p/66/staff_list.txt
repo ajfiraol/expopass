@@ -1,0 +1,8 @@
+Location: 1p
+Booth ID: 66
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+be7f1584-be5c-451c-a62f-a19fd4f88e3a,SERKALEM KARA,0911191638,VIP
+06b5a276-0618-477e-abfa-b41daa10bbbb,SERKALEM KARA,0911191638,Staff
+b5dd917a-9bcb-49f0-a4cc-679180028e94,SERKALEM KARA,0911191638,Staff

@@ -1,0 +1,8 @@
+Location: 1p
+Booth ID: 18
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+948d85ba-d190-4254-9c56-482ede31f299,ኡዩቤልዩ አዩ,0929134721,VIP
+9b32d9b1-fb41-4a4f-a483-aba755649346,ኡዩቤልዩ አዩ,0929134721,Staff
+54ca6248-672b-4f70-a542-8af22b1036c2,ኡዩቤልዩ አዩ,0929134721,Staff

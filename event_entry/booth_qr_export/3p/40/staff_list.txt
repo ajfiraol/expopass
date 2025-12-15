@@ -1,0 +1,9 @@
+Location: 3p
+Booth ID: 40
+Total staff: 4
+
+staff_code,name,phone_number,staff_type
+b10ee99b-f16e-429c-9855-c454a5de3e69,አቤኔዘር ጋሻዩ(ኮሌክሽን),968758844,VIP
+5d439992-db00-43f8-89e9-b0c110ca6953,አቤኔዘር ጋሻዩ(ኮሌክሽን),968758844,Staff
+c60e197c-c4d8-4027-b229-5008f52111da,አቤኔዘር ጋሻዩ(ኮሌክሽን),968758844,Staff
+6eba335e-68e9-4950-809f-eb4dca3e20ae,አቤኔዘር ጋሻዩ(ኮሌክሽን),968758844,Staff

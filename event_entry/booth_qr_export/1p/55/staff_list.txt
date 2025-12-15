@@ -1,0 +1,8 @@
+Location: 1p
+Booth ID: 55
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+a2712be3-4da6-4813-8c7b-23a5b0c30b0a,ህሊና ሸዋንዳይ/ኮሌክሽን,0913428214,VIP
+fd1ffd4c-1c2f-4deb-994b-1211222e8673,ህሊና ሸዋንዳይ/ኮሌክሽን,0913428214,Staff
+eb3edd0d-3aa6-470d-9c3c-a07cdee78751,ህሊና ሸዋንዳይ/ኮሌክሽን,0913428214,Staff

@@ -1,0 +1,8 @@
+Location: O
+Booth ID: 46
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+b5cf0d50-02e3-4173-9873-e51a87dbf7c3,አህመድ ሺበሺ,N/A,VIP
+bf49cfbe-c4c0-4449-b2f9-598c24709b1b,አህመድ ሺበሺ,N/A,Staff
+05a604ea-3e04-4ef7-bc2b-5118e5da2e96,አህመድ ሺበሺ,N/A,Staff

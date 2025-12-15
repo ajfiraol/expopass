@@ -1,0 +1,8 @@
+Location: O
+Booth ID: 128
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+5ef059a9-97ec-4eb9-b46e-79a1b191042d,ነጻነት ባዬ,923771313,VIP
+ac92ca1a-3c12-4942-bf00-5494ddf678d4,ነጻነት ባዬ,923771313,Staff
+8f15567b-ae56-4820-8220-2b17e6c5af84,ነጻነት ባዬ,923771313,Staff

@@ -1,0 +1,9 @@
+Location: 1p
+Booth ID: 77
+Total staff: 4
+
+staff_code,name,phone_number,staff_type
+1f36e185-f6ad-4328-9f75-4da82d28c524,እየሩሳሌም ውድራ /ኮሌክሽን/,N/A,VIP
+bdd155c7-583d-4633-b9f4-c05b31bd1050,እየሩሳሌም ውድራ /ኮሌክሽን/,N/A,Staff
+e308d5fc-ff49-4d6c-a961-3748c889573a,እየሩሳሌም ውድራ /ኮሌክሽን/,N/A,Staff
+19f8318d-049b-4b1a-b955-db8d8d118d81,እየሩሳሌም ውድራ /ኮሌክሽን/,N/A,Staff

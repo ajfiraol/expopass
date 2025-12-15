@@ -1,0 +1,9 @@
+Location: 1p
+Booth ID: 4
+Total staff: 4
+
+staff_code,name,phone_number,staff_type
+12a53130-f0ed-4b64-9360-49385dc43b57,ሂላሪ አሸብር/ጋርመንት (12 ካሬ) L,0930846235,VIP
+df55a547-298c-46a7-9bd9-4cc84f77603b,ሂላሪ አሸብር/ጋርመንት (12 ካሬ) L,0930846235,Staff
+c733b465-cba0-41c9-8056-43fcfc1a3a2a,ሂላሪ አሸብር/ጋርመንት (12 ካሬ) L,0930846235,Staff
+b1f3c894-b6d7-42b8-8df0-19b5e1e61ee3,ሂላሪ አሸብር/ጋርመንት (12 ካሬ) L,0930846235,Staff

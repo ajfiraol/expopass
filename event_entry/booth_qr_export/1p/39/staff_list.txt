@@ -1,0 +1,8 @@
+Location: 1p
+Booth ID: 39
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+484e7932-a1dd-45ce-bb75-22733f57f689,አለምጸሐይ/ መቅደስ በርበርሳ,N/A,VIP
+382a7c23-2e70-4820-90ab-e63f415f608f,አለምጸሐይ/ መቅደስ በርበርሳ,N/A,Staff
+458745ba-139f-4369-8f9f-84016f642ede,አለምጸሐይ/ መቅደስ በርበርሳ,N/A,Staff

@@ -1,0 +1,8 @@
+Location: 1p
+Booth ID: 38
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+e337349b-1e1e-4d23-82d9-0a951e7be3da,ፉአድ ሲራጅ/ ኮስሞቲክስ,N/A,VIP
+58bdf751-d607-4e8a-a875-358e6d2615aa,ፉአድ ሲራጅ/ ኮስሞቲክስ,N/A,Staff
+37f35d2d-f6f8-4c2f-a095-f627baa6f2f7,ፉአድ ሲራጅ/ ኮስሞቲክስ,N/A,Staff

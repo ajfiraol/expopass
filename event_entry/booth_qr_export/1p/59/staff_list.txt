@@ -1,0 +1,8 @@
+Location: 1p
+Booth ID: 59
+Total staff: 3
+
+staff_code,name,phone_number,staff_type
+e346acde-4e53-41a4-8ae2-05375bf0121e,ቢንያም ተ/ወልድ/ጋርመንት,0911514907,VIP
+0cdfbc37-7926-4b88-b114-d103cb4815f6,ቢንያም ተ/ወልድ/ጋርመንት,0911514907,Staff
+2a1e1703-2d4e-4de7-aeda-745b04160b1f,ቢንያም ተ/ወልድ/ጋርመንት,0911514907,Staff
