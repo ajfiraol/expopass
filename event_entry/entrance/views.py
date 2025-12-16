@@ -190,7 +190,14 @@ def download_qr(request, staff_id):
     if not staff.qr_code_image:
         return JsonResponse({'error': 'No QR'})
     path = staff.qr_code_image.path
-    return FileResponse(open(path, 'rb'), as_attachment=True, filename=os.path.basename(path))
+    # Descriptive download name without altering QR content
+    # Example: STAFF_2Pav02_AuiXMVA.png
+    prefix = (staff.staff_type or 'STAFF').upper()
+    booth = (staff.booth_id or 'NoBooth').replace(' ', '_')
+    location = (staff.location or 'NoLoc').replace(' ', '_')
+    short_id = str(staff.id).replace('-', '')[:8]
+    download_name = f"{prefix}_{booth}_{location}_{short_id}.png"
+    return FileResponse(open(path, 'rb'), as_attachment=True, filename=download_name)
 
 def scan_qr(request):
     return render(request, 'scan.html')
