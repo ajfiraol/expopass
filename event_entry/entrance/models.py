@@ -46,6 +46,8 @@ class Pass(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     printed = models.BooleanField(default=False)  # Track printed status
     qr_code_image = models.ImageField(upload_to='pass_qr/', blank=True, null=True)
+    photo = models.ImageField(upload_to='pass_photos/', blank=True, null=True)
+    photo_taken_at = models.DateTimeField(blank=True, null=True)
 
     def __str__(self):
         return f"{self.full_name} | {self.staff.staff_code} | {self.day_entered}"

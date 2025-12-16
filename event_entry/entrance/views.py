@@ -214,7 +214,20 @@ def verify_pass(request, pass_id):
     Shows pass info with photo if available.
     """
     from datetime import timedelta
+    import uuid
     
+    # Support payloads like "pass_id|booth|location"
+    if '|' in pass_id:
+        pass_id = pass_id.split('|', 1)[0]
+
+    # Validate UUID format early; if invalid, show error
+    try:
+        uuid.UUID(str(pass_id))
+    except ValueError:
+        return render(request, 'pass.html', {
+            'error': 'Invalid QR'
+        })
+
     try:
         pass_obj = Pass.objects.get(id=pass_id)
     except Pass.DoesNotExist:
@@ -441,12 +454,16 @@ def create_pass(request):
             print(f"Error saving photo: {e}")
             # Continue without photo if there's an error
     
-    # Generate QR code for the pass (using pass ID)
+    # Generate QR code for the pass (encode pass_id + booth + location)
     from .utils import generate_qr
-    qr_path = generate_qr(str(pass_obj.id))
+    qr_payload = f"{pass_obj.id}|{staff.booth_id or ''}|{staff.location or ''}"
+    qr_path = generate_qr(qr_payload)
     with open(qr_path, 'rb') as f:
+        # Include booth and location in the stored filename for clarity
+        booth_safe = (staff.booth_id or "no_booth").replace(" ", "_")
+        location_safe = (staff.location or "loc").replace(" ", "_")
         pass_obj.qr_code_image.save(
-            f'pass_{pass_obj.id}.png',
+            f'pass_{pass_obj.id}_{booth_safe}_{location_safe}.png',
             File(f),
             save=True
         )
