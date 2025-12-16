@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Pass - Admin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://unpkg.com/html5-qrcode"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #fff;
+      padding: 24px;
+      text-align: center;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .card {
+      background: linear-gradient(180deg, #111827, #0b1220);
+      border-radius: 12px;
+      padding: 24px;
+      margin: 20px 0;
+    }
+    h1, h2 {
+      margin-bottom: 16px;
+    }
+    .step {
+      display: none;
+    }
+    .step.active {
+      display: block;
+    }
+    #reader {
+      width: 100%;
+      max-width: 400px;
+      margin: 20px auto;
+    }
+    #camera-preview {
+      width: 100%;
+      max-width: 400px;
+      margin: 20px auto;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #1e293b;
+    }
+    #camera-preview video {
+      width: 100%;
+      display: block;
+    }
+    #captured-photo {
+      width: 100%;
+      max-width: 400px;
+      margin: 20px auto;
+      border-radius: 8px;
+      display: none;
+    }
+    #captured-photo img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .btn {
+      padding: 12px 24px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 8px;
+      background: #2563eb;
+      color: #fff;
+    }
+    .btn:hover {
+      background: #1d4ed8;
+    }
+    .btn-success {
+      background: #16a34a;
+    }
+    .btn-success:hover {
+      background: #15803d;
+    }
+    .btn-danger {
+      background: #dc2626;
+    }
+    .btn-danger:hover {
+      background: #b91c1c;
+    }
+    .staff-info {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 16px;
+      border-radius: 8px;
+      margin: 16px 0;
+      text-align: left;
+    }
+    .staff-info p {
+      margin: 8px 0;
+    }
+    .status {
+      padding: 12px;
+      border-radius: 6px;
+      margin: 16px 0;
+    }
+    .status.success {
+      background: #16a34a;
+    }
+    .status.error {
+      background: #dc2626;
+    }
+    .status.info {
+      background: #2563eb;
+    }
+    a.button {
+      display: inline-block;
+      margin: 12px 0;
+      padding: 12px 24px;
+      background: #2563eb;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    a.button:hover {
+      background: #1d4ed8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Create Pass - Admin</h1>
+    <a href="/" class="button">← Back to Home</a>
+
+    <!-- Step 1: Scan Staff QR -->
+    <div class="card step active" id="step-scan">
+      <h2>Step 1: Scan Staff QR Code</h2>
+      <div id="reader"></div>
+      <div id="scan-status" class="status info" style="display:none;"></div>
+    </div>
+
+    <!-- Step 2: Staff Info & Capture Photo -->
+    <div class="card step" id="step-capture">
+      <h2>Step 2: Capture Photo</h2>
+      <div id="staff-info" class="staff-info"></div>
+      
+      <div id="camera-preview" style="display:none;">
+        <video id="video" autoplay playsinline></video>
+      </div>
+      
+      <div id="captured-photo">
+        <img id="photo-preview" alt="Captured photo">
+      </div>
+
+      <div id="camera-controls" style="display:none;">
+        <button class="btn btn-success" id="capture-btn">Capture Photo</button>
+        <button class="btn" id="retake-btn" style="display:none;">Retake</button>
+      </div>
+
+      <form id="pass-form" style="display:none;" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="hidden" name="staff_id" id="staff-id">
+        <input type="hidden" name="photo_data" id="photo-data">
+        <div style="margin: 16px 0;">
+          <label style="display:block;margin-bottom:8px;">Full Name:</label>
+          <input type="text" name="full_name" id="full-name" required style="width:100%;padding:8px;border-radius:4px;border:1px solid #334155;background:#0f172a;color:#fff;">
+        </div>
+        <div style="margin: 16px 0;">
+          <label style="display:block;margin-bottom:8px;">Phone Number:</label>
+          <input type="text" name="phone_number" id="phone-number" style="width:100%;padding:8px;border-radius:4px;border:1px solid #334155;background:#0f172a;color:#fff;">
+        </div>
+        <button type="submit" class="btn btn-success">Create Pass</button>
+      </form>
+
+      <div id="create-status" class="status" style="display:none;"></div>
+    </div>
+
+    <!-- Step 3: Success -->
+    <div class="card step" id="step-success">
+      <h2>✅ Pass Created Successfully!</h2>
+      <p>The pass has been created with the captured photo.</p>
+      <p>The photo will automatically be deleted after 12 hours.</p>
+      <button class="btn" onclick="location.reload()">Create Another Pass</button>
+      <a href="/" class="button">Back to Home</a>
+    </div>
+  </div>
+
+  <script>
+    let scanner = null;
+    let stream = null;
+    let capturedPhoto = null;
+    let currentStaff = null;
+
+    // Step 1: Initialize QR Scanner
+    function initScanner() {
+      scanner = new Html5Qrcode("reader");
+      scanner.start(
+        { facingMode: "environment" },
+        { fps: 10, qrbox: 250 },
+        onScanSuccess,
+        onScanError
+      );
+    }
+
+    function onScanSuccess(qrCodeMessage) {
+      const staffCode = qrCodeMessage.trim();
+      document.getElementById('scan-status').style.display = 'block';
+      document.getElementById('scan-status').textContent = 'Scanned: ' + staffCode;
+      document.getElementById('scan-status').className = 'status info';
+      
+      scanner.stop().then(() => {
+        // Fetch staff info
+        fetch('/api/staff/' + encodeURIComponent(staffCode) + '/')
+          .then(response => response.json())
+          .then(data => {
+            if (data.success) {
+              currentStaff = data.staff;
+              showStep('step-capture');
+              displayStaffInfo(data.staff);
+              initCamera();
+            } else {
+              alert('Staff not found');
+              scanner.start({ facingMode: "environment" }, { fps: 10, qrbox: 250 }, onScanSuccess, onScanError);
+            }
+          })
+          .catch(error => {
+            console.error('Error:', error);
+            alert('Error fetching staff info');
+            scanner.start({ facingMode: "environment" }, { fps: 10, qrbox: 250 }, onScanSuccess, onScanError);
+          });
+      }).catch(err => console.error('Scanner stop error:', err));
+    }
+
+    function onScanError(error) {
+      // Ignore scanning errors
+    }
+
+    function displayStaffInfo(staff) {
+      const infoDiv = document.getElementById('staff-info');
+      infoDiv.innerHTML = `
+        <p><strong>Name:</strong> ${escapeHtml(staff.name)}</p>
+        <p><strong>Staff Type:</strong> ${escapeHtml(staff.staff_type)}</p>
+        <p><strong>Booth ID:</strong> ${escapeHtml(staff.booth_id || 'N/A')}</p>
+        <p><strong>Location:</strong> ${escapeHtml(staff.location_display || 'N/A')}</p>
+      `;
+      document.getElementById('staff-id').value = staff.id;
+      document.getElementById('full-name').value = staff.name;
+      document.getElementById('phone-number').value = staff.phone_number || '';
+    }
+
+    // Step 2: Camera Capture
+    function initCamera() {
+      navigator.mediaDevices.getUserMedia({ video: { facingMode: 'user' } })
+        .then(function(mediaStream) {
+          stream = mediaStream;
+          const video = document.getElementById('video');
+          video.srcObject = stream;
+          document.getElementById('camera-preview').style.display = 'block';
+          document.getElementById('camera-controls').style.display = 'block';
+        })
+        .catch(function(err) {
+          console.error('Camera error:', err);
+          alert('Could not access camera. Please allow camera permissions.');
+        });
+    }
+
+    document.getElementById('capture-btn').addEventListener('click', function() {
+      const video = document.getElementById('video');
+      const canvas = document.createElement('canvas');
+      canvas.width = video.videoWidth;
+      canvas.height = video.videoHeight;
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(video, 0, 0);
+      
+      capturedPhoto = canvas.toDataURL('image/jpeg', 0.8);
+      document.getElementById('photo-preview').src = capturedPhoto;
+      document.getElementById('captured-photo').style.display = 'block';
+      document.getElementById('camera-preview').style.display = 'none';
+      document.getElementById('capture-btn').style.display = 'none';
+      document.getElementById('retake-btn').style.display = 'inline-block';
+      document.getElementById('pass-form').style.display = 'block';
+      
+      // Stop camera
+      if (stream) {
+        stream.getTracks().forEach(track => track.stop());
+      }
+    });
+
+    document.getElementById('retake-btn').addEventListener('click', function() {
+      capturedPhoto = null;
+      document.getElementById('captured-photo').style.display = 'none';
+      document.getElementById('camera-preview').style.display = 'block';
+      document.getElementById('capture-btn').style.display = 'inline-block';
+      document.getElementById('retake-btn').style.display = 'none';
+      document.getElementById('pass-form').style.display = 'none';
+      initCamera();
+    });
+
+    // Step 3: Submit Form
+    document.getElementById('pass-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      if (!capturedPhoto) {
+        alert('Please capture a photo first');
+        return;
+      }
+
+      const formData = new FormData();
+      formData.append('staff_id', document.getElementById('staff-id').value);
+      formData.append('full_name', document.getElementById('full-name').value);
+      formData.append('phone_number', document.getElementById('phone-number').value);
+      formData.append('photo_data', capturedPhoto);
+      formData.append('csrfmiddlewaretoken', '{{ csrf_token }}');
+
+      const statusDiv = document.getElementById('create-status');
+      statusDiv.style.display = 'block';
+      statusDiv.className = 'status info';
+      statusDiv.textContent = 'Creating pass...';
+
+      fetch('/admin/create-pass/submit/', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          showStep('step-success');
+        } else {
+          statusDiv.className = 'status error';
+          statusDiv.textContent = data.error || 'Error creating pass';
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        statusDiv.className = 'status error';
+        statusDiv.textContent = 'Error creating pass';
+      });
+    });
+
+    function showStep(stepId) {
+      document.querySelectorAll('.step').forEach(step => {
+        step.classList.remove('active');
+      });
+      document.getElementById(stepId).classList.add('active');
+    }
+
+    function escapeHtml(text) {
+      const map = {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#039;'
+      };
+      return text ? text.replace(/[&<>"']/g, m => map[m]) : '';
+    }
+
+    // Initialize on page load
+    window.addEventListener('load', function() {
+      initScanner();
+    });
+
+    // Cleanup on page unload
+    window.addEventListener('beforeunload', function() {
+      if (scanner) {
+        scanner.stop().catch(err => console.error('Scanner cleanup error:', err));
+      }
+      if (stream) {
+        stream.getTracks().forEach(track => track.stop());
+      }
+    });
+  </script>
+</body>
+</html>
+

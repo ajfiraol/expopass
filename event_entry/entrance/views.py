@@ -208,6 +208,37 @@ def verify_staff(request, staff_code):
     })
 
 
+def verify_pass(request, pass_id):
+    """
+    Verify a pass by scanning its QR code (pass ID).
+    Shows pass info with photo if available.
+    """
+    from datetime import timedelta
+    
+    try:
+        pass_obj = Pass.objects.get(id=pass_id)
+    except Pass.DoesNotExist:
+        return render(request, 'pass.html', {
+            'error': 'Pass not found'
+        })
+    
+    # Check if photo is older than 12 hours and delete it
+    if pass_obj.photo_taken_at:
+        time_diff = timezone.now() - pass_obj.photo_taken_at
+        if time_diff > timedelta(hours=12):
+            # Delete photo after 12 hours
+            if pass_obj.photo:
+                pass_obj.photo.delete()
+                pass_obj.photo = None
+                pass_obj.photo_taken_at = None
+                pass_obj.save()
+    
+    return render(request, 'pass.html', {
+        'pass_obj': pass_obj,
+        'staff': pass_obj.staff
+    })
+
+
 # Use Django's built-in auth views for login/logout, wired in urls.py
 
 
@@ -331,3 +362,93 @@ def booth_delete_staff(request, staff_id):
         'location': location,
         'booth_id': booth_id,
     })
+
+
+@login_required
+def create_pass_page(request):
+    """
+    Admin page to create a pass by scanning staff QR and capturing photo.
+    """
+    return render(request, 'create_pass.html')
+
+
+@login_required
+def get_staff_info(request, staff_code):
+    """
+    API endpoint: Get staff info by staff_code (for pass creation).
+    """
+    try:
+        staff = Staff.objects.get(id=staff_code)
+        return JsonResponse({
+            'success': True,
+            'staff': {
+                'id': str(staff.id),
+                'name': staff.name,
+                'phone_number': staff.phone_number,
+                'staff_type': staff.staff_type,
+                'booth_id': staff.booth_id,
+                'location_display': staff.get_location_display(),
+            }
+        })
+    except Staff.DoesNotExist:
+        return JsonResponse({'success': False, 'error': 'Staff not found'})
+
+
+@login_required
+@require_POST
+def create_pass(request):
+    """
+    Create a pass with captured photo. Photo auto-deletes after 12 hours.
+    """
+    import base64
+    from django.core.files.base import ContentFile
+    from datetime import timedelta
+    
+    staff_id = request.POST.get('staff_id')
+    full_name = request.POST.get('full_name', '').strip()
+    phone_number = request.POST.get('phone_number', '').strip()
+    photo_data = request.POST.get('photo_data', '')
+    
+    if not staff_id or not full_name:
+        return JsonResponse({'success': False, 'error': 'Missing required fields'})
+    
+    try:
+        staff = Staff.objects.get(id=staff_id)
+    except Staff.DoesNotExist:
+        return JsonResponse({'success': False, 'error': 'Staff not found'})
+    
+    # Create Pass
+    pass_obj = Pass.objects.create(
+        staff=staff,
+        full_name=full_name,
+        phone_number=phone_number or staff.phone_number,
+        booth_id=staff.booth_id or '',
+        day_entered=timezone.now().date(),
+        photo_taken_at=timezone.now(),
+    )
+    
+    # Save photo from base64 data
+    if photo_data:
+        try:
+            # Remove data URL prefix if present
+            if ',' in photo_data:
+                photo_data = photo_data.split(',')[1]
+            
+            image_data = base64.b64decode(photo_data)
+            photo_file = ContentFile(image_data, name=f'pass_{pass_obj.id}.jpg')
+            pass_obj.photo.save(photo_file.name, photo_file, save=True)
+        except Exception as e:
+            print(f"Error saving photo: {e}")
+            # Continue without photo if there's an error
+    
+    # Generate QR code for the pass (using pass ID)
+    from .utils import generate_qr
+    qr_path = generate_qr(str(pass_obj.id))
+    with open(qr_path, 'rb') as f:
+        pass_obj.qr_code_image.save(
+            f'pass_{pass_obj.id}.png',
+            File(f),
+            save=True
+        )
+    
+    return JsonResponse({'success': True, 'pass_id': str(pass_obj.id)})
