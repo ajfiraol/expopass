@@ -200,12 +200,19 @@ def verify_staff(request, staff_code):
     """
     QR contains ONLY staff_code (e.g. 2PS110)
     """
+    import uuid
     # staff_code in our QR is currently the UUID string (primary key)
-    staff = get_object_or_404(Staff, id=staff_code)
+    try:
+        uuid.UUID(str(staff_code))
+    except ValueError:
+        return render(request, 'pass.html', {'error': 'Invalid QR'})
 
-    return render(request, 'pass.html', {
-        'staff': staff
-    })
+    try:
+        staff = Staff.objects.get(id=staff_code)
+    except Staff.DoesNotExist:
+        return render(request, 'pass.html', {'error': 'Staff not found'})
+
+    return render(request, 'pass.html', {'staff': staff})
 
 
 def verify_pass(request, pass_id):
@@ -390,6 +397,12 @@ def get_staff_info(request, staff_code):
     """
     API endpoint: Get staff info by staff_code (for pass creation).
     """
+    import uuid
+    try:
+        uuid.UUID(str(staff_code))
+    except ValueError:
+        return JsonResponse({'success': False, 'error': 'Invalid QR'})
+
     try:
         staff = Staff.objects.get(id=staff_code)
         return JsonResponse({
