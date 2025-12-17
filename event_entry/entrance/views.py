@@ -30,6 +30,7 @@ def dashboard(request):
     booth_filter = request.GET.get('booth_id', '')
     location_filter = request.GET.get('location', '')
     status_filter = request.GET.get('status', 'all')
+    sold_filter = request.GET.get('sold', 'all')
 
     staff_list = Staff.objects.all()
     if booth_filter:
@@ -43,6 +44,12 @@ def dashboard(request):
     elif status_filter == 'not_printed':
         staff_list = staff_list.filter(printed=False)
 
+    # Filter by sold status
+    if sold_filter == 'sold':
+        staff_list = staff_list.filter(sold=True)
+    elif sold_filter == 'not_sold':
+        staff_list = staff_list.filter(sold=False)
+
     # Annotate if any pass is printed
     for staff in staff_list:
         staff.any_printed = staff.passes.filter(printed=True).exists()
@@ -52,9 +59,12 @@ def dashboard(request):
         'booth_filter': booth_filter,
         'location_filter': location_filter,
         'status_filter': status_filter,
+        'sold_filter': sold_filter,
         'total_count': Staff.objects.count(),
         'printed_count': Staff.objects.filter(printed=True).count(),
         'not_printed_count': Staff.objects.filter(printed=False).count(),
+        'sold_count': Staff.objects.filter(sold=True).count(),
+        'not_sold_count': Staff.objects.filter(sold=False).count(),
     }
     return render(request, 'dashboard.html', context)
 
@@ -259,7 +269,7 @@ def verify_pass(request, pass_id):
                 pass_obj.photo = None
                 pass_obj.photo_taken_at = None
                 pass_obj.save()
-    
+
     return render(request, 'pass.html', {
         'pass_obj': pass_obj,
         'staff': pass_obj.staff
@@ -292,10 +302,15 @@ def booth_files(request):
         for booth_id in sorted(booth_set):
             if not booth_id:
                 continue
-            staff_count = Staff.objects.filter(location=loc_code, booth_id=booth_id).count()
+            qs = Staff.objects.filter(location=loc_code, booth_id=booth_id)
+            staff_count = qs.count()
+            printed_count = qs.filter(printed=True).count()
+            sold_count = qs.filter(sold=True).count()
             booths.append({
                 "name": booth_id,
                 "staff_count": staff_count,
+                "printed_count": printed_count,
+                "sold_count": sold_count,
             })
         
         if booths:
@@ -326,6 +341,8 @@ def booth_staff_list(request, location, booth_id):
             'phone': staff.phone_number,
             'staff_type': staff.staff_type,
             'staff_code': staff.staff_code,
+            'printed': staff.printed,
+            'sold': staff.sold,
             'qr_url': staff.qr_code_image.url if staff.qr_code_image else None,
         })
     return JsonResponse({'staff': data})

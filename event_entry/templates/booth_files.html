@@ -41,6 +41,37 @@
   </div>
   <p><a href="/dashboard/" class="button">Back to Dashboard</a></p>
 
+  <div style="margin-bottom:16px;">
+    <label>Search (location / booth / staff):
+      <input id="booth-search" type="text" placeholder="Type to filter..." style="width:260px;padding:4px;border-radius:4px;border:1px solid #334155;background:#0f172a;color:#fff;">
+    </label>
+    <span class="meta">Filters visible locations, booths, and loaded staff.</span>
+    <div style="margin-top:8px;">
+      <label>Booth sort:
+        <select id="booth-sort" style="padding:4px;border-radius:4px;border:1px solid #334155;background:#0f172a;color:#fff;">
+          <option value="name_asc">Name A→Z</option>
+          <option value="name_desc">Name Z→A</option>
+          <option value="count_asc">Staff count ↑</option>
+          <option value="count_desc">Staff count ↓</option>
+        </select>
+      </label>
+      <label style="margin-left:12px;">Printed:
+        <select id="booth-filter-printed" style="padding:4px;border-radius:4px;border:1px solid #334155;background:#0f172a;color:#fff;">
+          <option value="all">All</option>
+          <option value="some_printed">Has printed</option>
+          <option value="none_printed">No printed</option>
+        </select>
+      </label>
+      <label style="margin-left:12px;">Sold:
+        <select id="booth-filter-sold" style="padding:4px;border-radius:4px;border:1px solid #334155;background:#0f172a;color:#fff;">
+          <option value="all">All</option>
+          <option value="some_sold">Has sold</option>
+          <option value="none_sold">No sold</option>
+        </select>
+      </label>
+    </div>
+  </div>
+
   <div id="content">
     {% if locations %}
       {% for loc in locations %}
@@ -50,7 +81,13 @@
         </div>
         <div class="folder-content" data-parent-location="{{ loc.code }}">
           {% for booth in loc.booths %}
-            <div class="folder-item" data-type="booth" data-location="{{ loc.code }}" data-booth="{{ booth.name }}">
+            <div class="folder-item"
+                 data-type="booth"
+                 data-location="{{ loc.code }}"
+                 data-booth="{{ booth.name }}"
+                 data-staff-count="{{ booth.staff_count }}"
+                 data-printed-count="{{ booth.printed_count }}"
+                 data-sold-count="{{ booth.sold_count }}">
               <span class="folder-icon">📂</span>
               <span><strong>{{ booth.name }}</strong> ({{ booth.staff_count }} staff)</span>
             </div>
@@ -178,15 +215,37 @@
         $.get('/api/booth/' + encodeURIComponent(location) + '/' + encodeURIComponent(boothId) + '/staff/', function(data){
           $container.html('');
 
+          // Add filter controls for printed / sold
+          var filtersHtml = '' +
+            '<div class="meta staff-filters" style="margin-bottom:8px;">' +
+            'Show: ' +
+            '<label>Printed ' +
+            '<select class="staff-filter-printed" style="padding:2px 4px;border-radius:4px;border:1px solid #334155;background:#0f172a;color:#fff;margin-right:8px;">' +
+            '<option value="all">All</option>' +
+            '<option value="printed">Printed</option>' +
+            '<option value="not_printed">Not printed</option>' +
+            '</select></label>' +
+            '<label>Sold ' +
+            '<select class="staff-filter-sold" style="padding:2px 4px;border-radius:4px;border:1px solid #334155;background:#0f172a;color:#fff;">' +
+            '<option value="all">All</option>' +
+            '<option value="sold">Sold</option>' +
+            '<option value="not_sold">Not sold</option>' +
+            '</select></label>' +
+            '</div>';
+          $container.append(filtersHtml);
+
           // Show staff list (already sorted ascending by name from backend)
           if (data.staff && data.staff.length > 0) {
             data.staff.forEach(function(staff){
               var qrUrl = staff.qr_url || '/static/no-qr.png';
-              var staffHtml = '<div class="staff-item" data-staff-id="' + staff.id + '">' +
+              var staffHtml = '<div class="staff-item" data-staff-id="' + staff.id + '" data-printed="' + (staff.printed ? '1' : '0') + '" data-sold="' + (staff.sold ? '1' : '0') + '">' +
                 '<img src="' + qrUrl + '" class="qr-preview" alt="QR Code" onerror="this.src=\'/static/no-qr.png\'">' +
                 '<div class="staff-info">' +
                 '<div class="staff-name">' + escapeHtml(staff.name) + ' (' + escapeHtml(staff.staff_type) + ')</div>' +
-                '<div class="staff-details">Phone: ' + escapeHtml(staff.phone) + ' | Code: ' + escapeHtml(staff.staff_code) + '</div>' +
+                '<div class="staff-details">Phone: ' + escapeHtml(staff.phone) + ' | Code: ' + escapeHtml(staff.staff_code) +
+                ' | Printed: ' + (staff.printed ? 'Yes' : 'No') +
+                ' | Sold: ' + (staff.sold ? 'Yes' : 'No') +
+                '</div>' +
                 '</div>' +
                 '<button class="btn btn-danger delete-staff" data-staff-id="' + staff.id + '">Delete</button>' +
                 '</div>';
@@ -239,6 +298,130 @@
 
       // Initialize breadcrumb
       updateBreadcrumb();
+
+      // Global search filtering
+      $('#booth-search').on('keyup', function(){
+        var q = $(this).val().toLowerCase();
+
+        // Filter locations + booths text
+        $('.folder-item[data-type="location"], .folder-item[data-type="booth"]').each(function(){
+          var txt = $(this).text().toLowerCase();
+          if (!q || txt.indexOf(q) !== -1) {
+            $(this).show();
+            var parentAttr = $(this).data('code') || $(this).data('location');
+            if (parentAttr) {
+              $('.folder-content[data-parent-location="' + parentAttr + '"]').show();
+            }
+          } else {
+            $(this).hide();
+          }
+        });
+
+        // Filter loaded staff items
+        $('.staff-item').each(function(){
+          var txt = $(this).text().toLowerCase();
+          if (!q || txt.indexOf(q) !== -1) {
+            $(this).show();
+          } else {
+            $(this).hide();
+          }
+        });
+      });
+
+      // Booth sorting per location
+      $('#booth-sort').on('change', function(){
+        var mode = $(this).val();
+        $('[data-parent-location]').each(function(){
+          var $container = $(this);
+          var $booths = $container.find('.folder-item[data-type="booth"]').get();
+
+          $booths.sort(function(a, b){
+            var $a = $(a), $b = $(b);
+            var nameA = ($a.data('booth') || '').toString().toLowerCase();
+            var nameB = ($b.data('booth') || '').toString().toLowerCase();
+            var countA = parseInt($a.data('staff-count') || 0, 10);
+            var countB = parseInt($b.data('staff-count') || 0, 10);
+
+            if (mode === 'name_asc') return nameA.localeCompare(nameB);
+            if (mode === 'name_desc') return nameB.localeCompare(nameA);
+            if (mode === 'count_asc') return countA - countB;
+            if (mode === 'count_desc') return countB - countA;
+            return 0;
+          });
+
+          // Re-append booths and their associated staff containers
+          $.each($booths, function(_, boothEl){
+            var loc = $(boothEl).data('location');
+            var booth = $(boothEl).data('booth');
+            var $staffContainer = $container
+              .parent()
+              .find('.folder-content[data-location="' + loc + '"][data-booth="' + booth + '"]');
+            $container.append(boothEl);
+            $container.append($staffContainer);
+          });
+        });
+
+        // After sorting, re-apply global booth filters
+        applyBoothStatusFilters();
+      });
+
+      // Global booth filters for printed / sold (applied when locations/booths are visible)
+      function applyBoothStatusFilters() {
+        var printedMode = $('#booth-filter-printed').val();
+        var soldMode = $('#booth-filter-sold').val();
+
+        $('.folder-item[data-type="booth"]').each(function(){
+          var $b = $(this);
+          var printedCount = parseInt($b.data('printed-count') || 0, 10);
+          var soldCount = parseInt($b.data('sold-count') || 0, 10);
+
+          var matchPrinted = (printedMode === 'all') ||
+                             (printedMode === 'some_printed' && printedCount > 0) ||
+                             (printedMode === 'none_printed' && printedCount === 0);
+
+          var matchSold = (soldMode === 'all') ||
+                          (soldMode === 'some_sold' && soldCount > 0) ||
+                          (soldMode === 'none_sold' && soldCount === 0);
+
+          if (matchPrinted && matchSold) {
+            $b.show();
+          } else {
+            $b.hide();
+          }
+        });
+      }
+
+      $('#booth-filter-printed, #booth-filter-sold').on('change', function(){
+        applyBoothStatusFilters();
+      });
+
+      // Per-booth printed / sold filters
+      $(document).on('change', '.staff-filter-printed, .staff-filter-sold', function(){
+        var $filters = $(this).closest('.staff-filters');
+        var $container = $filters.closest('.folder-content');
+        var printedVal = $filters.find('.staff-filter-printed').val();
+        var soldVal = $filters.find('.staff-filter-sold').val();
+
+        $container.find('.staff-item').each(function(){
+          var $item = $(this);
+          var isPrinted = $item.data('printed') == 1;
+          var isSold = $item.data('sold') == 1;
+
+          var matchPrinted = (printedVal === 'all') ||
+                             (printedVal === 'printed' && isPrinted) ||
+                             (printedVal === 'not_printed' && !isPrinted);
+
+          var matchSold = (soldVal === 'all') ||
+                          (soldVal === 'sold' && isSold) ||
+                          (soldVal === 'not_sold' && !isSold);
+
+          if (matchPrinted && matchSold) {
+            $item.show();
+          } else {
+            $item.hide();
+          }
+        });
+      });
     });
   </script>
 </body>

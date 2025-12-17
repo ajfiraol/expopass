@@ -24,6 +24,14 @@ class Staff(models.Model):
     staff_type = models.CharField(max_length=10, choices=STAFF_TYPES)
     qr_code_image = models.ImageField(upload_to='staff_qr/', blank=True, null=True)
     printed = models.BooleanField(default=False)
+    sold = models.BooleanField(default=False, help_text="Whether this booth/staff slot is sold (from Excel 'Sold' column).")
+    staff_code_sheet = models.CharField(
+        max_length=20,
+        blank=True,
+        null=True,
+        unique=True,
+        help_text="Staff code from Excel/CSV (e.g. 1PV01, 1PS02)"
+    )
 
     @property
     def staff_code(self) -> str:

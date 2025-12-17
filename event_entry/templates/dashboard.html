@@ -42,27 +42,49 @@
         <option value="printed" {% if status_filter == "printed" %}selected{% endif %}>Printed</option>
         <option value="not_printed" {% if status_filter == "not_printed" %}selected{% endif %}>Not Printed</option>
       </select>
+      Sold:
+      <select name="sold">
+        <option value="all" {% if sold_filter == "all" %}selected{% endif %}>All</option>
+        <option value="sold" {% if sold_filter == "sold" %}selected{% endif %}>Sold</option>
+        <option value="not_sold" {% if sold_filter == "not_sold" %}selected{% endif %}>Not Sold</option>
+      </select>
       <button type="submit">Filter</button>
     </form>
+    <div style="margin-top:12px;">
+      <label>Quick search:
+        <input type="text" id="quick-search" placeholder="Search name, phone, booth, location, type" style="width:260px;padding:4px;border-radius:4px;border:1px solid #334155;background:#0f172a;color:#fff;">
+      </label>
+      <span style="font-size:12px;color:#9ca3af;margin-left:8px;">(client-side, on current page)</span>
+    </div>
     <p>
       Total: {{ total_count }} |
       Printed: {{ printed_count }} |
-      Not Printed: {{ not_printed_count }}
+      Not Printed: {{ not_printed_count }} |
+      Sold: {{ sold_count }} |
+      Not Sold: {{ not_sold_count }}
     </p>
   </div>
 
   <table>
     <tr>
-      <th>Booth ID</th>
-      <th>Location</th>
-      <th>Staff Type</th>
-      <th>Name</th>
-      <th>Phone</th>
+      <th class="sortable" data-sort-key="booth">Booth ID ▲▼</th>
+      <th class="sortable" data-sort-key="location">Location ▲▼</th>
+      <th class="sortable" data-sort-key="type">Staff Type ▲▼</th>
+      <th class="sortable" data-sort-key="name">Name ▲▼</th>
+      <th class="sortable" data-sort-key="phone">Phone ▲▼</th>
       <th>QR Code</th>
-      <th>Printed</th>
+      <th class="sortable" data-sort-key="printed">Printed ▲▼</th>
+      <th class="sortable" data-sort-key="sold">Sold ▲▼</th>
     </tr>
     {% for s in staff_list %}
-    <tr class="{% if s.printed %}printed-row{% endif %}" data-id="{{ s.id }}">
+    <tr class="{% if s.printed %}printed-row{% endif %}" data-id="{{ s.id }}"
+        data-booth="{{ s.booth_id|default:'' }}"
+        data-location="{{ s.get_location_display|default:'' }}"
+        data-type="{{ s.staff_type|default:'' }}"
+        data-name="{{ s.name|default:'' }}"
+        data-phone="{{ s.phone_number|default:'' }}"
+        data-printed="{{ s.printed|yesno:'1,0' }}"
+        data-sold="{{ s.sold|yesno:'1,0' }}">
       <td>{{ s.booth_id }}</td>
       <td>{{ s.get_location_display }}</td>
       <td>{{ s.staff_type }}</td>
@@ -77,6 +99,9 @@
       </td>
       <td>
         <input type="checkbox" class="printed-toggle" data-id="{{ s.id }}" {% if s.printed %}checked{% endif %}>
+      </td>
+      <td>
+        {% if s.sold %}Yes{% else %}No{% endif %}
       </td>
     </tr>
     {% endfor %}
@@ -102,6 +127,63 @@
           } else {
             alert('Error toggling printed');
           }
+        });
+      });
+
+      // Quick client-side search
+      $('#quick-search').on('keyup', function(){
+        var q = $(this).val().toLowerCase();
+        $('table tr[data-id]').each(function(){
+          var $row = $(this);
+          var hay = (
+            ($row.data('booth') || '') + ' ' +
+            ($row.data('location') || '') + ' ' +
+            ($row.data('type') || '') + ' ' +
+            ($row.data('name') || '') + ' ' +
+            ($row.data('phone') || '')
+          ).toLowerCase();
+          if (!q || hay.indexOf(q) !== -1) {
+            $row.show();
+          } else {
+            $row.hide();
+          }
+        });
+      });
+
+      // Simple client-side sorting
+      var currentSort = { key: null, dir: 1 };
+
+      function compare(a, b, key, dir) {
+        var va = $(a).data(key) || '';
+        var vb = $(b).data(key) || '';
+        // numeric if both look like numbers
+        var na = parseFloat(va), nb = parseFloat(vb);
+        if (!isNaN(na) && !isNaN(nb)) {
+          return (na - nb) * dir;
+        }
+        va = String(va).toLowerCase();
+        vb = String(vb).toLowerCase();
+        if (va < vb) return -1 * dir;
+        if (va > vb) return 1 * dir;
+        return 0;
+      }
+
+      $('.sortable').on('click', function(){
+        var key = $(this).data('sort-key');
+        if (!key) return;
+        if (currentSort.key === key) {
+          currentSort.dir = -currentSort.dir; // toggle
+        } else {
+          currentSort.key = key;
+          currentSort.dir = 1;
+        }
+
+        var $rows = $('table tr[data-id]').get();
+        $rows.sort(function(a, b){
+          return compare(a, b, key, currentSort.dir);
+        });
+        $.each($rows, function(idx, row){
+          $('table').append(row);
         });
       });
     });
