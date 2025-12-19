@@ -204,13 +204,20 @@
       initCameraModal();
     });
 
-    $('.close').on('click', function(){
+    $(document).on('click', '.close', function(){
       $('#photo-modal').hide();
       stopCamera();
       capturedPhotoData = null;
     });
 
     function initCameraModal() {
+      // Reset UI state
+      $('#captured-photo').hide();
+      $('#retake-photo-btn').hide();
+      $('#upload-photo-btn').hide();
+      $('#upload-status').hide();
+      $('#capture-photo-btn').show().prop('disabled', false);
+      
       // Use back camera (environment) for better photo quality
       navigator.mediaDevices.getUserMedia({ 
         video: { 
@@ -222,12 +229,26 @@
         .then(function(stream) {
           cameraStream = stream;
           const video = document.getElementById('camera-video');
+          if (!video) {
+            console.error('Video element not found');
+            return;
+          }
           video.srcObject = stream;
           video.setAttribute('playsinline', '');
           video.setAttribute('webkit-playsinline', '');
-          $('#camera-preview').show();
-          $('#captured-photo').hide();
-          $('#camera-controls').show();
+          
+          // Wait for video to be ready before showing controls
+          video.onloadedmetadata = function() {
+            console.log('Video metadata loaded, dimensions:', video.videoWidth, 'x', video.videoHeight);
+            $('#camera-preview').show();
+            $('#camera-controls').show();
+            $('#capture-photo-btn').prop('disabled', false).show();
+          };
+          
+          video.onerror = function(err) {
+            console.error('Video error:', err);
+            alert('Error loading camera video.');
+          };
         })
         .catch(function(err) {
           console.error('Camera error:', err);
@@ -236,15 +257,24 @@
             .then(function(stream) {
               cameraStream = stream;
               const video = document.getElementById('camera-video');
+              if (!video) {
+                console.error('Video element not found');
+                return;
+              }
               video.srcObject = stream;
               video.setAttribute('playsinline', '');
               video.setAttribute('webkit-playsinline', '');
-              $('#camera-preview').show();
-              $('#captured-photo').hide();
-              $('#camera-controls').show();
+              
+              video.onloadedmetadata = function() {
+                console.log('Video metadata loaded (fallback), dimensions:', video.videoWidth, 'x', video.videoHeight);
+                $('#camera-preview').show();
+                $('#camera-controls').show();
+                $('#capture-photo-btn').prop('disabled', false).show();
+              };
             })
             .catch(function(fallbackErr) {
-              alert('Could not access camera. Please allow camera permissions.');
+              console.error('Fallback camera error:', fallbackErr);
+              alert('Could not access camera. Please allow camera permissions and try again.');
             });
         });
     }
@@ -256,49 +286,113 @@
       }
     }
 
-    $('#capture-photo-btn').on('click', function(){
+    // Use event delegation for buttons that might be dynamically shown/hidden
+    $(document).on('click', '#capture-photo-btn', function(e){
+      e.preventDefault();
+      console.log('Capture button clicked');
       const video = document.getElementById('camera-video');
-      const canvas = document.createElement('canvas');
-      canvas.width = video.videoWidth;
-      canvas.height = video.videoHeight;
-      const ctx = canvas.getContext('2d');
-      ctx.drawImage(video, 0, 0);
       
-      capturedPhotoData = canvas.toDataURL('image/jpeg', 0.8);
-      $('#photo-preview').attr('src', capturedPhotoData);
-      $('#camera-preview').hide();
-      $('#captured-photo').show();
-      $('#retake-photo-btn').show();
-      $('#upload-photo-btn').show();
-      stopCamera();
+      if (!video) {
+        alert('Camera video element not found.');
+        return;
+      }
+      
+      // Check if video has valid dimensions (more lenient check)
+      if (!video.videoWidth || !video.videoHeight || video.videoWidth === 0 || video.videoHeight === 0) {
+        console.log('Video not ready. Dimensions:', video.videoWidth, 'x', video.videoHeight, 'ReadyState:', video.readyState);
+        alert('Camera is not ready yet. Please wait a moment for the camera to initialize.');
+        return;
+      }
+      
+      console.log('Capturing photo with dimensions:', video.videoWidth, 'x', video.videoHeight);
+      
+      try {
+        const canvas = document.createElement('canvas');
+        canvas.width = video.videoWidth;
+        canvas.height = video.videoHeight;
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(video, 0, 0);
+        
+        capturedPhotoData = canvas.toDataURL('image/jpeg', 0.8);
+        
+        if (!capturedPhotoData || capturedPhotoData.length < 100) {
+          console.error('Invalid captured data length:', capturedPhotoData ? capturedPhotoData.length : 0);
+          alert('Failed to capture photo. Please try again.');
+          return;
+        }
+        
+        console.log('Photo captured successfully, data length:', capturedPhotoData.length);
+        
+        $('#photo-preview').attr('src', capturedPhotoData);
+        $('#camera-preview').hide();
+        $('#captured-photo').show();
+        $('#capture-photo-btn').hide();
+        $('#retake-photo-btn').show();
+        $('#upload-photo-btn').show();
+        stopCamera();
+      } catch (error) {
+        console.error('Capture error:', error);
+        alert('Error capturing photo: ' + error.message);
+      }
     });
 
-    $('#retake-photo-btn').on('click', function(){
+    $(document).on('click', '#retake-photo-btn', function(e){
+      e.preventDefault();
       capturedPhotoData = null;
       $('#captured-photo').hide();
       $('#retake-photo-btn').hide();
       $('#upload-photo-btn').hide();
+      $('#upload-status').hide();
       initCameraModal();
     });
 
-    $('#upload-photo-btn').on('click', function(){
+    $(document).on('click', '#upload-photo-btn', function(e){
+      e.preventDefault();
       if (!capturedPhotoData || !currentStaffId) {
         alert('Please capture a photo first');
         return;
       }
 
-      $.post('/api/staff/' + currentStaffId + '/upload-photo/', {
-        'csrfmiddlewaretoken': '{{ csrf_token }}',
-        'photo_data': capturedPhotoData
-      }, function(data){
-        if (data.success) {
-          alert('Photo uploaded successfully!');
-          location.reload();
-        } else {
-          alert('Error uploading photo: ' + (data.error || 'Unknown error'));
+      // Disable button during upload
+      var $btn = $(this);
+      var $status = $('#upload-status');
+      $btn.prop('disabled', true).text('Uploading...');
+      $status.show().text('Uploading photo...').css('background', '#2563eb');
+
+      $.ajax({
+        url: '/api/staff/' + currentStaffId + '/upload-photo/',
+        method: 'POST',
+        data: {
+          'csrfmiddlewaretoken': '{{ csrf_token }}',
+          'photo_data': capturedPhotoData
+        },
+        success: function(data){
+          if (data.success) {
+            $status.text('✅ Photo uploaded successfully!').css('background', '#16a34a');
+            setTimeout(function(){
+              $('#photo-modal').hide();
+              stopCamera();
+              location.reload();
+            }, 1000);
+          } else {
+            $status.text('❌ Error: ' + (data.error || 'Unknown error')).css('background', '#dc2626');
+            $btn.prop('disabled', false).text('✅ Upload Photo');
+          }
+        },
+        error: function(xhr, status, error){
+          console.error('Upload error:', xhr.responseText);
+          var errorMsg = 'Error uploading photo';
+          try {
+            var response = JSON.parse(xhr.responseText);
+            if (response.error) {
+              errorMsg = response.error;
+            }
+          } catch(e) {
+            errorMsg = 'Network error. Please check your connection and try again.';
+          }
+          $status.text('❌ ' + errorMsg).css('background', '#dc2626');
+          $btn.prop('disabled', false).text('✅ Upload Photo');
         }
-      }).fail(function(){
-        alert('Error uploading photo');
       });
     });
   </script>
@@ -317,10 +411,11 @@
         <img id="photo-preview" alt="Captured photo">
       </div>
       <div class="camera-controls" id="camera-controls" style="display:none;">
-        <button id="capture-photo-btn" class="btn-success">Capture Photo</button>
-        <button id="retake-photo-btn" style="display:none;">Retake</button>
-        <button id="upload-photo-btn" style="display:none;">Upload Photo</button>
+        <button id="capture-photo-btn" class="btn-success" style="display:block;">📷 Capture Photo</button>
+        <button id="retake-photo-btn" style="display:none;">🔄 Retake</button>
+        <button id="upload-photo-btn" style="display:none;">✅ Upload Photo</button>
       </div>
+      <div id="upload-status" style="display:none; margin-top:12px; padding:8px; border-radius:4px; background:#1e293b; color:#fff; text-align:center;"></div>
     </div>
   </div>
 

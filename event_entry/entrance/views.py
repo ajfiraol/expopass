@@ -517,36 +517,73 @@ def upload_staff_photo(request, staff_id):
     """
     import base64
     from django.core.files.base import ContentFile
+    import logging
     
-    staff = get_object_or_404(Staff, id=staff_id)
+    logger = logging.getLogger(__name__)
     
-    # Check if photo is provided as base64 (from camera) or file upload
-    photo_data = request.POST.get('photo_data', '')
-    photo_file = request.FILES.get('photo', None)
+    try:
+        staff = get_object_or_404(Staff, id=staff_id)
+        
+        # Check if photo is provided as base64 (from camera) or file upload
+        photo_data = request.POST.get('photo_data', '')
+        photo_file = request.FILES.get('photo', None)
+        
+        if photo_data:
+            # Handle base64 photo data from camera
+            try:
+                # Remove data URL prefix if present
+                if ',' in photo_data:
+                    photo_data = photo_data.split(',')[1]
+                
+                if not photo_data or len(photo_data) < 100:
+                    return JsonResponse({'success': False, 'error': 'Invalid photo data provided'})
+                
+                image_data = base64.b64decode(photo_data)
+                
+                if not image_data or len(image_data) < 1000:
+                    return JsonResponse({'success': False, 'error': 'Photo data too small or invalid'})
+                
+                # Delete old photo if exists
+                if staff.photo:
+                    staff.photo.delete(save=False)
+                
+                photo_file = ContentFile(image_data, name=f'staff_{staff.id}.jpg')
+                staff.photo.save(photo_file.name, photo_file, save=True)
+                
+                logger.info(f'Photo uploaded successfully for staff {staff.id}')
+                
+                return JsonResponse({
+                    'success': True,
+                    'photo_url': staff.photo.url
+                })
+            except base64.binascii.Error as e:
+                logger.error(f'Base64 decode error: {str(e)}')
+                return JsonResponse({'success': False, 'error': f'Invalid photo format: {str(e)}'})
+            except Exception as e:
+                logger.error(f'Error processing photo: {str(e)}', exc_info=True)
+                return JsonResponse({'success': False, 'error': f'Error processing photo: {str(e)}'})
+        
+        elif photo_file:
+            # Handle file upload
+            try:
+                # Delete old photo if exists
+                if staff.photo:
+                    staff.photo.delete(save=False)
+                
+                staff.photo.save(photo_file.name, photo_file, save=True)
+                
+                logger.info(f'Photo uploaded successfully for staff {staff.id}')
+                
+                return JsonResponse({
+                    'success': True,
+                    'photo_url': staff.photo.url
+                })
+            except Exception as e:
+                logger.error(f'Error saving photo file: {str(e)}', exc_info=True)
+                return JsonResponse({'success': False, 'error': f'Error saving photo: {str(e)}'})
+        
+        return JsonResponse({'success': False, 'error': 'No photo provided'})
     
-    if photo_data:
-        # Handle base64 photo data from camera
-        try:
-            # Remove data URL prefix if present
-            if ',' in photo_data:
-                photo_data = photo_data.split(',')[1]
-            
-            image_data = base64.b64decode(photo_data)
-            photo_file = ContentFile(image_data, name=f'staff_{staff.id}.jpg')
-            staff.photo.save(photo_file.name, photo_file, save=True)
-            return JsonResponse({
-                'success': True,
-                'photo_url': staff.photo.url
-            })
-        except Exception as e:
-            return JsonResponse({'success': False, 'error': f'Error processing photo: {str(e)}'})
-    
-    elif photo_file:
-        # Handle file upload
-        staff.photo.save(photo_file.name, photo_file, save=True)
-        return JsonResponse({
-            'success': True,
-            'photo_url': staff.photo.url
-        })
-    
-    return JsonResponse({'success': False, 'error': 'No photo provided'})
+    except Exception as e:
+        logger.error(f'Unexpected error in upload_staff_photo: {str(e)}', exc_info=True)
+        return JsonResponse({'success': False, 'error': f'Unexpected error: {str(e)}'})

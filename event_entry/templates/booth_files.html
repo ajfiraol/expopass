@@ -476,6 +476,13 @@
     });
 
     function initBoothCameraModal() {
+      // Reset UI state
+      $('#booth-captured-photo').hide();
+      $('#booth-retake-photo-btn').hide();
+      $('#booth-upload-photo-btn').hide();
+      $('#booth-upload-status').hide();
+      $('#booth-capture-photo-btn').show().prop('disabled', false);
+      
       // Use back camera (environment) for better photo quality
       navigator.mediaDevices.getUserMedia({ 
         video: { 
@@ -487,12 +494,26 @@
         .then(function(stream) {
           boothCameraStream = stream;
           const video = document.getElementById('booth-camera-video');
+          if (!video) {
+            console.error('Video element not found');
+            return;
+          }
           video.srcObject = stream;
           video.setAttribute('playsinline', '');
           video.setAttribute('webkit-playsinline', '');
-          $('#booth-camera-preview').show();
-          $('#booth-captured-photo').hide();
-          $('#booth-camera-controls').show();
+          
+          // Wait for video to be ready before showing controls
+          video.onloadedmetadata = function() {
+            console.log('Booth video metadata loaded, dimensions:', video.videoWidth, 'x', video.videoHeight);
+            $('#booth-camera-preview').show();
+            $('#booth-camera-controls').show();
+            $('#booth-capture-photo-btn').prop('disabled', false).show();
+          };
+          
+          video.onerror = function(err) {
+            console.error('Video error:', err);
+            alert('Error loading camera video.');
+          };
         })
         .catch(function(err) {
           console.error('Camera error:', err);
@@ -501,15 +522,24 @@
             .then(function(stream) {
               boothCameraStream = stream;
               const video = document.getElementById('booth-camera-video');
+              if (!video) {
+                console.error('Video element not found');
+                return;
+              }
               video.srcObject = stream;
               video.setAttribute('playsinline', '');
               video.setAttribute('webkit-playsinline', '');
-              $('#booth-camera-preview').show();
-              $('#booth-captured-photo').hide();
-              $('#booth-camera-controls').show();
+              
+              video.onloadedmetadata = function() {
+                console.log('Booth video metadata loaded (fallback), dimensions:', video.videoWidth, 'x', video.videoHeight);
+                $('#booth-camera-preview').show();
+                $('#booth-camera-controls').show();
+                $('#booth-capture-photo-btn').prop('disabled', false).show();
+              };
             })
             .catch(function(fallbackErr) {
-              alert('Could not access camera. Please allow camera permissions.');
+              console.error('Fallback camera error:', fallbackErr);
+              alert('Could not access camera. Please allow camera permissions and try again.');
             });
         });
     }
@@ -521,57 +551,119 @@
       }
     }
 
-    $('#booth-capture-photo-btn').on('click', function(){
+    // Use event delegation for buttons that might be dynamically shown/hidden
+    $(document).on('click', '#booth-capture-photo-btn', function(e){
+      e.preventDefault();
+      console.log('Booth capture button clicked');
       const video = document.getElementById('booth-camera-video');
-      const canvas = document.createElement('canvas');
-      canvas.width = video.videoWidth;
-      canvas.height = video.videoHeight;
-      const ctx = canvas.getContext('2d');
-      ctx.drawImage(video, 0, 0);
       
-      boothCapturedPhotoData = canvas.toDataURL('image/jpeg', 0.8);
-      $('#booth-photo-preview').attr('src', boothCapturedPhotoData);
-      $('#booth-camera-preview').hide();
-      $('#booth-captured-photo').show();
-      $('#booth-retake-photo-btn').show();
-      $('#booth-upload-photo-btn').show();
-      stopBoothCamera();
+      if (!video) {
+        alert('Camera video element not found.');
+        return;
+      }
+      
+      // Check if video has valid dimensions (more lenient check)
+      if (!video.videoWidth || !video.videoHeight || video.videoWidth === 0 || video.videoHeight === 0) {
+        console.log('Booth video not ready. Dimensions:', video.videoWidth, 'x', video.videoHeight, 'ReadyState:', video.readyState);
+        alert('Camera is not ready yet. Please wait a moment for the camera to initialize.');
+        return;
+      }
+      
+      console.log('Capturing booth photo with dimensions:', video.videoWidth, 'x', video.videoHeight);
+      
+      try {
+        const canvas = document.createElement('canvas');
+        canvas.width = video.videoWidth;
+        canvas.height = video.videoHeight;
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(video, 0, 0);
+        
+        boothCapturedPhotoData = canvas.toDataURL('image/jpeg', 0.8);
+        
+        if (!boothCapturedPhotoData || boothCapturedPhotoData.length < 100) {
+          console.error('Invalid captured data length:', boothCapturedPhotoData ? boothCapturedPhotoData.length : 0);
+          alert('Failed to capture photo. Please try again.');
+          return;
+        }
+        
+        console.log('Booth photo captured successfully, data length:', boothCapturedPhotoData.length);
+        
+        $('#booth-photo-preview').attr('src', boothCapturedPhotoData);
+        $('#booth-camera-preview').hide();
+        $('#booth-captured-photo').show();
+        $('#booth-capture-photo-btn').hide();
+        $('#booth-retake-photo-btn').show();
+        $('#booth-upload-photo-btn').show();
+        stopBoothCamera();
+      } catch (error) {
+        console.error('Capture error:', error);
+        alert('Error capturing photo: ' + error.message);
+      }
     });
 
-    $('#booth-retake-photo-btn').on('click', function(){
+    $(document).on('click', '#booth-retake-photo-btn', function(e){
+      e.preventDefault();
       boothCapturedPhotoData = null;
       $('#booth-captured-photo').hide();
       $('#booth-retake-photo-btn').hide();
       $('#booth-upload-photo-btn').hide();
+      $('#booth-upload-status').hide();
       initBoothCameraModal();
     });
 
-    $('#booth-upload-photo-btn').on('click', function(){
+    $(document).on('click', '#booth-upload-photo-btn', function(e){
+      e.preventDefault();
       if (!boothCapturedPhotoData || !boothCurrentStaffId) {
         alert('Please capture a photo first');
         return;
       }
 
-      $.post('/api/staff/' + boothCurrentStaffId + '/upload-photo/', {
-        'csrfmiddlewaretoken': '{{ csrf_token }}',
-        'photo_data': boothCapturedPhotoData
-      }, function(data){
-        if (data.success) {
-          alert('Photo uploaded successfully!');
-          // Reload the current booth staff
-          var $container = $('.booth-camera-btn[data-staff-id="' + boothCurrentStaffId + '"]').closest('.folder-content');
-          var location = $container.data('location');
-          var booth = $container.data('booth');
-          if (location && booth) {
-            loadBoothStaff(location, booth);
+      // Disable button during upload
+      var $btn = $(this);
+      var $status = $('#booth-upload-status');
+      $btn.prop('disabled', true).text('Uploading...');
+      $status.show().text('Uploading photo...').css('background', '#2563eb');
+
+      $.ajax({
+        url: '/api/staff/' + boothCurrentStaffId + '/upload-photo/',
+        method: 'POST',
+        data: {
+          'csrfmiddlewaretoken': '{{ csrf_token }}',
+          'photo_data': boothCapturedPhotoData
+        },
+        success: function(data){
+          if (data.success) {
+            $status.text('✅ Photo uploaded successfully!').css('background', '#16a34a');
+            setTimeout(function(){
+              $('#booth-photo-modal').hide();
+              stopBoothCamera();
+              // Reload the current booth staff
+              var $container = $('.booth-camera-btn[data-staff-id="' + boothCurrentStaffId + '"]').closest('.folder-content');
+              var location = $container.data('location');
+              var booth = $container.data('booth');
+              if (location && booth) {
+                loadBoothStaff(location, booth);
+              }
+            }, 1000);
+          } else {
+            $status.text('❌ Error: ' + (data.error || 'Unknown error')).css('background', '#dc2626');
+            $btn.prop('disabled', false).text('✅ Upload Photo');
           }
-          $('#booth-photo-modal').hide();
-          stopBoothCamera();
-        } else {
-          alert('Error uploading photo: ' + (data.error || 'Unknown error'));
+        },
+        error: function(xhr, status, error){
+          console.error('Upload error:', xhr.responseText);
+          var errorMsg = 'Error uploading photo';
+          try {
+            var response = JSON.parse(xhr.responseText);
+            if (response.error) {
+              errorMsg = response.error;
+            }
+          } catch(e) {
+            errorMsg = 'Network error. Please check your connection and try again.';
+          }
+          $status.text('❌ ' + errorMsg).css('background', '#dc2626');
+          $btn.prop('disabled', false).text('✅ Upload Photo');
         }
-      }).fail(function(){
-        alert('Error uploading photo');
       });
     });
   </script>
@@ -590,10 +682,11 @@
         <img id="booth-photo-preview" alt="Captured photo">
       </div>
       <div class="camera-controls" id="booth-camera-controls" style="display:none;">
-        <button id="booth-capture-photo-btn" class="btn-success">Capture Photo</button>
-        <button id="booth-retake-photo-btn" style="display:none;">Retake</button>
-        <button id="booth-upload-photo-btn" style="display:none;">Upload Photo</button>
+        <button id="booth-capture-photo-btn" class="btn-success" style="display:block;">📷 Capture Photo</button>
+        <button id="booth-retake-photo-btn" style="display:none;">🔄 Retake</button>
+        <button id="booth-upload-photo-btn" style="display:none;">✅ Upload Photo</button>
       </div>
+      <div id="booth-upload-status" style="display:none; margin-top:12px; padding:8px; border-radius:4px; background:#1e293b; color:#fff; text-align:center;"></div>
     </div>
   </div>
 </body>
