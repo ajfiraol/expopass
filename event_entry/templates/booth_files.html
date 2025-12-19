@@ -11,9 +11,12 @@
     .breadcrumb a{color:#93c5fd;text-decoration:none;margin:0 4px}
     .breadcrumb a:hover{text-decoration:underline}
     .breadcrumb span{color:#64748b}
-    .folder-item{cursor:pointer;padding:8px;margin:4px 0;border-radius:4px;background:#1e293b;display:flex;align-items:center;gap:8px;user-select:none}
+    .folder-item{cursor:pointer;padding:8px;margin:4px 0;border-radius:4px;background:#1e293b;display:flex;align-items:center;gap:8px;user-select:none;border-left:4px solid transparent}
     .folder-item:hover{background:#334155}
     .folder-item.expanded{background:#334155}
+    .folder-item.has-photos{border-left-color:#16a34a;background:#1a2e1a}
+    .folder-item.has-photos:hover{background:#1f3a1f}
+    .folder-item.has-photos.expanded{background:#1f3a1f}
     .folder-icon{font-size:18px;width:24px;text-align:center}
     .folder-content{margin-left:24px;display:none}
     .folder-content.expanded{display:block}
@@ -300,15 +303,16 @@
         </div>
         <div class="folder-content" data-parent-location="{{ loc.code }}">
           {% for booth in loc.booths %}
-            <div class="folder-item"
+            <div class="folder-item{% if booth.photo_count > 0 %} has-photos{% endif %}"
                  data-type="booth"
                  data-location="{{ loc.code }}"
                  data-booth="{{ booth.name }}"
                  data-staff-count="{{ booth.staff_count }}"
                  data-printed-count="{{ booth.printed_count }}"
-                 data-sold-count="{{ booth.sold_count }}">
+                 data-sold-count="{{ booth.sold_count }}"
+                 data-photo-count="{{ booth.photo_count }}">
               <span class="folder-icon">📂</span>
-              <span><strong>{{ booth.name }}</strong> ({{ booth.staff_count }} staff)</span>
+              <span><strong>{{ booth.name }}</strong> ({{ booth.staff_count }} staff{% if booth.photo_count > 0 %} • 📷 {{ booth.photo_count }} photo{{ booth.photo_count|pluralize }}{% endif %})</span>
             </div>
             <div class="folder-content" data-location="{{ loc.code }}" data-booth="{{ booth.name }}">
               <div class="loading">Click to load staff...</div>
@@ -854,6 +858,38 @@
               var booth = $container.data('booth');
               if (location && booth) {
                 loadBoothStaff(location, booth);
+                // Update booth indicator if it doesn't have photos class
+                var $boothItem = $('.folder-item[data-type="booth"][data-location="' + location + '"][data-booth="' + booth + '"]');
+                if (!$boothItem.hasClass('has-photos')) {
+                  $boothItem.addClass('has-photos');
+                  var currentPhotoCount = parseInt($boothItem.data('photo-count') || 0, 10);
+                  $boothItem.data('photo-count', currentPhotoCount + 1);
+                  // Update the display text
+                  var $boothText = $boothItem.find('span').last();
+                  var currentText = $boothText.html();
+                  if (currentText.indexOf('📷') === -1) {
+                    var staffCount = $boothItem.data('staff-count');
+                    $boothText.html('<strong>' + booth + '</strong> (' + staffCount + ' staff • 📷 1 photo)');
+                  } else {
+                    // Update existing photo count
+                currentText = currentText.replace(/📷 \d+ photo(s)?/, function(match) {
+                  var count = parseInt(match.match(/\d+/)[0], 10) + 1;
+                  return '📷 ' + count + ' photo' + (count > 1 ? 's' : '');
+                });
+                $boothText.html(currentText);
+                  }
+                } else {
+                  // Update photo count
+                  var currentPhotoCount = parseInt($boothItem.data('photo-count') || 0, 10);
+                  $boothItem.data('photo-count', currentPhotoCount + 1);
+                  var $boothText = $boothItem.find('span').last();
+                  var currentText = $boothText.html();
+                  currentText = currentText.replace(/📷 \d+ photo(s)?/, function(match) {
+                    var count = parseInt(match.match(/\d+/)[0], 10) + 1;
+                    return '📷 ' + count + ' photo' + (count > 1 ? 's' : '');
+                  });
+                  $boothText.html(currentText);
+                }
               }
             }, 1000);
           } else {

@@ -306,11 +306,13 @@ def booth_files(request):
             staff_count = qs.count()
             printed_count = qs.filter(printed=True).count()
             sold_count = qs.filter(sold=True).count()
+            photo_count = qs.exclude(photo__isnull=True).exclude(photo='').count()
             booths.append({
                 "name": booth_id,
                 "staff_count": staff_count,
                 "printed_count": printed_count,
                 "sold_count": sold_count,
+                "photo_count": photo_count,
             })
         
         if booths:
