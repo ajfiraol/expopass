@@ -32,6 +32,12 @@ class Staff(models.Model):
         unique=True,
         help_text="Staff code from Excel/CSV (e.g. 1PV01, 1PS02)"
     )
+    photo = models.ImageField(
+        upload_to='staff_photos/',
+        blank=True,
+        null=True,
+        help_text="Profile photo for this staff/VIP"
+    )
 
     @property
     def staff_code(self) -> str:

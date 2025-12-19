@@ -3,16 +3,16 @@ Name,Booth ID,Staff Code,Phone no,Location,Staff Type,Sold
 ፀጋዬ  ብርሃነ (outdoor  119),1,1PS02,,1p,Sales,yes
 ፀጋዬ  ብርሃነ (outdoor  119),1,1PS03,,1p,Sales,yes
 ፀጋዬ  ብርሃነ (outdoor  119),1,1PS04,,1p,Sales,yes
-ኤም ኬ /ሽቶ/,2,1PV05,09 55 55 55 5,1p,VIP,yes
-ኤም ኬ /ሽቶ/,2,1PS06,09 55 55 55 5,1p,Sales,yes
-ኤም ኬ /ሽቶ/,2,1PS07,09 55 55 55 5,1p,Sales,yes
-ናትናኤል (21ካሬ),3,1PV08,09 30 03 38 58,1p,VIP,yes
-ናትናኤል (21ካሬ),3,1PS09,09 30 03 38 58,1p,Sales,yes
-ናትናኤል (21ካሬ),3,1PS10,09 30 03 38 58,1p,Sales,yes
-ናትናኤል (21ካሬ),3,1PS11,09 30 03 38 58,1p,Sales,yes
-ናትናኤል (21ካሬ),3,1PS12,09 30 03 38 58,1p,Sales,yes
-ናትናኤል (21ካሬ),3,1PS13,09 30 03 38 58,1p,Sales,yes
-ናትናኤል (21ካሬ),3,1PS14,09 30 03 38 58,1p,Sales,yes
+ኤም ኬ /ሽቶ/,2,1PV05,09 55 55 55 5,1p,VIP,no
+ኤም ኬ /ሽቶ/,2,1PS06,09 55 55 55 5,1p,Sales,no
+ኤም ኬ /ሽቶ/,2,1PS07,09 55 55 55 5,1p,Sales,no
+ናትናኤል (21ካሬ),3,1PV08,09 30 03 38 58,1p,VIP,no
+ናትናኤል (21ካሬ),3,1PS09,09 30 03 38 58,1p,Sales,no
+ናትናኤል (21ካሬ),3,1PS10,09 30 03 38 58,1p,Sales,no
+ናትናኤል (21ካሬ),3,1PS11,09 30 03 38 58,1p,Sales,no
+ናትናኤል (21ካሬ),3,1PS12,09 30 03 38 58,1p,Sales,no
+ናትናኤል (21ካሬ),3,1PS13,09 30 03 38 58,1p,Sales,no
+ናትናኤል (21ካሬ),3,1PS14,09 30 03 38 58,1p,Sales,no
 ሂላሪ አሸብር/ጋርመንት (12 ካሬ) L,4,1PV15,09 30 84 62 35,1p,VIP,yes
 ሂላሪ አሸብር/ጋርመንት (12 ካሬ) L,4,1PS16,09 30 84 62 35,1p,Sales,yes
 ሂላሪ አሸብር/ጋርመንት (12 ካሬ) L,4,1PS17,09 30 84 62 35,1p,Sales,yes
@@ -29,9 +29,9 @@ Name,Booth ID,Staff Code,Phone no,Location,Staff Type,Sold
 እዮብ አሰፈ/ አሰፋ ገብሩ,8,1PV28,,1p,VIP,yes
 እዮብ አሰፈ/ አሰፋ ገብሩ,8,1PS29,,1p,Sales,yes
 እዮብ አሰፈ/ አሰፋ ገብሩ,8,1PS30,,1p,Sales,yes
-ሄኖክ ልዑል,9,1PV31,911692818,1p,VIP,yes
-ሄኖክ ልዑል,9,1PS32,911692818,1p,Sales,yes
-ሄኖክ ልዑል,9,1PS33,911692818,1p,Sales,yes
+ሄኖክ ልዑል,9,1PV31,911692818,1p,VIP,no
+ሄኖክ ልዑል,9,1PS32,911692818,1p,Sales,no
+ሄኖክ ልዑል,9,1PS33,911692818,1p,Sales,no
 ናትናኤል ምክሩ,10,1PV34,09 11 88 41 83,1p,VIP,yes
 ናትናኤል ምክሩ,10,1PS35,09 11 88 41 83,1p,Sales,yes
 ናትናኤል ምክሩ,10,1PS36,09 11 88 41 83,1p,Sales,yes
@@ -39,10 +39,10 @@ Name,Booth ID,Staff Code,Phone no,Location,Staff Type,Sold
 ዮሃንስ ብርሃኑ (12ካሬ) L,11,1PS38,,1p,Sales,yes
 ዮሃንስ ብርሃኑ (12ካሬ) L,11,1PS39,,1p,Sales,yes
 ዮሃንስ ብርሃኑ (12ካሬ) L,11,1PS40,,1p,Sales,yes
-ሰራዊት አድማሱ (12ካሬ) L,12,1PV41,09 11 86 86 24,1p,VIP,yes
-ሰራዊት አድማሱ (12ካሬ) L,12,1PS42,09 11 86 86 24,1p,Sales,yes
-ሰራዊት አድማሱ (12ካሬ) L,12,1PS43,09 11 86 86 24,1p,Sales,yes
-ሰራዊት አድማሱ (12ካሬ) L,12,1PS44,09 11 86 86 24,1p,Sales,yes
+ሰራዊት አድማሱ (12ካሬ) L,12,1PV41,09 11 86 86 24,1p,VIP,no
+ሰራዊት አድማሱ (12ካሬ) L,12,1PS42,09 11 86 86 24,1p,Sales,no
+ሰራዊት አድማሱ (12ካሬ) L,12,1PS43,09 11 86 86 24,1p,Sales,no
+ሰራዊት አድማሱ (12ካሬ) L,12,1PS44,09 11 86 86 24,1p,Sales,no
 ይስሀቅ አንተነህ /ኮሌክሽን/ ( mixed with outdoor-39),13,1PV45,,1p,VIP,yes
 ይስሀቅ አንተነህ /ኮሌክሽን/ ( mixed with outdoor-39),13,1PS46,,1p,Sales,yes
 ይስሀቅ አንተነህ /ኮሌክሽን/ ( mixed with outdoor-39),13,1PS47,,1p,Sales,yes
@@ -87,41 +87,41 @@ Name,Booth ID,Staff Code,Phone no,Location,Staff Type,Sold
 ሃደራ ተስፋ/ኮሌክሽን/,25,1PS86,,1p,Sales,yes
 ሃደራ ተስፋ/ኮሌክሽን/,25,1PS87,,1p,Sales,yes
 ሃደራ ተስፋ/ኮሌክሽን/,25,1PS88,,1p,Sales,yes
-ቢንያም ከበደ,26,1PV89,979798433,1p,VIP,yes
-ቢንያም ከበደ,26,1PS90,979798433,1p,Sales,yes
-ቢንያም ከበደ,26,1PS91,979798433,1p,Sales,yes
-ገነት ደጀኔ /ሚሚ ጋርመንት/,27,1PV92,09 12 61 76 57,1p,VIP,yes
-ገነት ደጀኔ /ሚሚ ጋርመንት/,27,1PS93,09 12 61 76 57,1p,Sales,yes
-ገነት ደጀኔ /ሚሚ ጋርመንት/,27,1PS94,09 12 61 76 57,1p,Sales,yes
-ነጃት መሃዲ ከማል,28,1PV95,940105218,1p,VIP,yes
-ነጃት መሃዲ ከማል,28,1PS96,940105218,1p,Sales,yes
-ነጃት መሃዲ ከማል,28,1PS97,940105218,1p,Sales,yes
+ቢንያም ከበደ,26,1PV89,979798433,1p,VIP,no
+ቢንያም ከበደ,26,1PS90,979798433,1p,Sales,no
+ቢንያም ከበደ,26,1PS91,979798433,1p,Sales,no
+ገነት ደጀኔ /ሚሚ ጋርመንት/,27,1PV92,09 12 61 76 57,1p,VIP,no
+ገነት ደጀኔ /ሚሚ ጋርመንት/,27,1PS93,09 12 61 76 57,1p,Sales,no
+ገነት ደጀኔ /ሚሚ ጋርመንት/,27,1PS94,09 12 61 76 57,1p,Sales,no
+ነጃት መሃዲ ከማል,28,1PV95,940105218,1p,VIP,no
+ነጃት መሃዲ ከማል,28,1PS96,940105218,1p,Sales,no
+ነጃት መሃዲ ከማል,28,1PS97,940105218,1p,Sales,no
 አቤኔዘር ፀዳሉ/አልባሳት,29,1PV98,09 13 09 40 77,1p,VIP,yes
 አቤኔዘር ፀዳሉ/አልባሳት,29,1PS99,09 13 09 40 77,1p,Sales,yes
 አቤኔዘር ፀዳሉ/አልባሳት,29,1PS100,09 13 09 40 77,1p,Sales,yes
-በረከት አበበ/ቺያ ሲድ/,30,1PV101,09 93 18 39 89,1p,VIP,yes
-በረከት አበበ/ቺያ ሲድ/,30,1PS102,09 93 18 39 89,1p,Sales,yes
-በረከት አበበ/ቺያ ሲድ/,30,1PS103,09 93 18 39 89,1p,Sales,yes
-nan,31,1PV104,,1p,VIP,no
-nan,31,1PS105,,1p,Sales,no
-nan,31,1PS106,,1p,Sales,no
+በረከት አበበ/ቺያ ሲድ/,30,1PV101,09 93 18 39 89,1p,VIP,no
+በረከት አበበ/ቺያ ሲድ/,30,1PS102,09 93 18 39 89,1p,Sales,no
+በረከት አበበ/ቺያ ሲድ/,30,1PS103,09 93 18 39 89,1p,Sales,no
+ፅላት አበበ,31,1PV104,,1p,VIP,no
+ፅላት አበበ,31,1PS105,,1p,Sales,no
+ፅላት አበበ,31,1PS106,,1p,Sales,no
 ብላቱ ወርቁ/አልባሳት,32,1PV107,09 23 86 18 11,1p,VIP,yes
 ብላቱ ወርቁ/አልባሳት,32,1PS108,09 23 86 18 11,1p,Sales,yes
 ብላቱ ወርቁ/አልባሳት,32,1PS109,09 23 86 18 11,1p,Sales,yes
-ሼሩ/ኮሪኣ/,33,1PV110,,1p,VIP,yes
-ሼሩ/ኮሪኣ/,33,1PS111,,1p,Sales,yes
-ሼሩ/ኮሪኣ/,33,1PS112,,1p,Sales,yes
-ሼሩ/ኮሪኣ/,33,1PS113,,1p,Sales,yes
-"ኢኮ ክሎዝ/መንሱር ከማል/ (outdoor- 115, 116 )(12ካሬ)",34,1PV114,,1p,VIP,yes
-"ኢኮ ክሎዝ/መንሱር ከማል/ (outdoor- 115, 116 )(12ካሬ)",34,1PS115,,1p,Sales,yes
-"ኢኮ ክሎዝ/መንሱር ከማል/ (outdoor- 115, 116 )(12ካሬ)",34,1PS116,,1p,Sales,yes
-"ኢኮ ክሎዝ/መንሱር ከማል/ (outdoor- 115, 116 )(12ካሬ)",34,1PS117,,1p,Sales,yes
-"ኢኮ ክሎዝ/መንሱር ከማል/ (outdoor- 115, 116 )(12ካሬ)",34,1PS118,,1p,Sales,yes
-"ኢኮ ክሎዝ/መንሱር ከማል/ (outdoor- 115, 116 )(12ካሬ)",34,1PS119,,1p,Sales,yes
-"ኢኮ ክሎዝ/መንሱር ከማል/ (outdoor- 115, 116 )(12ካሬ)",34,1PS120,,1p,Sales,yes
-dashen,35,1PV121,,1p,VIP,yes
-dashen,35,1PS122,,1p,Sales,yes
-dashen,35,1PS123,,1p,Sales,yes
+ሼሩ/ኮሪኣ/,33,1PV110,,1p,VIP,no
+ሼሩ/ኮሪኣ/,33,1PS111,,1p,Sales,no
+ሼሩ/ኮሪኣ/,33,1PS112,,1p,Sales,no
+ሼሩ/ኮሪኣ/,33,1PS113,,1p,Sales,no
+"ኢኮ ክሎዝ/መንሱር ከማል/ (outdoor- 115, 116 )(12ካሬ)",34,1PV114,,1p,VIP,no
+"ኢኮ ክሎዝ/መንሱር ከማል/ (outdoor- 115, 116 )(12ካሬ)",34,1PS115,,1p,Sales,no
+"ኢኮ ክሎዝ/መንሱር ከማል/ (outdoor- 115, 116 )(12ካሬ)",34,1PS116,,1p,Sales,no
+"ኢኮ ክሎዝ/መንሱር ከማል/ (outdoor- 115, 116 )(12ካሬ)",34,1PS117,,1p,Sales,no
+"ኢኮ ክሎዝ/መንሱር ከማል/ (outdoor- 115, 116 )(12ካሬ)",34,1PS118,,1p,Sales,no
+"ኢኮ ክሎዝ/መንሱር ከማል/ (outdoor- 115, 116 )(12ካሬ)",34,1PS119,,1p,Sales,no
+"ኢኮ ክሎዝ/መንሱር ከማል/ (outdoor- 115, 116 )(12ካሬ)",34,1PS120,,1p,Sales,no
+dashen,35,1PV121,,1p,VIP,no
+dashen,35,1PS122,,1p,Sales,no
+dashen,35,1PS123,,1p,Sales,no
 ደሉ ቴክስታይል/ኮቴክስ/ልብስ,36,1PV124,09 29 90 06 73,1p,VIP,yes
 ደሉ ቴክስታይል/ኮቴክስ/ልብስ,36,1PS125,09 29 90 06 73,1p,Sales,yes
 ደሉ ቴክስታይል/ኮቴክስ/ልብስ,36,1PS126,09 29 90 06 73,1p,Sales,yes
@@ -130,9 +130,9 @@ dashen,35,1PS123,,1p,Sales,yes
 አዲል ማሩ/ጌጣጌጥ,37,1PS129,09 11 73 73 73,1p,Sales,yes
 አዲል ማሩ/ጌጣጌጥ,37,1PS130,09 11 73 73 73,1p,Sales,yes
 አዲል ማሩ/ጌጣጌጥ,37,1PS131,09 11 73 73 73,1p,Sales,yes
-ፉአድ ሲራጅ/ ኮስሞቲክስ,38,1PV132,,1p,VIP,yes
-ፉአድ ሲራጅ/ ኮስሞቲክስ,38,1PS133,,1p,Sales,yes
-ፉአድ ሲራጅ/ ኮስሞቲክስ,38,1PS134,,1p,Sales,yes
+ፉአድ ሲራጅ/ ኮስሞቲክስ,38,1PV132,,1p,VIP,no
+ፉአድ ሲራጅ/ ኮስሞቲክስ,38,1PS133,,1p,Sales,no
+ፉአድ ሲራጅ/ ኮስሞቲክስ,38,1PS134,,1p,Sales,no
 አለምጸሐይ/ መቅደስ በርበርሳ,39,1PV135,,1p,VIP,yes
 አለምጸሐይ/ መቅደስ በርበርሳ,39,1PS136,,1p,Sales,yes
 አለምጸሐይ/ መቅደስ በርበርሳ,39,1PS137,,1p,Sales,yes
@@ -144,62 +144,62 @@ dashen,35,1PS123,,1p,Sales,yes
 ነፃነት ተሸመ/ኮሌክሽን/,41,1PS143,,1p,Sales,yes
 ነፃነት ተሸመ/ኮሌክሽን/,41,1PS144,,1p,Sales,yes
 ነፃነት ተሸመ/ኮሌክሽን/,41,1PS145,,1p,Sales,yes
-ቅድስት አታላይ,42,1PV146,,1p,VIP,yes
-ቅድስት አታላይ,42,1PS147,,1p,Sales,yes
-ቅድስት አታላይ,42,1PS148,,1p,Sales,yes
-ቅድስት አታላይ,43,1PV149,,1p,VIP,yes
-ቅድስት አታላይ,43,1PS150,,1p,Sales,yes
-ቅድስት አታላይ,43,1PS151,,1p,Sales,yes
-ኑሪያ ተስፋ/ኮሌክሽን/,44,1PV152,,1p,VIP,yes
-ኑሪያ ተስፋ/ኮሌክሽን/,44,1PS153,,1p,Sales,yes
-ኑሪያ ተስፋ/ኮሌክሽን/,44,1PS154,,1p,Sales,yes
-ኑሪያ ተስፋ/ኮሌክሽን/,44,1PS155,,1p,Sales,yes
+ቅድስት አታላይ,42,1PV146,,1p,VIP,no
+ቅድስት አታላይ,42,1PS147,,1p,Sales,no
+ቅድስት አታላይ,42,1PS148,,1p,Sales,no
+ቅድስት አታላይ,43,1PV149,,1p,VIP,no
+ቅድስት አታላይ,43,1PS150,,1p,Sales,no
+ቅድስት አታላይ,43,1PS151,,1p,Sales,no
+ኑሪያ ተስፋ/ኮሌክሽን/,44,1PV152,,1p,VIP,no
+ኑሪያ ተስፋ/ኮሌክሽን/,44,1PS153,,1p,Sales,no
+ኑሪያ ተስፋ/ኮሌክሽን/,44,1PS154,,1p,Sales,no
+ኑሪያ ተስፋ/ኮሌክሽን/,44,1PS155,,1p,Sales,no
 እመቤት አሸኔ/የ ልጆች ስም/,45,1PV156,,1p,VIP,yes
 እመቤት አሸኔ/የ ልጆች ስም/,45,1PS157,,1p,Sales,yes
 እመቤት አሸኔ/የ ልጆች ስም/,45,1PS158,,1p,Sales,yes
 እመቤት አሸኔ/የ ልጆች ስም/,45,1PS159,,1p,Sales,yes
-ሙና ያሲን,46,1PV160,,1p,VIP,yes
-ሙና ያሲን,46,1PS161,,1p,Sales,yes
-ሙና ያሲን,46,1PS162,,1p,Sales,yes
+ሙና ያሲን,46,1PV160,,1p,VIP,no
+ሙና ያሲን,46,1PS161,,1p,Sales,no
+ሙና ያሲን,46,1PS162,,1p,Sales,no
 ነስረዲን እንድሪስ/ኮስሞ/,47,1PV163,,1p,VIP,yes
 ነስረዲን እንድሪስ/ኮስሞ/,47,1PS164,,1p,Sales,yes
 ነስረዲን እንድሪስ/ኮስሞ/,47,1PS165,,1p,Sales,yes
-ዘውድነሽ/ካሳሁን/ፂዮን,48,1PV166,,1p,VIP,yes
-ዘውድነሽ/ካሳሁን/ፂዮን,48,1PS167,,1p,Sales,yes
-ዘውድነሽ/ካሳሁን/ፂዮን,48,1PS168,,1p,Sales,yes
-ዘውድነሽ/ካሳሁን/ፂዮን,48,1PS169,,1p,Sales,yes
-ሀናን/ ዙልፋ ሙደሲር,49,1PV170,09 61 29 04 44,1p,VIP,yes
-ሀናን/ ዙልፋ ሙደሲር,49,1PS171,09 61 29 04 44,1p,Sales,yes
-ሀናን/ ዙልፋ ሙደሲር,49,1PS172,09 61 29 04 44,1p,Sales,yes
-ሀናን/ ዙልፋ ሙደሲር,49,1PS173,09 61 29 04 44,1p,Sales,yes
-ሙጅብ ሰፉ,50,1PV174,,1p,VIP,yes
-ሙጅብ ሰፉ,50,1PS175,,1p,Sales,yes
-ሙጅብ ሰፉ,50,1PS176,,1p,Sales,yes
-ሙጅብ ሰፉ,51,1PV177,,1p,VIP,yes
-ሙጅብ ሰፉ,51,1PS178,,1p,Sales,yes
-ሙጅብ ሰፉ,51,1PS179,,1p,Sales,yes
+ዘውድነሽ/ካሳሁን/ፂዮን,48,1PV166,,1p,VIP,no
+ዘውድነሽ/ካሳሁን/ፂዮን,48,1PS167,,1p,Sales,no
+ዘውድነሽ/ካሳሁን/ፂዮን,48,1PS168,,1p,Sales,no
+ዘውድነሽ/ካሳሁን/ፂዮን,48,1PS169,,1p,Sales,no
+ሀናን/ ዙልፋ ሙደሲር,49,1PV170,09 61 29 04 44,1p,VIP,no
+ሀናን/ ዙልፋ ሙደሲር,49,1PS171,09 61 29 04 44,1p,Sales,no
+ሀናን/ ዙልፋ ሙደሲር,49,1PS172,09 61 29 04 44,1p,Sales,no
+ሀናን/ ዙልፋ ሙደሲር,49,1PS173,09 61 29 04 44,1p,Sales,no
+ሙጅብ ሰፉ,50,1PV174,,1p,VIP,no
+ሙጅብ ሰፉ,50,1PS175,,1p,Sales,no
+ሙጅብ ሰፉ,50,1PS176,,1p,Sales,no
+ሙጅብ ሰፉ,51,1PV177,,1p,VIP,no
+ሙጅብ ሰፉ,51,1PS178,,1p,Sales,no
+ሙጅብ ሰፉ,51,1PS179,,1p,Sales,no
 ባንቺወሰን ሰሎሞን,52,1PV180,,1p,VIP,yes
 ባንቺወሰን ሰሎሞን,52,1PS181,,1p,Sales,yes
 ባንቺወሰን ሰሎሞን,52,1PS182,,1p,Sales,yes
 ባንቺወሰን ሰሎሞን,52,1PS183,,1p,Sales,yes
-አብረሃም አለባቸው,53,1PV184,09 12 30 31 49,1p,VIP,yes
-አብረሃም አለባቸው,53,1PS185,09 12 30 31 49,1p,Sales,yes
-አብረሃም አለባቸው,53,1PS186,09 12 30 31 49,1p,Sales,yes
-አብረሃም አለባቸው,53,1PS187,09 12 30 31 49,1p,Sales,yes
+አብረሃም አለባቸው,53,1PV184,09 12 30 31 49,1p,VIP,no
+አብረሃም አለባቸው,53,1PS185,09 12 30 31 49,1p,Sales,no
+አብረሃም አለባቸው,53,1PS186,09 12 30 31 49,1p,Sales,no
+አብረሃም አለባቸው,53,1PS187,09 12 30 31 49,1p,Sales,no
 (ha(hagerie minale )ሃና መናለ (outdoor-70A)gerie minale ),54,1PV188,09 22 53 59 95,1p,VIP,yes
 (ha(hagerie minale )ሃና መናለ (outdoor-70A)gerie minale ),54,1PS189,09 22 53 59 95,1p,Sales,yes
 (ha(hagerie minale )ሃና መናለ (outdoor-70A)gerie minale ),54,1PS190,09 22 53 59 95,1p,Sales,yes
 ህሊና ሸዋንዳይ/ኮሌክሽን,55,1PV191,09 13 42 82 14,1p,VIP,yes
 ህሊና ሸዋንዳይ/ኮሌክሽን,55,1PS192,09 13 42 82 14,1p,Sales,yes
 ህሊና ሸዋንዳይ/ኮሌክሽን,55,1PS193,09 13 42 82 14,1p,Sales,yes
-ዘይድ በረከት,56,1PV194,09 13 74 21 68,1p,VIP,yes
-ዘይድ በረከት,56,1PS195,09 13 74 21 68,1p,Sales,yes
-ዘይድ በረከት,56,1PS196,09 13 74 21 68,1p,Sales,yes
-ዘይድ በረከት,56,1PS197,09 13 74 21 68,1p,Sales,yes
-መሰረት ከበደ /ኮሌክሽን/,57,1PV198,09 36 64 83 41,1p,VIP,yes
-መሰረት ከበደ /ኮሌክሽን/,57,1PS199,09 36 64 83 41,1p,Sales,yes
-መሰረት ከበደ /ኮሌክሽን/,57,1PS200,09 36 64 83 41,1p,Sales,yes
-መሰረት ከበደ /ኮሌክሽን/,57,1PS201,09 36 64 83 41,1p,Sales,yes
+ዘይድ በረከት,56,1PV194,09 13 74 21 68,1p,VIP,no
+ዘይድ በረከት,56,1PS195,09 13 74 21 68,1p,Sales,no
+ዘይድ በረከት,56,1PS196,09 13 74 21 68,1p,Sales,no
+ዘይድ በረከት,56,1PS197,09 13 74 21 68,1p,Sales,no
+መሰረት ከበደ /ኮሌክሽን/,57,1PV198,09 36 64 83 41,1p,VIP,no
+መሰረት ከበደ /ኮሌክሽን/,57,1PS199,09 36 64 83 41,1p,Sales,no
+መሰረት ከበደ /ኮሌክሽን/,57,1PS200,09 36 64 83 41,1p,Sales,no
+መሰረት ከበደ /ኮሌክሽን/,57,1PS201,09 36 64 83 41,1p,Sales,no
 ዳግም በላይ,58,1PV202,,1p,VIP,yes
 ዳግም በላይ,58,1PS203,,1p,Sales,yes
 ዳግም በላይ,58,1PS204,,1p,Sales,yes
@@ -210,66 +210,66 @@ dashen,35,1PS123,,1p,Sales,yes
 "እዝቅያስ ደጉ (mixed with out door-111,112)",60,1PS209,,1p,Sales,yes
 "እዝቅያስ ደጉ (mixed with out door-111,112)",60,1PS210,,1p,Sales,yes
 "እዝቅያስ ደጉ (mixed with out door-111,112)",60,1PS211,,1p,Sales,yes
-"እዝቅያስ ደጉ (mixed with out door-111,112)",61,1PV212,,1p,VIP,yes
-"እዝቅያስ ደጉ (mixed with out door-111,112)",61,1PS213,,1p,Sales,yes
-"እዝቅያስ ደጉ (mixed with out door-111,112)",61,1PS214,,1p,Sales,yes
-"እዝቅያስ ደጉ (mixed with out door-111,112)",61,1PS215,,1p,Sales,yes
-ቴዎድሮስ በርሄ/ መክሊት,62,1PV216,,1p,VIP,yes
-ቴዎድሮስ በርሄ/ መክሊት,62,1PS217,,1p,Sales,yes
-ቴዎድሮስ በርሄ/ መክሊት,62,1PS218,,1p,Sales,yes
+"እዝቅያስ ደጉ (mixed with out door-111,112)",61,1PV212,,1p,VIP,no
+"እዝቅያስ ደጉ (mixed with out door-111,112)",61,1PS213,,1p,Sales,no
+"እዝቅያስ ደጉ (mixed with out door-111,112)",61,1PS214,,1p,Sales,no
+"እዝቅያስ ደጉ (mixed with out door-111,112)",61,1PS215,,1p,Sales,no
+ቴዎድሮስ በርሄ/ መክሊት,62,1PV216,,1p,VIP,no
+ቴዎድሮስ በርሄ/ መክሊት,62,1PS217,,1p,Sales,no
+ቴዎድሮስ በርሄ/ መክሊት,62,1PS218,,1p,Sales,no
 ሄቨን አሳዩ,63,1PV219,09 29 83 80 87,1p,VIP,yes
 ሄቨን አሳዩ,63,1PS220,09 29 83 80 87,1p,Sales,yes
 ሄቨን አሳዩ,63,1PS221,09 29 83 80 87,1p,Sales,yes
-ሳምራዊት ሀይሉ (Mixed with outdoor-005 ),64,1PV222,,1p,VIP,yes
-ሳምራዊት ሀይሉ (Mixed with outdoor-005 ),64,1PS223,,1p,Sales,yes
-ሳምራዊት ሀይሉ (Mixed with outdoor-005 ),64,1PS224,,1p,Sales,yes
-ሳምራዊት ሀይሉ (Mixed with outdoor-005 ),64,1PS225,,1p,Sales,yes
+ሳምራዊት ሀይሉ (Mixed with outdoor-005 ),64,1PV222,,1p,VIP,no
+ሳምራዊት ሀይሉ (Mixed with outdoor-005 ),64,1PS223,,1p,Sales,no
+ሳምራዊት ሀይሉ (Mixed with outdoor-005 ),64,1PS224,,1p,Sales,no
+ሳምራዊት ሀይሉ (Mixed with outdoor-005 ),64,1PS225,,1p,Sales,no
 ታሪኩ ገላን/ኮለክሽን/,65,1PV226,,1p,VIP,yes
 ታሪኩ ገላን/ኮለክሽን/,65,1PS227,,1p,Sales,yes
 ታሪኩ ገላን/ኮለክሽን/,65,1PS228,,1p,Sales,yes
 ታሪኩ ገላን/ኮለክሽን/,65,1PS229,,1p,Sales,yes
-SERKALEM KARA,66,1PV230,09 11 19 16 38,1p,VIP,yes
-SERKALEM KARA,66,1PS231,09 11 19 16 38,1p,Sales,yes
-SERKALEM KARA,66,1PS232,09 11 19 16 38,1p,Sales,yes
-አዚዛ ሽብሩ/ኮሌክሽን,67,1PV233,09 10 15 66 91,1p,VIP,yes
-አዚዛ ሽብሩ/ኮሌክሽን,67,1PS234,09 10 15 66 91,1p,Sales,yes
-አዚዛ ሽብሩ/ኮሌክሽን,67,1PS235,09 10 15 66 91,1p,Sales,yes
-ጥላሁን ፈለቀ/ኮሌክሽን,68,1PV236,09 11 39 64 07,1p,VIP,yes
-ጥላሁን ፈለቀ/ኮሌክሽን,68,1PS237,09 11 39 64 07,1p,Sales,yes
-ጥላሁን ፈለቀ/ኮሌክሽን,68,1PS238,09 11 39 64 07,1p,Sales,yes
-ጥላሁን ፈለቀ/ኮሌክሽን,68,1PS239,09 11 39 64 07,1p,Sales,yes
+SERKALEM KARA,66,1PV230,09 11 19 16 38,1p,VIP,no
+SERKALEM KARA,66,1PS231,09 11 19 16 38,1p,Sales,no
+SERKALEM KARA,66,1PS232,09 11 19 16 38,1p,Sales,no
+አዚዛ ሽብሩ/ኮሌክሽን,67,1PV233,09 10 15 66 91,1p,VIP,no
+አዚዛ ሽብሩ/ኮሌክሽን,67,1PS234,09 10 15 66 91,1p,Sales,no
+አዚዛ ሽብሩ/ኮሌክሽን,67,1PS235,09 10 15 66 91,1p,Sales,no
+ጥላሁን ፈለቀ/ኮሌክሽን,68,1PV236,09 11 39 64 07,1p,VIP,no
+ጥላሁን ፈለቀ/ኮሌክሽን,68,1PS237,09 11 39 64 07,1p,Sales,no
+ጥላሁን ፈለቀ/ኮሌክሽን,68,1PS238,09 11 39 64 07,1p,Sales,no
+ጥላሁን ፈለቀ/ኮሌክሽን,68,1PS239,09 11 39 64 07,1p,Sales,no
 ሳሙኤል ገ/ፀሐይ /የቤት እቃ/,69,1PV240,,1p,VIP,yes
 ሳሙኤል ገ/ፀሐይ /የቤት እቃ/,69,1PS241,,1p,Sales,yes
 ሳሙኤል ገ/ፀሐይ /የቤት እቃ/,69,1PS242,,1p,Sales,yes
 ሳሙኤል ገ/ፀሐይ /የቤት እቃ/,69,1PS243,,1p,Sales,yes
-ቅድስት አታላይ,70,1PV244,,1p,VIP,yes
-ቅድስት አታላይ,70,1PS245,,1p,Sales,yes
-ቅድስት አታላይ,70,1PS246,,1p,Sales,yes
-ትርሲት አያለው,71,1PV247,,1p,VIP,yes
-ትርሲት አያለው,71,1PS248,,1p,Sales,yes
-ትርሲት አያለው,71,1PS249,,1p,Sales,yes
-መሃመድ አህመድ,72,1PV250,,1p,VIP,yes
-መሃመድ አህመድ,72,1PS251,,1p,Sales,yes
-መሃመድ አህመድ,72,1PS252,,1p,Sales,yes
-መሃመድ አህመድ,72,1PS253,,1p,Sales,yes
+ቅድስት አታላይ,70,1PV244,,1p,VIP,no
+ቅድስት አታላይ,70,1PS245,,1p,Sales,no
+ቅድስት አታላይ,70,1PS246,,1p,Sales,no
+ትርሲት አያለው,71,1PV247,,1p,VIP,no
+ትርሲት አያለው,71,1PS248,,1p,Sales,no
+ትርሲት አያለው,71,1PS249,,1p,Sales,no
+መሃመድ አህመድ,72,1PV250,,1p,VIP,no
+መሃመድ አህመድ,72,1PS251,,1p,Sales,no
+መሃመድ አህመድ,72,1PS252,,1p,Sales,no
+መሃመድ አህመድ,72,1PS253,,1p,Sales,no
 በሃይሉ ሃይሉ,73,1PV254,911694576,1p,VIP,yes
 በሃይሉ ሃይሉ,73,1PS255,911694576,1p,Sales,yes
 በሃይሉ ሃይሉ,73,1PS256,911694576,1p,Sales,yes
 በሃይሉ ሃይሉ,73,1PS257,911694576,1p,Sales,yes
-ቤተልሄም ጎሹ,74,1PV258,921540125,1p,VIP,yes
-ቤተልሄም ጎሹ,74,1PS259,921540125,1p,Sales,yes
-ቤተልሄም ጎሹ,74,1PS260,921540125,1p,Sales,yes
-ሚሚ አደም,75,1PV261,916581916,1p,VIP,yes
-ሚሚ አደም,75,1PS262,916581916,1p,Sales,yes
-ሚሚ አደም,75,1PS263,916581916,1p,Sales,yes
-አህመድ ሲራጅ /ኮንፈርት/,76,1PV264,,1p,VIP,yes
-አህመድ ሲራጅ /ኮንፈርት/,76,1PS265,,1p,Sales,yes
-አህመድ ሲራጅ /ኮንፈርት/,76,1PS266,,1p,Sales,yes
-አህመድ ሲራጅ /ኮንፈርት/,76,1PS267,,1p,Sales,yes
-እየሩሳሌም ውድራ /ኮሌክሽን/,77,1PV268,,1p,VIP,yes
-እየሩሳሌም ውድራ /ኮሌክሽን/,77,1PS269,,1p,Sales,yes
-እየሩሳሌም ውድራ /ኮሌክሽን/,77,1PS270,,1p,Sales,yes
-እየሩሳሌም ውድራ /ኮሌክሽን/,77,1PS271,,1p,Sales,yes
+ቤተልሄም ጎሹ,74,1PV258,921540125,1p,VIP,no
+ቤተልሄም ጎሹ,74,1PS259,921540125,1p,Sales,no
+ቤተልሄም ጎሹ,74,1PS260,921540125,1p,Sales,no
+ሚሚ አደም,75,1PV261,916581916,1p,VIP,no
+ሚሚ አደም,75,1PS262,916581916,1p,Sales,no
+ሚሚ አደም,75,1PS263,916581916,1p,Sales,no
+አህመድ ሲራጅ /ኮንፈርት/,76,1PV264,,1p,VIP,no
+አህመድ ሲራጅ /ኮንፈርት/,76,1PS265,,1p,Sales,no
+አህመድ ሲራጅ /ኮንፈርት/,76,1PS266,,1p,Sales,no
+አህመድ ሲራጅ /ኮንፈርት/,76,1PS267,,1p,Sales,no
+እየሩሳሌም ውድራ /ኮሌክሽን/,77,1PV268,,1p,VIP,no
+እየሩሳሌም ውድራ /ኮሌክሽን/,77,1PS269,,1p,Sales,no
+እየሩሳሌም ውድራ /ኮሌክሽን/,77,1PS270,,1p,Sales,no
+እየሩሳሌም ውድራ /ኮሌክሽን/,77,1PS271,,1p,Sales,no
 አህመድ መሃመድ,78,1PV272,,1p,VIP,yes
 አህመድ መሃመድ,78,1PS273,,1p,Sales,yes
 አህመድ መሃመድ,78,1PS274,,1p,Sales,yes
@@ -280,20 +280,20 @@ SERKALEM KARA,66,1PS232,09 11 19 16 38,1p,Sales,yes
 ኬርመንት,80,1PS279,,1p,Sales,yes
 ኬርመንት,80,1PS280,,1p,Sales,yes
 ኬርመንት,80,1PS281,,1p,Sales,yes
-Memnon treading,81,1PV282,09 35007373,1p,VIP,yes
-Memnon treading,81,1PS283,09 35007373,1p,Sales,yes
-Memnon treading,81,1PS284,09 35007373,1p,Sales,yes
-Memnon treading,81,1PS285,09 35007373,1p,Sales,yes
-nan,82,1PV286,,1p,VIP,no
-nan,82,1PS287,,1p,Sales,no
-nan,82,1PS288,,1p,Sales,no
+Memnon treading,81,1PV282,09 35007373,1p,VIP,no
+Memnon treading,81,1PS283,09 35007373,1p,Sales,no
+Memnon treading,81,1PS284,09 35007373,1p,Sales,no
+Memnon treading,81,1PS285,09 35007373,1p,Sales,no
+ኮሮኔል,82,1PV286,,1p,VIP,yes
+ኮሮኔል,82,1PS287,,1p,Sales,yes
+ኮሮኔል,82,1PS288,,1p,Sales,yes
 ሳላህ/ሽቶ/,83,1PV289,09 12 65 86 22,1p,VIP,yes
 ሳላህ/ሽቶ/,83,1PS290,09 12 65 86 22,1p,Sales,yes
 ሳላህ/ሽቶ/,83,1PS291,09 12 65 86 22,1p,Sales,yes
-"እዝቅያስ ደጉ (mixed with out door-111,112)",84,1PV292,,1p,VIP,yes
-"እዝቅያስ ደጉ (mixed with out door-111,112)",84,1PS293,,1p,Sales,yes
-"እዝቅያስ ደጉ (mixed with out door-111,112)",84,1PS294,,1p,Sales,yes
-"እዝቅያስ ደጉ (mixed with out door-111,112)",84,1PS295,,1p,Sales,yes
+"እዝቅያስ ደጉ (mixed with out door-111,112)",84,1PV292,,1p,VIP,no
+"እዝቅያስ ደጉ (mixed with out door-111,112)",84,1PS293,,1p,Sales,no
+"እዝቅያስ ደጉ (mixed with out door-111,112)",84,1PS294,,1p,Sales,no
+"እዝቅያስ ደጉ (mixed with out door-111,112)",84,1PS295,,1p,Sales,no
 M &M T-shirt,1,2PV01,09 13 00 81 62,2p,VIP,yes
 M &M T-shirt,1,2PS02,09 13 00 81 62,2p,Sales,yes
 M &M T-shirt,1,2PS03,09 13 00 81 62,2p,Sales,yes
@@ -306,27 +306,27 @@ NIB Chocolate,2,2PS06,09 11 66 83 38,2p,Sales,yes
 ሮሆቦት ቅመማ ቅመም,4,2PV10,09 13 10 23 93,2p,VIP,yes
 ሮሆቦት ቅመማ ቅመም,4,2PS11,09 13 10 23 93,2p,Sales,yes
 ሮሆቦት ቅመማ ቅመም,4,2PS12,09 13 10 23 93,2p,Sales,yes
-ሳምያ ኡስማን,5,2PV13,09 11 40 53 30,2p,VIP,yes
-ሳምያ ኡስማን,5,2PS14,09 11 40 53 30,2p,Sales,yes
-ሳምያ ኡስማን,5,2PS15,09 11 40 53 30,2p,Sales,yes
+ሳምያ ኡስማን,5,2PV13,09 11 40 53 30,2p,VIP,no
+ሳምያ ኡስማን,5,2PS14,09 11 40 53 30,2p,Sales,no
+ሳምያ ኡስማን,5,2PS15,09 11 40 53 30,2p,Sales,no
 ኤልሳ ተክሉ ደስታ,6,2PV16,,2p,VIP,yes
 ኤልሳ ተክሉ ደስታ,6,2PS17,,2p,Sales,yes
 ኤልሳ ተክሉ ደስታ,6,2PS18,,2p,Sales,yes
 ዳንኤል ግርማ,7,2PV19,911365035,2p,VIP,yes
 ዳንኤል ግርማ,7,2PS20,911365035,2p,Sales,yes
 ዳንኤል ግርማ,7,2PS21,911365035,2p,Sales,yes
-ዳዊት አዳባሽ,8,2PV22,,2p,VIP,yes
-ዳዊት አዳባሽ,8,2PS23,,2p,Sales,yes
-ዳዊት አዳባሽ,8,2PS24,,2p,Sales,yes
-ፈትያ መሃመድ (የልጅ ልብስ),9,2PV25,09 14 72 33 92,2p,VIP,yes
-ፈትያ መሃመድ (የልጅ ልብስ),9,2PS26,09 14 72 33 92,2p,Sales,yes
-ፈትያ መሃመድ (የልጅ ልብስ),9,2PS27,09 14 72 33 92,2p,Sales,yes
+ዳዊት አዳባሽ,8,2PV22,,2p,VIP,no
+ዳዊት አዳባሽ,8,2PS23,,2p,Sales,no
+ዳዊት አዳባሽ,8,2PS24,,2p,Sales,no
+ፈትያ መሃመድ (የልጅ ልብስ),9,2PV25,09 14 72 33 92,2p,VIP,no
+ፈትያ መሃመድ (የልጅ ልብስ),9,2PS26,09 14 72 33 92,2p,Sales,no
+ፈትያ መሃመድ (የልጅ ልብስ),9,2PS27,09 14 72 33 92,2p,Sales,no
 ቤዛዊት አንዳርጌ,10,2PV28,921777018,2p,VIP,yes
 ቤዛዊት አንዳርጌ,10,2PS29,921777018,2p,Sales,yes
 ቤዛዊት አንዳርጌ,10,2PS30,921777018,2p,Sales,yes
-አብዱራህማን አብራር,11,2PV31,09 11 97 24 98,2p,VIP,yes
-አብዱራህማን አብራር,11,2PS32,09 11 97 24 98,2p,Sales,yes
-አብዱራህማን አብራር,11,2PS33,09 11 97 24 98,2p,Sales,yes
+አብዱራህማን አብራር,11,2PV31,09 11 97 24 98,2p,VIP,no
+አብዱራህማን አብራር,11,2PS32,09 11 97 24 98,2p,Sales,no
+አብዱራህማን አብራር,11,2PS33,09 11 97 24 98,2p,Sales,no
 Abdurahman Beshir,12,2PV34,914150403,2p,VIP,yes
 Abdurahman Beshir,12,2PS35,914150403,2p,Sales,yes
 Abdurahman Beshir,12,2PS36,914150403,2p,Sales,yes
@@ -342,9 +342,9 @@ Abdurahman Beshir,12,2PS36,914150403,2p,Sales,yes
 ፍፁም በላይነህ በቀለ,15,2PS46,,2p,Sales,yes
 ፍፁም በላይነህ በቀለ,15,2PS47,,2p,Sales,yes
 ፍፁም በላይነህ በቀለ,15,2PS48,,2p,Sales,yes
-ትዘታ መንበሩ,16,2PV49,09 35 00 83 38,2p,VIP,yes
-ትዘታ መንበሩ,16,2PS50,09 35 00 83 38,2p,Sales,yes
-ትዘታ መንበሩ,16,2PS51,09 35 00 83 38,2p,Sales,yes
+ትዘታ መንበሩ,16,2PV49,09 35 00 83 38,2p,VIP,no
+ትዘታ መንበሩ,16,2PS50,09 35 00 83 38,2p,Sales,no
+ትዘታ መንበሩ,16,2PS51,09 35 00 83 38,2p,Sales,no
 "ሱራፌል ልኡል መስፍን/ኮሌክሽን (mixed with pav 2-17, outdoor-007 L,113 U)",17,2PV52,,2p,VIP,yes
 "ሱራፌል ልኡል መስፍን/ኮሌክሽን (mixed with pav 2-17, outdoor-007 L,113 U)",17,2PS53,,2p,Sales,yes
 "ሱራፌል ልኡል መስፍን/ኮሌክሽን (mixed with pav 2-17, outdoor-007 L,113 U)",17,2PS54,,2p,Sales,yes
@@ -355,21 +355,21 @@ Abdurahman Beshir,12,2PS36,914150403,2p,Sales,yes
 nan,19,2PV59,,2p,VIP,no
 nan,19,2PS60,,2p,Sales,no
 nan,19,2PS61,,2p,Sales,no
-ጀማል ከድር (ልብስ ጋርመንት),20,2PV62,09 11 13 27 82,2p,VIP,yes
-ጀማል ከድር (ልብስ ጋርመንት),20,2PS63,09 11 13 27 82,2p,Sales,yes
-ጀማል ከድር (ልብስ ጋርመንት),20,2PS64,09 11 13 27 82,2p,Sales,yes
+ጀማል ከድር (ልብስ ጋርመንት),20,2PV62,09 11 13 27 82,2p,VIP,no
+ጀማል ከድር (ልብስ ጋርመንት),20,2PS63,09 11 13 27 82,2p,Sales,no
+ጀማል ከድር (ልብስ ጋርመንት),20,2PS64,09 11 13 27 82,2p,Sales,no
 nan,21,2PV65,,2p,VIP,no
 nan,21,2PS66,,2p,Sales,no
 nan,21,2PS67,,2p,Sales,no
 nan,22,2PV68,,2p,VIP,no
 nan,22,2PS69,,2p,Sales,no
 nan,22,2PS70,,2p,Sales,no
-Enat Mewelweya(Robel Gebru),23,2PV71,925279999,2p,VIP,yes
-Enat Mewelweya(Robel Gebru),23,2PS72,925279999,2p,Sales,yes
-Enat Mewelweya(Robel Gebru),23,2PS73,925279999,2p,Sales,yes
-ዜናወርቅ እንድሪያስ (ልብስ),24,2PV74,09 13 66 77 45,2p,VIP,yes
-ዜናወርቅ እንድሪያስ (ልብስ),24,2PS75,09 13 66 77 45,2p,Sales,yes
-ዜናወርቅ እንድሪያስ (ልብስ),24,2PS76,09 13 66 77 45,2p,Sales,yes
+Enat Mewelweya(Robel Gebru),23,2PV71,925279999,2p,VIP,no
+Enat Mewelweya(Robel Gebru),23,2PS72,925279999,2p,Sales,no
+Enat Mewelweya(Robel Gebru),23,2PS73,925279999,2p,Sales,no
+ዜናወርቅ እንድሪያስ (ልብስ),24,2PV74,09 13 66 77 45,2p,VIP,no
+ዜናወርቅ እንድሪያስ (ልብስ),24,2PS75,09 13 66 77 45,2p,Sales,no
+ዜናወርቅ እንድሪያስ (ልብስ),24,2PS76,09 13 66 77 45,2p,Sales,no
 ወንደሰን አለሙ,25,2PV77,,2p,VIP,yes
 ወንደሰን አለሙ,25,2PS78,,2p,Sales,yes
 ወንደሰን አለሙ,25,2PS79,,2p,Sales,yes
@@ -383,10 +383,10 @@ Enat Mewelweya(Robel Gebru),23,2PS73,925279999,2p,Sales,yes
 nan,28,2PV87,,2p,VIP,no
 nan,28,2PS88,,2p,Sales,no
 nan,28,2PS89,,2p,Sales,no
-ሽኩር ተስፋ,29,2PV90,,2p,VIP,yes
-ሽኩር ተስፋ,29,2PS91,,2p,Sales,yes
-ሽኩር ተስፋ,29,2PS92,,2p,Sales,yes
-ሽኩር ተስፋ,29,2PS93,,2p,Sales,yes
+ሽኩር ተስፋ,29,2PV90,,2p,VIP,no
+ሽኩር ተስፋ,29,2PS91,,2p,Sales,no
+ሽኩር ተስፋ,29,2PS92,,2p,Sales,no
+ሽኩር ተስፋ,29,2PS93,,2p,Sales,no
 አሚኑ ነስሩ,30,2PV94,,2p,VIP,yes
 አሚኑ ነስሩ,30,2PS95,,2p,Sales,yes
 አሚኑ ነስሩ,30,2PS96,,2p,Sales,yes
@@ -397,18 +397,18 @@ nan,28,2PS89,,2p,Sales,no
 መሃመድ ላሎ,32,2PV101,913569855,2p,VIP,yes
 መሃመድ ላሎ,32,2PS102,913569855,2p,Sales,yes
 መሃመድ ላሎ,32,2PS103,913569855,2p,Sales,yes
-Eleni Girma,33,2PV104,902597777,2p,VIP,yes
-Eleni Girma,33,2PS105,902597777,2p,Sales,yes
-Eleni Girma,33,2PS106,902597777,2p,Sales,yes
+Eleni Girma,33,2PV104,902597777,2p,VIP,no
+Eleni Girma,33,2PS105,902597777,2p,Sales,no
+Eleni Girma,33,2PS106,902597777,2p,Sales,no
 Hiwot mulatu,34,2PV107,911643862,2p,VIP,yes
 Hiwot mulatu,34,2PS108,911643862,2p,Sales,yes
 Hiwot mulatu,34,2PS109,911643862,2p,Sales,yes
-Samrawit Mulugeta,35,2PV110,937839576,2p,VIP,yes
-Samrawit Mulugeta,35,2PS111,937839576,2p,Sales,yes
-Samrawit Mulugeta,35,2PS112,937839576,2p,Sales,yes
-nan,36,2PV113,,2p,VIP,no
-nan,36,2PS114,,2p,Sales,no
-nan,36,2PS115,,2p,Sales,no
+Samrawit Mulugeta,35,2PV110,937839576,2p,VIP,no
+Samrawit Mulugeta,35,2PS111,937839576,2p,Sales,no
+Samrawit Mulugeta,35,2PS112,937839576,2p,Sales,no
+nan,36,2PV113,,2p,VIP,
+nan,36,2PS114,,2p,Sales,
+nan,36,2PS115,,2p,Sales,
 nan,37,2PV116,,2p,VIP,no
 nan,37,2PS117,,2p,Sales,no
 nan,37,2PS118,,2p,Sales,no
@@ -451,9 +451,9 @@ nan,1,3PS03,,3p,Sales,no
 nan,2,3PV04,,3p,VIP,no
 nan,2,3PS05,,3p,Sales,no
 nan,2,3PS06,,3p,Sales,no
-nan,3,3PV07,,3p,VIP,no
-nan,3,3PS08,,3p,Sales,no
-nan,3,3PS09,,3p,Sales,no
+booby,3,3PV07,,3p,VIP,no
+booby,3,3PS08,,3p,Sales,no
+booby,3,3PS09,,3p,Sales,no
 nan,4,3PV10,,3p,VIP,no
 nan,4,3PS11,,3p,Sales,no
 nan,4,3PS12,,3p,Sales,no
@@ -484,260 +484,259 @@ nan,12,3PS36,,3p,Sales,no
 ያሬድ ጌታቸው(ትርሲት),13,3PV37,939637349,3p,VIP,yes
 ያሬድ ጌታቸው(ትርሲት),13,3PS38,939637349,3p,Sales,yes
 ያሬድ ጌታቸው(ትርሲት),13,3PS39,939637349,3p,Sales,yes
-ያሬድ ጌታቸው(ትርሲት),14,3PV40,939637349,3p,VIP,yes
-ያሬድ ጌታቸው(ትርሲት),14,3PS41,939637349,3p,Sales,yes
-ያሬድ ጌታቸው(ትርሲት),14,3PS42,939637349,3p,Sales,yes
-አብዱልቃድር ሀሰን,15,3PV43,929150305,3p,VIP,yes
-አብዱልቃድር ሀሰን,15,3PS44,929150305,3p,Sales,yes
-አብዱልቃድር ሀሰን,15,3PS45,929150305,3p,Sales,yes
-አብዱልቃድር ሀሰን,15,3PS46,929150305,3p,Sales,yes
-nan,16,3PV47,,3p,VIP,no
-nan,16,3PS48,,3p,Sales,no
-nan,16,3PS49,,3p,Sales,no
-nan,17,3PV50,,3p,VIP,no
-nan,17,3PS51,,3p,Sales,no
-nan,17,3PS52,,3p,Sales,no
-nan,18,3PV53,,3p,VIP,no
-nan,18,3PS54,,3p,Sales,no
-nan,18,3PS55,,3p,Sales,no
-nan,19,3PV56,,3p,VIP,no
-nan,19,3PS57,,3p,Sales,no
-nan,19,3PS58,,3p,Sales,no
-nan,20,3PV59,,3p,VIP,no
-nan,20,3PS60,,3p,Sales,no
-nan,20,3PS61,,3p,Sales,no
-nan,21,3PV62,,3p,VIP,no
-nan,21,3PS63,,3p,Sales,no
-nan,21,3PS64,,3p,Sales,no
-nan,22,3PV65,,3p,VIP,no
-nan,22,3PS66,,3p,Sales,no
-nan,22,3PS67,,3p,Sales,no
-nan,23,3PV68,,3p,VIP,no
-nan,23,3PS69,,3p,Sales,no
-nan,23,3PS70,,3p,Sales,no
-nan,24,3PV71,,3p,VIP,no
-nan,24,3PS72,,3p,Sales,no
-nan,24,3PS73,,3p,Sales,no
-nan,25,3PV74,,3p,VIP,no
-nan,25,3PS75,,3p,Sales,no
-nan,25,3PS76,,3p,Sales,no
-ትዕግስትገ/ማርያም,26,3PV77,913003350,3p,VIP,yes
-ትዕግስትገ/ማርያም,26,3PS78,913003350,3p,Sales,yes
-ትዕግስትገ/ማርያም,26,3PS79,913003350,3p,Sales,yes
-ትዕግስትገ/ማርያም,26,3PS80,913003350,3p,Sales,yes
-nan,27,3PV81,,3p,VIP,no
-nan,27,3PS82,,3p,Sales,no
-nan,27,3PS83,,3p,Sales,no
-nan,28,3PV84,,3p,VIP,no
-nan,28,3PS85,,3p,Sales,no
-nan,28,3PS86,,3p,Sales,no
-nan,29,3PV87,,3p,VIP,no
-nan,29,3PS88,,3p,Sales,no
-nan,29,3PS89,,3p,Sales,no
-nan,30,3PV90,,3p,VIP,no
-nan,30,3PS91,,3p,Sales,no
-nan,30,3PS92,,3p,Sales,no
-ሄለን ጉታ,31,3PV93,911678705,3p,VIP,yes
-ሄለን ጉታ,31,3PS94,911678705,3p,Sales,yes
-ሄለን ጉታ,31,3PS95,911678705,3p,Sales,yes
-ሄለን ጉታ,31,3PS96,911678705,3p,Sales,yes
-nan,32,3PV97,,3p,VIP,no
-nan,32,3PS98,,3p,Sales,no
-nan,32,3PS99,,3p,Sales,no
-nan,32,3PS100,,3p,Sales,no
-nan,33,3PV101,,3p,VIP,no
+ያሬድ ጌታቸው(ትርሲት),13,3PS40,939637349,3p,Sales,yes
+አብዱልቃድር ሀሰን,15,3PV41,929150305,3p,VIP,no
+አብዱልቃድር ሀሰን,15,3PS42,929150305,3p,Sales,no
+አብዱልቃድር ሀሰን,15,3PS43,929150305,3p,Sales,no
+አብዱልቃድር ሀሰን,15,3PS44,929150305,3p,Sales,no
+nan,16,3PV45,,3p,VIP,no
+nan,16,3PS46,,3p,Sales,no
+nan,16,3PS47,,3p,Sales,no
+nan,17,3PV48,,3p,VIP,no
+nan,17,3PS49,,3p,Sales,no
+nan,17,3PS50,,3p,Sales,no
+nan,18,3PV51,,3p,VIP,no
+nan,18,3PS52,,3p,Sales,no
+nan,18,3PS53,,3p,Sales,no
+nan,19,3PV54,,3p,VIP,no
+nan,19,3PS55,,3p,Sales,no
+nan,19,3PS56,,3p,Sales,no
+nan,20,3PV57,,3p,VIP,no
+nan,20,3PS58,,3p,Sales,no
+nan,20,3PS59,,3p,Sales,no
+nan,21,3PV60,,3p,VIP,no
+nan,21,3PS61,,3p,Sales,no
+nan,21,3PS62,,3p,Sales,no
+nan,22,3PV63,,3p,VIP,no
+nan,22,3PS64,,3p,Sales,no
+nan,22,3PS65,,3p,Sales,no
+nan,23,3PV66,,3p,VIP,no
+nan,23,3PS67,,3p,Sales,no
+nan,23,3PS68,,3p,Sales,no
+nan,24,3PV69,,3p,VIP,no
+nan,24,3PS70,,3p,Sales,no
+nan,24,3PS71,,3p,Sales,no
+nan,25,3PV72,,3p,VIP,no
+nan,25,3PS73,,3p,Sales,no
+nan,25,3PS74,,3p,Sales,no
+ትዕግስትገ/ማርያም,26,3PV75,913003350,3p,VIP,no
+ትዕግስትገ/ማርያም,26,3PS76,913003350,3p,Sales,no
+ትዕግስትገ/ማርያም,26,3PS77,913003350,3p,Sales,no
+ትዕግስትገ/ማርያም,26,3PS78,913003350,3p,Sales,no
+nan,27,3PV79,,3p,VIP,no
+nan,27,3PS80,,3p,Sales,no
+nan,27,3PS81,,3p,Sales,no
+nan,28,3PV82,,3p,VIP,no
+nan,28,3PS83,,3p,Sales,no
+nan,28,3PS84,,3p,Sales,no
+nan,29,3PV85,,3p,VIP,no
+nan,29,3PS86,,3p,Sales,no
+nan,29,3PS87,,3p,Sales,no
+nan,30,3PV88,,3p,VIP,no
+nan,30,3PS89,,3p,Sales,no
+nan,30,3PS90,,3p,Sales,no
+ሄለን ጉታ,31,3PV91,911678705,3p,VIP,no
+ሄለን ጉታ,31,3PS92,911678705,3p,Sales,no
+ሄለን ጉታ,31,3PS93,911678705,3p,Sales,no
+ሄለን ጉታ,31,3PS94,911678705,3p,Sales,no
+መሀመድ ሃይረዲን,32,3PV95,,3p,VIP,no
+መሀመድ ሃይረዲን,32,3PS96,,3p,Sales,no
+መሀመድ ሃይረዲን,32,3PS97,,3p,Sales,no
+መሀመድ ሃይረዲን,32,3PS98,,3p,Sales,no
+nan,33,3PV99,,3p,VIP,no
+nan,33,3PS100,,3p,Sales,no
+nan,33,3PS101,,3p,Sales,no
 nan,33,3PS102,,3p,Sales,no
-nan,33,3PS103,,3p,Sales,no
-nan,33,3PS104,,3p,Sales,no
-nan,34,3PV105,,3p,VIP,no
+nan,34,3PV103,,3p,VIP,no
+nan,34,3PS104,,3p,Sales,no
+nan,34,3PS105,,3p,Sales,no
 nan,34,3PS106,,3p,Sales,no
-nan,34,3PS107,,3p,Sales,no
-nan,34,3PS108,,3p,Sales,no
-nan,35,3PV109,,3p,VIP,yes
-nan,35,3PS110,,3p,Sales,yes
-nan,35,3PS111,,3p,Sales,yes
-nan,35,3PS112,,3p,Sales,yes
-nan,36,3PV113,,3p,VIP,no
+nan,35,3PV107,,3p,VIP,no
+nan,35,3PS108,,3p,Sales,no
+nan,35,3PS109,,3p,Sales,no
+nan,35,3PS110,,3p,Sales,no
+nan,36,3PV111,,3p,VIP,no
+nan,36,3PS112,,3p,Sales,no
+nan,36,3PS113,,3p,Sales,no
 nan,36,3PS114,,3p,Sales,no
-nan,36,3PS115,,3p,Sales,no
-nan,36,3PS116,,3p,Sales,no
-nan,37,3PV117,,3p,VIP,no
+nan,37,3PV115,,3p,VIP,no
+nan,37,3PS116,,3p,Sales,no
+nan,37,3PS117,,3p,Sales,no
 nan,37,3PS118,,3p,Sales,no
-nan,37,3PS119,,3p,Sales,no
-nan,37,3PS120,,3p,Sales,no
-nan,38,3PV121,,3p,VIP,no
+nan,38,3PV119,,3p,VIP,no
+nan,38,3PS120,,3p,Sales,no
+nan,38,3PS121,,3p,Sales,no
 nan,38,3PS122,,3p,Sales,no
-nan,38,3PS123,,3p,Sales,no
-nan,38,3PS124,,3p,Sales,no
-nan,39,3PV125,,3p,VIP,no
+nan,39,3PV123,,3p,VIP,no
+nan,39,3PS124,,3p,Sales,no
+nan,39,3PS125,,3p,Sales,no
 nan,39,3PS126,,3p,Sales,no
-nan,39,3PS127,,3p,Sales,no
-nan,39,3PS128,,3p,Sales,no
-አቤኔዘር ጋሻዩ(ኮሌክሽን),40,3PV129,968758844,3p,VIP,yes
-አቤኔዘር ጋሻዩ(ኮሌክሽን),40,3PS130,968758844,3p,Sales,yes
-አቤኔዘር ጋሻዩ(ኮሌክሽን),40,3PS131,968758844,3p,Sales,yes
-አቤኔዘር ጋሻዩ(ኮሌክሽን),40,3PS132,968758844,3p,Sales,yes
-nan,41,3PV133,,3p,VIP,no
+አቤኔዘር ጋሻዩ(ኮሌክሽን),40,3PV127,968758844,3p,VIP,no
+አቤኔዘር ጋሻዩ(ኮሌክሽን),40,3PS128,968758844,3p,Sales,no
+አቤኔዘር ጋሻዩ(ኮሌክሽን),40,3PS129,968758844,3p,Sales,no
+አቤኔዘር ጋሻዩ(ኮሌክሽን),40,3PS130,968758844,3p,Sales,no
+nan,41,3PV131,,3p,VIP,no
+nan,41,3PS132,,3p,Sales,no
+nan,41,3PS133,,3p,Sales,no
 nan,41,3PS134,,3p,Sales,no
-nan,41,3PS135,,3p,Sales,no
-nan,41,3PS136,,3p,Sales,no
-nan,42,3PV137,,3p,VIP,no
+nan,42,3PV135,,3p,VIP,no
+nan,42,3PS136,,3p,Sales,no
+nan,42,3PS137,,3p,Sales,no
 nan,42,3PS138,,3p,Sales,no
-nan,42,3PS139,,3p,Sales,no
-nan,42,3PS140,,3p,Sales,no
-nan,43,3PV141,,3p,VIP,no
-nan,43,3PS142,,3p,Sales,no
-nan,43,3PS143,,3p,Sales,no
-nan,44,3PV144,,3p,VIP,no
+nan,43,3PV139,,3p,VIP,no
+nan,43,3PS140,,3p,Sales,no
+nan,43,3PS141,,3p,Sales,no
+nan,44,3PV142,,3p,VIP,no
+nan,44,3PS143,,3p,Sales,no
+nan,44,3PS144,,3p,Sales,no
 nan,44,3PS145,,3p,Sales,no
-nan,44,3PS146,,3p,Sales,no
-nan,44,3PS147,,3p,Sales,no
-nan,45,3PV148,,3p,VIP,no
+nan,45,3PV146,,3p,VIP,no
+nan,45,3PS147,,3p,Sales,no
+nan,45,3PS148,,3p,Sales,no
 nan,45,3PS149,,3p,Sales,no
-nan,45,3PS150,,3p,Sales,no
-nan,45,3PS151,,3p,Sales,no
-nan,46,3PV152,,3p,VIP,no
-nan,46,3PS153,,3p,Sales,no
-nan,46,3PS154,,3p,Sales,no
-ሃብታሙ ጎሹ,47,3PV155,962616165,3p,VIP,yes
-ሃብታሙ ጎሹ,47,3PS156,962616165,3p,Sales,yes
-ሃብታሙ ጎሹ,47,3PS157,962616165,3p,Sales,yes
-ሃብታሙ ጎሹ,47,3PS158,962616165,3p,Sales,yes
+nan,46,3PV150,,3p,VIP,no
+nan,46,3PS151,,3p,Sales,no
+nan,46,3PS152,,3p,Sales,no
+ሃብታሙ ጎሹ,47,3PV153,962616165,3p,VIP,no
+ሃብታሙ ጎሹ,47,3PS154,962616165,3p,Sales,no
+ሃብታሙ ጎሹ,47,3PS155,962616165,3p,Sales,no
+ሃብታሙ ጎሹ,47,3PS156,962616165,3p,Sales,no
 Amrot mola,1,4PV01,934060052,4p,VIP,yes
 Amrot mola,1,4PS02,934060052,4p,Sales,yes
 Amrot mola,1,4PS03,934060052,4p,Sales,yes
-nan,2,4PV04,,4p,VIP,yes
-nan,2,4PS05,,4p,Sales,yes
-nan,2,4PS06,,4p,Sales,yes
-nan,3,4PV07,,4p,VIP,no
-nan,3,4PS08,,4p,Sales,no
+እትዮ ጋሪ ቢዝነስ ግሩፕ,2,4PV04,,4p,VIP,no
+እትዮ ጋሪ ቢዝነስ ግሩፕ,2,4PS05,,4p,Sales,no
+እትዮ ጋሪ ቢዝነስ ግሩፕ,2,4PS06,,4p,Sales,no
+እትዮ ጋሪ ቢዝነስ ግሩፕ,2,4PS07,,4p,Sales,no
+nan,3,4PV08,,4p,VIP,no
 nan,3,4PS09,,4p,Sales,no
-nan,4,4PV10,,4p,VIP,no
-nan,4,4PS11,,4p,Sales,no
+nan,3,4PS10,,4p,Sales,no
+nan,4,4PV11,,4p,VIP,no
 nan,4,4PS12,,4p,Sales,no
-nan,5,4PV13,,4p,VIP,no
-nan,5,4PS14,,4p,Sales,no
+nan,4,4PS13,,4p,Sales,no
+nan,5,4PV14,,4p,VIP,no
 nan,5,4PS15,,4p,Sales,no
-nan,6,4PV16,,4p,VIP,no
-nan,6,4PS17,,4p,Sales,no
+nan,5,4PS16,,4p,Sales,no
+nan,6,4PV17,,4p,VIP,no
 nan,6,4PS18,,4p,Sales,no
-nan,7,4PV19,,4p,VIP,no
-nan,7,4PS20,,4p,Sales,no
+nan,6,4PS19,,4p,Sales,no
+nan,7,4PV20,,4p,VIP,no
 nan,7,4PS21,,4p,Sales,no
-nan,8,4PV22,,4p,VIP,no
-nan,8,4PS23,,4p,Sales,no
+nan,7,4PS22,,4p,Sales,no
+nan,8,4PV23,,4p,VIP,no
 nan,8,4PS24,,4p,Sales,no
-nan,9,4PV25,,4p,VIP,no
-nan,9,4PS26,,4p,Sales,no
+nan,8,4PS25,,4p,Sales,no
+nan,9,4PV26,,4p,VIP,no
 nan,9,4PS27,,4p,Sales,no
-nan,10,4PV28,,4p,VIP,no
-nan,10,4PS29,,4p,Sales,no
+nan,9,4PS28,,4p,Sales,no
+nan,10,4PV29,,4p,VIP,no
 nan,10,4PS30,,4p,Sales,no
-nan,11,4PV31,,4p,VIP,no
-nan,11,4PS32,,4p,Sales,no
+nan,10,4PS31,,4p,Sales,no
+nan,11,4PV32,,4p,VIP,no
 nan,11,4PS33,,4p,Sales,no
-nan,12,4PV34,,4p,VIP,no
-nan,12,4PS35,,4p,Sales,no
+nan,11,4PS34,,4p,Sales,no
+nan,12,4PV35,,4p,VIP,no
 nan,12,4PS36,,4p,Sales,no
-nan,13,4PV37,,4p,VIP,no
-nan,13,4PS38,,4p,Sales,no
+nan,12,4PS37,,4p,Sales,no
+nan,13,4PV38,,4p,VIP,no
 nan,13,4PS39,,4p,Sales,no
-nan,14,4PV40,,4p,VIP,no
-nan,14,4PS41,,4p,Sales,no
+nan,13,4PS40,,4p,Sales,no
+nan,14,4PV41,,4p,VIP,no
 nan,14,4PS42,,4p,Sales,no
-nan,15,4PV43,,4p,VIP,no
-nan,15,4PS44,,4p,Sales,no
+nan,14,4PS43,,4p,Sales,no
+nan,15,4PV44,,4p,VIP,no
 nan,15,4PS45,,4p,Sales,no
-nan,16,4PV46,,4p,VIP,no
-nan,16,4PS47,,4p,Sales,no
+nan,15,4PS46,,4p,Sales,no
+nan,16,4PV47,,4p,VIP,no
 nan,16,4PS48,,4p,Sales,no
-nan,17,4PV49,,4p,VIP,no
-nan,17,4PS50,,4p,Sales,no
+nan,16,4PS49,,4p,Sales,no
+nan,17,4PV50,,4p,VIP,no
 nan,17,4PS51,,4p,Sales,no
-nan,18,4PV52,,4p,VIP,no
-nan,18,4PS53,,4p,Sales,no
+nan,17,4PS52,,4p,Sales,no
+nan,18,4PV53,,4p,VIP,no
 nan,18,4PS54,,4p,Sales,no
-nan,19,4PV55,,4p,VIP,no
-nan,19,4PS56,,4p,Sales,no
+nan,18,4PS55,,4p,Sales,no
+nan,19,4PV56,,4p,VIP,no
 nan,19,4PS57,,4p,Sales,no
-nan,20,4PV58,,4p,VIP,no
-nan,20,4PS59,,4p,Sales,no
+nan,19,4PS58,,4p,Sales,no
+nan,20,4PV59,,4p,VIP,no
 nan,20,4PS60,,4p,Sales,no
-nan,21,4PV61,,4p,VIP,no
-nan,21,4PS62,,4p,Sales,no
+nan,20,4PS61,,4p,Sales,no
+nan,21,4PV62,,4p,VIP,no
 nan,21,4PS63,,4p,Sales,no
-nan,22,4PV64,,4p,VIP,no
-nan,22,4PS65,,4p,Sales,no
+nan,21,4PS64,,4p,Sales,no
+nan,22,4PV65,,4p,VIP,no
 nan,22,4PS66,,4p,Sales,no
-nan,23,4PV67,,4p,VIP,no
-nan,23,4PS68,,4p,Sales,no
+nan,22,4PS67,,4p,Sales,no
+nan,23,4PV68,,4p,VIP,no
 nan,23,4PS69,,4p,Sales,no
-nan,24,4PV70,,4p,VIP,no
-nan,24,4PS71,,4p,Sales,no
+nan,23,4PS70,,4p,Sales,no
+nan,24,4PV71,,4p,VIP,no
 nan,24,4PS72,,4p,Sales,no
-nan,25,4PV73,,4p,VIP,no
-nan,25,4PS74,,4p,Sales,no
+nan,24,4PS73,,4p,Sales,no
+nan,25,4PV74,,4p,VIP,no
 nan,25,4PS75,,4p,Sales,no
-nan,26,4PV76,,4p,VIP,no
-nan,26,4PS77,,4p,Sales,no
+nan,25,4PS76,,4p,Sales,no
+nan,26,4PV77,,4p,VIP,no
 nan,26,4PS78,,4p,Sales,no
-nan,27,4PV79,,4p,VIP,no
-nan,27,4PS80,,4p,Sales,no
+nan,26,4PS79,,4p,Sales,no
+nan,27,4PV80,,4p,VIP,no
 nan,27,4PS81,,4p,Sales,no
-nan,28,4PV82,,4p,VIP,no
-nan,28,4PS83,,4p,Sales,no
+nan,27,4PS82,,4p,Sales,no
+nan,28,4PV83,,4p,VIP,no
 nan,28,4PS84,,4p,Sales,no
-nan,29,4PV85,,4p,VIP,no
-nan,29,4PS86,,4p,Sales,no
+nan,28,4PS85,,4p,Sales,no
+nan,29,4PV86,,4p,VIP,no
 nan,29,4PS87,,4p,Sales,no
-nan,30,4PV88,,4p,VIP,no
-nan,30,4PS89,,4p,Sales,no
+nan,29,4PS88,,4p,Sales,no
+nan,30,4PV89,,4p,VIP,no
 nan,30,4PS90,,4p,Sales,no
-nan,31,4PV91,,4p,VIP,no
-nan,31,4PS92,,4p,Sales,no
+nan,30,4PS91,,4p,Sales,no
+nan,31,4PV92,,4p,VIP,no
 nan,31,4PS93,,4p,Sales,no
-nan,32,4PV94,,4p,VIP,no
-nan,32,4PS95,,4p,Sales,no
+nan,31,4PS94,,4p,Sales,no
+nan,32,4PV95,,4p,VIP,no
 nan,32,4PS96,,4p,Sales,no
-nan,33,4PV97,,4p,VIP,no
-nan,33,4PS98,,4p,Sales,no
+nan,32,4PS97,,4p,Sales,no
+nan,33,4PV98,,4p,VIP,no
 nan,33,4PS99,,4p,Sales,no
+nan,33,4PS100,,4p,Sales,no
 ሳራ አየለ,1,OV01,910435808,O,VIP,yes
 ሳራ አየለ,1,OS02,910435808,O,Sales,yes
 ሳራ አየለ,1,OS03,910435808,O,Sales,yes
 መለስ,2,OV04,912683165,O,VIP,yes
 መለስ,2,OS05,912683165,O,Sales,yes
 መለስ,2,OS06,912683165,O,Sales,yes
-ብርሃኑ ጎሳዬ/ አስቴር ደመላሽ,3,OV07,,O,VIP,yes
-ብርሃኑ ጎሳዬ/ አስቴር ደመላሽ,3,OS08,,O,Sales,yes
-ብርሃኑ ጎሳዬ/ አስቴር ደመላሽ,3,OS09,,O,Sales,yes
-ፈርሃ አብዱልሰማይ,4,OV10,,O,VIP,yes
-ፈርሃ አብዱልሰማይ,4,OS11,,O,Sales,yes
-ፈርሃ አብዱልሰማይ,4,OS12,,O,Sales,yes
-ሳምራዊት ሀይሉ (Mixed with pav-1 ),5,OV13,,O,VIP,yes
-ሳምራዊት ሀይሉ (Mixed with pav-1 ),5,OS14,,O,Sales,yes
-ሳምራዊት ሀይሉ (Mixed with pav-1 ),5,OS15,,O,Sales,yes
-ዶቃ/እፀገነት መለስ/,6,OV16,970711251,O,VIP,yes
-ዶቃ/እፀገነት መለስ/,6,OS17,970711251,O,Sales,yes
-ዶቃ/እፀገነት መለስ/,6,OS18,970711251,O,Sales,yes
-ሱራፌል መስፍን/ኮሌክሽን (mixed with pav2-17 and pav1- 23/24),7,OV19,,O,VIP,yes
-ሱራፌል መስፍን/ኮሌክሽን (mixed with pav2-17 and pav1- 23/24),7,OS20,,O,Sales,yes
-ሱራፌል መስፍን/ኮሌክሽን (mixed with pav2-17 and pav1- 23/24),7,OS21,,O,Sales,yes
+ብርሃኑ ጎሳዬ/ አስቴር ደመላሽ,3,OV07,,O,VIP,no
+ብርሃኑ ጎሳዬ/ አስቴር ደመላሽ,3,OS08,,O,Sales,no
+ብርሃኑ ጎሳዬ/ አስቴር ደመላሽ,3,OS09,,O,Sales,no
+ፈርሃ አብዱልሰማይ,4,OV10,,O,VIP,no
+ፈርሃ አብዱልሰማይ,4,OS11,,O,Sales,no
+ፈርሃ አብዱልሰማይ,4,OS12,,O,Sales,no
+ሳምራዊት ሀይሉ (Mixed with pav-1 ),5,OV13,,O,VIP,no
+ሳምራዊት ሀይሉ (Mixed with pav-1 ),5,OS14,,O,Sales,no
+ሳምራዊት ሀይሉ (Mixed with pav-1 ),5,OS15,,O,Sales,no
+ዶቃ/እፀገነት መለስ/,6,OV16,970711251,O,VIP,no
+ዶቃ/እፀገነት መለስ/,6,OS17,970711251,O,Sales,no
+ዶቃ/እፀገነት መለስ/,6,OS18,970711251,O,Sales,no
+ሱራፌል መስፍን/ኮሌክሽን (mixed with pav2-17 and pav1- 23/24),7,OV19,,O,VIP,no
+ሱራፌል መስፍን/ኮሌክሽን (mixed with pav2-17 and pav1- 23/24),7,OS20,,O,Sales,no
+ሱራፌል መስፍን/ኮሌክሽን (mixed with pav2-17 and pav1- 23/24),7,OS21,,O,Sales,no
 አብዱል ሙኢን አማን(ጫማ),8,OV22,913311787,O,VIP,yes
 አብዱል ሙኢን አማን(ጫማ),8,OS23,913311787,O,Sales,yes
 አብዱል ሙኢን አማን(ጫማ),8,OS24,913311787,O,Sales,yes
 ሬድዋን ሙሰማ,9,OV25,983176959,O,VIP,yes
 ሬድዋን ሙሰማ,9,OS26,983176959,O,Sales,yes
 ሬድዋን ሙሰማ,9,OS27,983176959,O,Sales,yes
-ዘይኑ ሽኩረላ,10,OV28,911827766,O,VIP,yes
-ዘይኑ ሽኩረላ,10,OS29,911827766,O,Sales,yes
-ዘይኑ ሽኩረላ,10,OS30,911827766,O,Sales,yes
-nan,11,OV31,,O,VIP,yes
-nan,11,OS32,,O,Sales,yes
-nan,11,OS33,,O,Sales,yes
-በህርያ ሽኩር,12,OV34,913430367,O,VIP,yes
-በህርያ ሽኩር,12,OS35,913430367,O,Sales,yes
-በህርያ ሽኩር,12,OS36,913430367,O,Sales,yes
+ዘይኑ ሽኩረላ,10,OV28,911827766,O,VIP,no
+ዘይኑ ሽኩረላ,10,OS29,911827766,O,Sales,no
+ዘይኑ ሽኩረላ,10,OS30,911827766,O,Sales,no
+አሚና ሙዘይን,11,OV31,985562026,O,VIP,yes
+አሚና ሙዘይን,11,OS32,985562026,O,Sales,yes
+አሚና ሙዘይን,11,OS33,985562026,O,Sales,yes
+በህርያ ሽኩር,12,OV34,913430367,O,VIP,no
+በህርያ ሽኩር,12,OS35,913430367,O,Sales,no
+በህርያ ሽኩር,12,OS36,913430367,O,Sales,no
 አሚና ከድር,13,OV37,,O,VIP,yes
 አሚና ከድር,13,OS38,,O,Sales,yes
 አሚና ከድር,13,OS39,,O,Sales,yes
@@ -750,21 +749,21 @@ nan,14,OS42,,O,Sales,no
 ሃና ጥላሁን,16,OV46,,O,VIP,yes
 ሃና ጥላሁን,16,OS47,,O,Sales,yes
 ሃና ጥላሁን,16,OS48,,O,Sales,yes
-ቃለአብ በልሁ,17,OV49,982044194,O,VIP,yes
-ቃለአብ በልሁ,17,OS50,982044194,O,Sales,yes
-ቃለአብ በልሁ,17,OS51,982044194,O,Sales,yes
-ጀማል አወል,18,OV52,,O,VIP,yes
-ጀማል አወል,18,OS53,,O,Sales,yes
-ጀማል አወል,18,OS54,,O,Sales,yes
+ቃለአብ በልሁ,17,OV49,982044194,O,VIP,no
+ቃለአብ በልሁ,17,OS50,982044194,O,Sales,no
+ቃለአብ በልሁ,17,OS51,982044194,O,Sales,no
+ጀማል አወል,18,OV52,,O,VIP,no
+ጀማል አወል,18,OS53,,O,Sales,no
+ጀማል አወል,18,OS54,,O,Sales,no
 nan,19,OV55,,O,VIP,no
 nan,19,OS56,,O,Sales,no
 nan,19,OS57,,O,Sales,no
 nan,20,OV58,,O,VIP,no
 nan,20,OS59,,O,Sales,no
 nan,20,OS60,,O,Sales,no
-ሰኢዳ አብደላ/ኮሌክሽን/,21,OV61,,O,VIP,yes
-ሰኢዳ አብደላ/ኮሌክሽን/,21,OS62,,O,Sales,yes
-ሰኢዳ አብደላ/ኮሌክሽን/,21,OS63,,O,Sales,yes
+ሰኢዳ አብደላ/ኮሌክሽን/,21,OV61,,O,VIP,no
+ሰኢዳ አብደላ/ኮሌክሽን/,21,OS62,,O,Sales,no
+ሰኢዳ አብደላ/ኮሌክሽን/,21,OS63,,O,Sales,no
 nan,22,OV64,,O,VIP,no
 nan,22,OS65,,O,Sales,no
 nan,22,OS66,,O,Sales,no
@@ -777,18 +776,18 @@ nan,24,OS72,,O,Sales,no
 dawit,25,OV73,,O,VIP,yes
 dawit,25,OS74,,O,Sales,yes
 dawit,25,OS75,,O,Sales,yes
-ሃና ተሰማ ፈረጃ,26,OV76,911738856,O,VIP,yes
-ሃና ተሰማ ፈረጃ,26,OS77,911738856,O,Sales,yes
-ሃና ተሰማ ፈረጃ,26,OS78,911738856,O,Sales,yes
+ሃና ተሰማ ፈረጃ,26,OV76,911738856,O,VIP,no
+ሃና ተሰማ ፈረጃ,26,OS77,911738856,O,Sales,no
+ሃና ተሰማ ፈረጃ,26,OS78,911738856,O,Sales,no
 ፋጡማ ነስሮ,27,OV79,912007381,O,VIP,yes
 ፋጡማ ነስሮ,27,OS80,912007381,O,Sales,yes
 ፋጡማ ነስሮ,27,OS81,912007381,O,Sales,yes
-መሃመድ ሙሰማ,28,OV82,924539532,O,VIP,yes
-መሃመድ ሙሰማ,28,OS83,924539532,O,Sales,yes
-መሃመድ ሙሰማ,28,OS84,924539532,O,Sales,yes
-ሩት አበበ,29,OV85,915953575,O,VIP,yes
-ሩት አበበ,29,OS86,915953575,O,Sales,yes
-ሩት አበበ,29,OS87,915953575,O,Sales,yes
+መሃመድ ሙሰማ,28,OV82,924539532,O,VIP,no
+መሃመድ ሙሰማ,28,OS83,924539532,O,Sales,no
+መሃመድ ሙሰማ,28,OS84,924539532,O,Sales,no
+ሩት አበበ,29,OV85,915953575,O,VIP,no
+ሩት አበበ,29,OS86,915953575,O,Sales,no
+ሩት አበበ,29,OS87,915953575,O,Sales,no
 ጠይባ ሰመድ(ኦሌክሽን),30,OV88,911346077,O,VIP,yes
 ጠይባ ሰመድ(ኦሌክሽን),30,OS89,911346077,O,Sales,yes
 ጠይባ ሰመድ(ኦሌክሽን),30,OS90,911346077,O,Sales,yes
@@ -810,9 +809,9 @@ nan,37,OS105,,O,Sales,no
 nan,38,OV106,,O,VIP,no
 nan,38,OS107,,O,Sales,no
 nan,38,OS108,,O,Sales,no
-ይስሃቅ አንተነህ (mixed with pav-1)//13,39,OV109,,O,VIP,yes
-ይስሃቅ አንተነህ (mixed with pav-1)//13,39,OS110,,O,Sales,yes
-ይስሃቅ አንተነህ (mixed with pav-1)//13,39,OS111,,O,Sales,yes
+ይስሃቅ አንተነህ (mixed with pav-1)//13,39,OV109,,O,VIP,no
+ይስሃቅ አንተነህ (mixed with pav-1)//13,39,OS110,,O,Sales,no
+ይስሃቅ አንተነህ (mixed with pav-1)//13,39,OS111,,O,Sales,no
 nan,40,OV112,,O,VIP,no
 nan,40,OS113,,O,Sales,no
 nan,40,OS114,,O,Sales,no
@@ -822,21 +821,21 @@ nan,41,OS117,,O,Sales,no
 nan,42,OV118,,O,VIP,no
 nan,42,OS119,,O,Sales,no
 nan,42,OS120,,O,Sales,no
-አሚና ሙዘይን,43,OV121,985562026,O,VIP,yes
-አሚና ሙዘይን,43,OS122,985562026,O,Sales,yes
-አሚና ሙዘይን,43,OS123,985562026,O,Sales,yes
-በረከት አገሬ አጽብሃ,44,OV124,933481212,O,VIP,yes
-በረከት አገሬ አጽብሃ,44,OS125,933481212,O,Sales,yes
-በረከት አገሬ አጽብሃ,44,OS126,933481212,O,Sales,yes
+nan,43,OV121,,O,VIP,no
+nan,43,OS122,,O,Sales,no
+nan,43,OS123,,O,Sales,no
+በረከት አገሬ አጽብሃ,44,OV124,933481212,O,VIP,no
+በረከት አገሬ አጽብሃ,44,OS125,933481212,O,Sales,no
+በረከት አገሬ አጽብሃ,44,OS126,933481212,O,Sales,no
 አሃዱ ግርማ,45,OV127,911827304,O,VIP,yes
 አሃዱ ግርማ,45,OS128,911827304,O,Sales,yes
 አሃዱ ግርማ,45,OS129,911827304,O,Sales,yes
-አህመድ ሺበሺ,46,OV130,,O,VIP,yes
-አህመድ ሺበሺ,46,OS131,,O,Sales,yes
-አህመድ ሺበሺ,46,OS132,,O,Sales,yes
-ጀማል አወል,47,OV133,911616117,O,VIP,yes
-ጀማል አወል,47,OS134,911616117,O,Sales,yes
-ጀማል አወል,47,OS135,911616117,O,Sales,yes
+አህመድ ሺበሺ,46,OV130,,O,VIP,no
+አህመድ ሺበሺ,46,OS131,,O,Sales,no
+አህመድ ሺበሺ,46,OS132,,O,Sales,no
+ጀማል አወል,47,OV133,911616117,O,VIP,no
+ጀማል አወል,47,OS134,911616117,O,Sales,no
+ጀማል አወል,47,OS135,911616117,O,Sales,no
 ቶፊክ  ምሰማ,48,OV136,,O,VIP,yes
 ቶፊክ  ምሰማ,48,OS137,,O,Sales,yes
 ቶፊክ  ምሰማ,48,OS138,,O,Sales,yes
@@ -849,9 +848,9 @@ nan,50,OS144,,O,Sales,no
 መኩ መኮንን,51,OV145,913573693,O,VIP,yes
 መኩ መኮንን,51,OS146,913573693,O,Sales,yes
 መኩ መኮንን,51,OS147,913573693,O,Sales,yes
-እትዮ ጋሪ ቢዝነስ ግሩፕ,52,OV148,,O,VIP,no
-እትዮ ጋሪ ቢዝነስ ግሩፕ,52,OS149,,O,Sales,no
-እትዮ ጋሪ ቢዝነስ ግሩፕ,52,OS150,,O,Sales,no
+nan,52,OV148,,O,VIP,no
+nan,52,OS149,,O,Sales,no
+nan,52,OS150,,O,Sales,no
 nan,53,OV151,,O,VIP,no
 nan,53,OS152,,O,Sales,no
 nan,53,OS153,,O,Sales,no
@@ -861,42 +860,42 @@ nan,54,OS156,,O,Sales,no
 ሃድያወርቅ ተስፋዬ,55,OV157,,O,VIP,yes
 ሃድያወርቅ ተስፋዬ,55,OS158,,O,Sales,yes
 ሃድያወርቅ ተስፋዬ,55,OS159,,O,Sales,yes
-nan,56,OV160,,O,VIP,no
-nan,56,OS161,,O,Sales,no
+ሃድያወርቅ ተስፋዬ,55,OS160,,O,Sales,yes
+nan,56,OV161,,O,VIP,no
 nan,56,OS162,,O,Sales,no
-nan,57,OV163,,O,VIP,yes
-nan,57,OS164,,O,Sales,yes
-nan,57,OS165,,O,Sales,yes
-nan,58,OV166,,O,VIP,yes
-nan,58,OS167,,O,Sales,yes
-nan,58,OS168,,O,Sales,yes
-nan,59,OV169,,O,VIP,no
-nan,59,OS170,,O,Sales,no
+nan,56,OS163,,O,Sales,no
+ፋንታ,57,OV164,,O,VIP,no
+ፋንታ,57,OS165,,O,Sales,no
+ፋንታ,57,OS166,,O,Sales,no
+ፋንታ,58,OV167,,O,VIP,no
+ፋንታ,58,OS168,,O,Sales,no
+ፋንታ,58,OS169,,O,Sales,no
+nan,59,OV170,,O,VIP,no
 nan,59,OS171,,O,Sales,no
-nan,60,OV172,,O,VIP,no
-nan,60,OS173,,O,Sales,no
+nan,59,OS172,,O,Sales,no
+nan,60,OV173,,O,VIP,no
 nan,60,OS174,,O,Sales,no
-nan,61,OV175,,O,VIP,no
-nan,61,OS176,,O,Sales,no
-nan,61,OS177,,O,Sales,no
-nan,62,OV178,,O,VIP,no
-nan,62,OS179,,O,Sales,no
+nan,60,OS175,,O,Sales,no
+nan,61,OV176,,O,VIP,yes
+nan,61,OS177,,O,Sales,yes
+nan,61,OS178,,O,Sales,yes
+nan,62,OV179,,O,VIP,no
 nan,62,OS180,,O,Sales,no
-ሰለሞን ማሞ(ፋስት ፉድ),69,OV181,911002440,O,VIP,yes
-ሰለሞን ማሞ(ፋስት ፉድ),69,OS182,911002440,O,Sales,yes
-ሰለሞን ማሞ(ፋስት ፉድ),69,OS183,911002440,O,Sales,yes
-Hageri minale (hana minale),70             70A,OV184,,O,VIP,yes
-Hageri minale (hana minale),70             70A,OS185,,O,Sales,yes
-Hageri minale (hana minale),70             70A,OS186,,O,Sales,yes
-Hageri minale (hana minale),70             70A,OS187,,O,Sales,yes
-ሜሮን ግዜ/ኮሌክሽን 2*2ካሬ 71 ቁጥር,71,OV188,,O,VIP,yes
-ሜሮን ግዜ/ኮሌክሽን 2*2ካሬ 71 ቁጥር,71,OS189,,O,Sales,yes
+nan,62,OS181,,O,Sales,no
+ሰለሞን ማሞ(ፋስት ፉድ),69,OV182,911002440,O,VIP,no
+ሰለሞን ማሞ(ፋስት ፉድ),69,OS183,911002440,O,Sales,no
+ሰለሞን ማሞ(ፋስት ፉድ),69,OS184,911002440,O,Sales,no
+Hageri minale (hana minale),70A,OV185,,O,VIP,yes
+Hageri minale (hana minale),70A,OS186,,O,Sales,yes
+Hageri minale (hana minale),70A,OS187,,O,Sales,yes
+Hageri minale (hana minale),70A,OS188,,O,Sales,yes
+ሜሮን ግዜ/ኮሌክሽን 2*2ካሬ 71 ቁጥር,71,OV189,,O,VIP,yes
 ሜሮን ግዜ/ኮሌክሽን 2*2ካሬ 71 ቁጥር,71,OS190,,O,Sales,yes
-ሜሮን ግዜ/ኮሌክሽን 2*2ካሬ 72 ቁጥር,72,OV191,,O,VIP,yes
-ሜሮን ግዜ/ኮሌክሽን 2*2ካሬ 72 ቁጥር,72,OS192,,O,Sales,yes
+ሜሮን ግዜ/ኮሌክሽን 2*2ካሬ 71 ቁጥር,71,OS191,,O,Sales,yes
+ሜሮን ግዜ/ኮሌክሽን 2*2ካሬ 72 ቁጥር,72,OV192,,O,VIP,yes
 ሜሮን ግዜ/ኮሌክሽን 2*2ካሬ 72 ቁጥር,72,OS193,,O,Sales,yes
-ተስፋይ አለም(ቶም በርገር),73,OV194,910157840,O,VIP,yes
-ተስፋይ አለም(ቶም በርገር),73,OS195,910157840,O,Sales,yes
+ሜሮን ግዜ/ኮሌክሽን 2*2ካሬ 72 ቁጥር,72,OS194,,O,Sales,yes
+ተስፋይ አለም(ቶም በርገር),73,OV195,910157840,O,VIP,yes
 ተስፋይ አለም(ቶም በርገር),73,OS196,910157840,O,Sales,yes
 ተስፋይ አለም(ቶም በርገር),73,OS197,910157840,O,Sales,yes
 ተስፋይ አለም(ቶም በርገር),73,OS198,910157840,O,Sales,yes
@@ -908,146 +907,146 @@ Hageri minale (hana minale),70             70A,OS187,,O,Sales,yes
 ተስፋይ አለም(ቶም በርገር),73,OS204,910157840,O,Sales,yes
 ተስፋይ አለም(ቶም በርገር),73,OS205,910157840,O,Sales,yes
 ተስፋይ አለም(ቶም በርገር),73,OS206,910157840,O,Sales,yes
-nan,74,OV207,,O,VIP,no
-nan,74,OS208,,O,Sales,no
-nan,74,OS209,,O,Sales,no
-nan,94,OV210,,O,VIP,no
-nan,94,OS211,,O,Sales,no
-nan,94,OS212,,O,Sales,no
-nan,95,OV213,,O,VIP,no
-nan,95,OS214,,O,Sales,no
-nan,95,OS215,,O,Sales,no
-nan,96,OV216,,O,VIP,no
-nan,96,OS217,,O,Sales,no
-nan,96,OS218,,O,Sales,no
-nan,97,OV219,,O,VIP,no
-nan,97,OS220,,O,Sales,no
-nan,97,OS221,,O,Sales,no
-nan,98,OV222,,O,VIP,no
-nan,98,OS223,,O,Sales,no
-nan,98,OS224,,O,Sales,no
-nan,99,OV225,,O,VIP,no
-nan,99,OS226,,O,Sales,no
-nan,99,OS227,,O,Sales,no
-nan,100,OV228,,O,VIP,no
-nan,100,OS229,,O,Sales,no
-nan,100,OS230,,O,Sales,no
-አለፈ ሀ/ማርያም,101,OV231,,O,VIP,yes
-አለፈ ሀ/ማርያም,101,OS232,,O,Sales,yes
-አለፈ ሀ/ማርያም,101,OS233,,O,Sales,yes
-አለፈ ሀ/ማርያም,102,OV234,,O,VIP,yes
-አለፈ ሀ/ማርያም,102,OS235,,O,Sales,yes
-አለፈ ሀ/ማርያም,102,OS236,,O,Sales,yes
-አለፈ ሀ/ማርያም,103,OV237,,O,VIP,yes
-አለፈ ሀ/ማርያም,103,OS238,,O,Sales,yes
-አለፈ ሀ/ማርያም,103,OS239,,O,Sales,yes
-nan,104,OV240,,O,VIP,no
-nan,104,OS241,,O,Sales,no
-nan,104,OS242,,O,Sales,no
-nan,105,OV243,,O,VIP,no
-nan,105,OS244,,O,Sales,no
-nan,105,OS245,,O,Sales,no
-nan,106,OV246,,O,VIP,no
-nan,106,OS247,,O,Sales,no
-nan,106,OS248,,O,Sales,no
-nan,107,OV249,,O,VIP,no
-nan,107,OS250,,O,Sales,no
-nan,107,OS251,,O,Sales,no
-nan,108,OV252,,O,VIP,no
-nan,108,OS253,,O,Sales,no
-nan,108,OS254,,O,Sales,no
-nan,109,OV255,,O,VIP,no
-nan,109,OS256,,O,Sales,no
-nan,109,OS257,,O,Sales,no
-nan,110,OV258,,O,VIP,yes
-nan,110,OS259,,O,Sales,yes
-nan,110,OS260,,O,Sales,yes
-እዝቅያስ ደጉ (mixed with pav1- 60/61/84),111,OV261,,O,VIP,yes
-እዝቅያስ ደጉ (mixed with pav1- 60/61/84),111,OS262,,O,Sales,yes
-እዝቅያስ ደጉ (mixed with pav1- 60/61/84),111,OS263,,O,Sales,yes
-እዝቅያስ ደጉ (mixed with pav1- 60/61/84),112,OV264,,O,VIP,yes
-እዝቅያስ ደጉ (mixed with pav1- 60/61/84),112,OS265,,O,Sales,yes
-እዝቅያስ ደጉ (mixed with pav1- 60/61/84),112,OS266,,O,Sales,yes
-እዝቅያስ ደጉ (mixed with pav1- 60/61/84),112,OS267,,O,Sales,yes
-ሱራፌል መስፍን/ኮሌክሽን (mixed with pav 2-17 and pav-1) & 7,113,OV268,,O,VIP,yes
-ሱራፌል መስፍን/ኮሌክሽን (mixed with pav 2-17 and pav-1) & 7,113,OS269,,O,Sales,yes
-ሱራፌል መስፍን/ኮሌክሽን (mixed with pav 2-17 and pav-1) & 7,113,OS270,,O,Sales,yes
-ናታን ተረፈ(አቢስንያ ሽቶ),114,OV271,911141375,O,VIP,yes
-ናታን ተረፈ(አቢስንያ ሽቶ),114,OS272,911141375,O,Sales,yes
-ናታን ተረፈ(አቢስንያ ሽቶ),114,OS273,911141375,O,Sales,yes
-ኢኮ ክሎዝ/መንሱር ከማል/ ( mixed with pav1- 34),115,OV274,,O,VIP,yes
-ኢኮ ክሎዝ/መንሱር ከማል/ ( mixed with pav1- 34),115,OS275,,O,Sales,yes
-ኢኮ ክሎዝ/መንሱር ከማል/ ( mixed with pav1- 34),115,OS276,,O,Sales,yes
-ኢኮ ክሎዝ/መንሱር ከማል/ ( mixed with pav1- 34),116,OV277,,O,VIP,yes
-ኢኮ ክሎዝ/መንሱር ከማል/ ( mixed with pav1- 34),116,OS278,,O,Sales,yes
-ኢኮ ክሎዝ/መንሱር ከማል/ ( mixed with pav1- 34),116,OS279,,O,Sales,yes
-ሄቨን ዮሃንስ/ገላግሌ/,117,OV280,,O,VIP,yes
-ሄቨን ዮሃንስ/ገላግሌ/,117,OS281,,O,Sales,yes
-ሄቨን ዮሃንስ/ገላግሌ/,117,OS282,,O,Sales,yes
-ሄቨን ዮሃንስ/ገላግሌ/,118,OV283,,O,VIP,yes
-ሄቨን ዮሃንስ/ገላግሌ/,118,OS284,,O,Sales,yes
-ሄቨን ዮሃንስ/ገላግሌ/,118,OS285,,O,Sales,yes
-ፀጋዬ  ብርሃነ ( mixed with pav1-1),119,OV286,,O,VIP,yes
-ፀጋዬ  ብርሃነ ( mixed with pav1-1),119,OS287,,O,Sales,yes
-ፀጋዬ  ብርሃነ ( mixed with pav1-1),119,OS288,,O,Sales,yes
-ፀጋዬ  ብርሃነ ( mixed with pav1-1),119,OS289,,O,Sales,yes
-ሳሮን ገንዘቤ(ቡና ሰሃን),120,OV290,912710775,O,VIP,yes
-ሳሮን ገንዘቤ(ቡና ሰሃን),120,OS291,912710775,O,Sales,yes
-ሳሮን ገንዘቤ(ቡና ሰሃን),120,OS292,912710775,O,Sales,yes
-ሳሮን ገንዘቤ(ቡና ሰሃን),120,OS293,912710775,O,Sales,yes
-ቆንጆ ፉድስ ፒኤል ሲ,121,OV294,926323313,O,VIP,yes
-ቆንጆ ፉድስ ፒኤል ሲ,121,OS295,926323313,O,Sales,yes
-ቆንጆ ፉድስ ፒኤል ሲ,121,OS296,926323313,O,Sales,yes
-ቅርጫንሼ ግሩፕ,122,OV297,902010038,O,VIP,yes
-ቅርጫንሼ ግሩፕ,122,OS298,902010038,O,Sales,yes
-ቅርጫንሼ ግሩፕ,122,OS299,902010038,O,Sales,yes
-ዳግማዊት አስፋው/ኮሌክሽን/,123,OV300,,O,VIP,yes
-ዳግማዊት አስፋው/ኮሌክሽን/,123,OS301,,O,Sales,yes
-ዳግማዊት አስፋው/ኮሌክሽን/,123,OS302,,O,Sales,yes
-ዳግማዊት አስፋው/ኮሌክሽን/,123,OS303,,O,Sales,yes
-ሜሮን ግዜ/ኮሌክሽን,124,OV304,,O,VIP,yes
-ሜሮን ግዜ/ኮሌክሽን,124,OS305,,O,Sales,yes
-ሜሮን ግዜ/ኮሌክሽን,124,OS306,,O,Sales,yes
-ሜሮን ግዜ/ኮሌክሽን,124,OS307,,O,Sales,yes
-በትረ ሀ/ፅዮን/ትራስ,125,OV308,09 11 66 99 08,O,VIP,yes
-በትረ ሀ/ፅዮን/ትራስ,125,OS309,09 11 66 99 08,O,Sales,yes
-በትረ ሀ/ፅዮን/ትራስ,125,OS310,09 11 66 99 08,O,Sales,yes
-በትረ ሀ/ፅዮን/ትራስ,125,OS311,09 11 66 99 08,O,Sales,yes
-dawit,127,OV312,,O,VIP,yes
-dawit,127,OS313,,O,Sales,yes
-dawit,127,OS314,,O,Sales,yes
-dawit,127,OS315,,O,Sales,yes
-ነጻነት ባዬ,128,OV316,923771313,O,VIP,yes
-ነጻነት ባዬ,128,OS317,923771313,O,Sales,yes
-ነጻነት ባዬ,128,OS318,923771313,O,Sales,yes
-ኤፍሬም ተክሌ,129,OV319,922224920,O,VIP,yes
-ኤፍሬም ተክሌ,129,OS320,922224920,O,Sales,yes
-ኤፍሬም ተክሌ,129,OS321,922224920,O,Sales,yes
-ወሊድ ቶፊቅ,130,OV322,911340727,O,VIP,yes
-ወሊድ ቶፊቅ,130,OS323,911340727,O,Sales,yes
-ወሊድ ቶፊቅ,130,OS324,911340727,O,Sales,yes
-ወሊድ ቶፊቅ,131,OV325,911340727,O,VIP,yes
-ወሊድ ቶፊቅ,131,OS326,911340727,O,Sales,yes
-ወሊድ ቶፊቅ,131,OS327,911340727,O,Sales,yes
-ጥላ ጂም,132,OV328,974169678,O,VIP,yes
-ጥላ ጂም,132,OS329,974169678,O,Sales,yes
-ጥላ ጂም,132,OS330,974169678,O,Sales,yes
-አቤል ሙሉጌታ,133,OV331,,O,VIP,yes
-አቤል ሙሉጌታ,133,OS332,,O,Sales,yes
-አቤል ሙሉጌታ,133,OS333,,O,Sales,yes
-ህሊና(ገንቢ ምግብ),134,OV334,944036594,O,VIP,yes
-ህሊና(ገንቢ ምግብ),134,OS335,944036594,O,Sales,yes
-ህሊና(ገንቢ ምግብ),134,OS336,944036594,O,Sales,yes
-ናትናኤል አዳነ,135,OV337,,O,VIP,yes
-ናትናኤል አዳነ,135,OS338,,O,Sales,yes
-ናትናኤል አዳነ,135,OS339,,O,Sales,yes
-ናትናኤል አዳነ,135,OS340,,O,Sales,yes
-wiwi catering/woyneshet,FF,OV341,911190030,O,VIP,yes
-wiwi catering/woyneshet,FF,OS342,911190030,O,Sales,yes
-wiwi catering/woyneshet,FF,OS343,911190030,O,Sales,yes
-wiwi catering/woyneshet,FF,OS344,911190030,O,Sales,yes
-wiwi catering/woyneshet,FF,OS345,911190030,O,Sales,yes
-wiwi catering/woyneshet,FF,OS346,911190030,O,Sales,yes
+ተስፋይ አለም(ቶም በርገር),73,OS207,910157840,O,Sales,yes
+ተስፋይ አለም(ቶም በርገር),73,OS208,910157840,O,Sales,yes
+ተስፋይ አለም(ቶም በርገር),73,OS209,910157840,O,Sales,yes
+ተስፋይ አለም(ቶም በርገር),73,OS210,910157840,O,Sales,yes
+ተስፋይ አለም(ቶም በርገር),73,OS211,910157840,O,Sales,yes
+nan,74,OV212,,O,VIP,no
+nan,74,OS213,,O,Sales,no
+nan,74,OS214,,O,Sales,no
+nan,94,OV215,,O,VIP,no
+nan,94,OS216,,O,Sales,no
+nan,94,OS217,,O,Sales,no
+nan,95,OV218,,O,VIP,no
+nan,95,OS219,,O,Sales,no
+nan,95,OS220,,O,Sales,no
+nan,96,OV221,,O,VIP,no
+nan,96,OS222,,O,Sales,no
+nan,96,OS223,,O,Sales,no
+nan,97,OV224,,O,VIP,no
+nan,97,OS225,,O,Sales,no
+nan,97,OS226,,O,Sales,no
+nan,98,OV227,,O,VIP,no
+nan,98,OS228,,O,Sales,no
+nan,98,OS229,,O,Sales,no
+nan,99,OV230,,O,VIP,no
+nan,99,OS231,,O,Sales,no
+nan,99,OS232,,O,Sales,no
+nan,100,OV233,,O,VIP,no
+nan,100,OS234,,O,Sales,no
+nan,100,OS235,,O,Sales,no
+አለፈ ሀ/ማርያም,101,OV236,,O,VIP,yes
+አለፈ ሀ/ማርያም,101,OS237,,O,Sales,yes
+አለፈ ሀ/ማርያም,101,OS238,,O,Sales,yes
+አለፈ ሀ/ማርያም,102,OV239,,O,VIP,yes
+አለፈ ሀ/ማርያም,102,OS240,,O,Sales,yes
+አለፈ ሀ/ማርያም,102,OS241,,O,Sales,yes
+አለፈ ሀ/ማርያም,103,OV242,,O,VIP,yes
+አለፈ ሀ/ማርያም,103,OS243,,O,Sales,yes
+አለፈ ሀ/ማርያም,103,OS244,,O,Sales,yes
+ዳሽን,104,OV245,,O,VIP,no
+ዳሽን,104,OS246,,O,Sales,no
+ዳሽን,104,OS247,,O,Sales,no
+ወጋገን,105,OV248,,O,VIP,yes
+ወጋገን,105,OS249,,O,Sales,yes
+ወጋገን,105,OS250,,O,Sales,yes
+nan,106,OV251,,O,VIP,no
+nan,106,OS252,,O,Sales,no
+nan,106,OS253,,O,Sales,no
+nan,107,OV254,,O,VIP,no
+nan,107,OS255,,O,Sales,no
+nan,107,OS256,,O,Sales,no
+nan,108,OV257,,O,VIP,no
+nan,108,OS258,,O,Sales,no
+nan,108,OS259,,O,Sales,no
+nan,109,OV260,,O,VIP,no
+nan,109,OS261,,O,Sales,no
+nan,109,OS262,,O,Sales,no
+አሃዱ ባንክ,111A,OV263,,O,VIP,yes
+አሃዱ ባንክ,111A,OS264,,O,Sales,yes
+አሃዱ ባንክ,111A,OS265,,O,Sales,yes
+እዝቅያስ ደጉ (mixed with pav1- 60/61/84),111,OV266,,O,VIP,no
+እዝቅያስ ደጉ (mixed with pav1- 60/61/84),111,OS267,,O,Sales,no
+እዝቅያስ ደጉ (mixed with pav1- 60/61/84),111,OS268,,O,Sales,no
+እዝቅያስ ደጉ (mixed with pav1- 60/61/84),112,OV269,,O,VIP,no
+እዝቅያስ ደጉ (mixed with pav1- 60/61/84),112,OS270,,O,Sales,no
+እዝቅያስ ደጉ (mixed with pav1- 60/61/84),112,OS271,,O,Sales,no
+እዝቅያስ ደጉ (mixed with pav1- 60/61/84),112,OS272,,O,Sales,no
+ሱራፌል መስፍን/ኮሌክሽን (mixed with pav 2-17 and pav-1) & 7,113,OV273,,O,VIP,no
+ሱራፌል መስፍን/ኮሌክሽን (mixed with pav 2-17 and pav-1) & 7,113,OS274,,O,Sales,no
+ሱራፌል መስፍን/ኮሌክሽን (mixed with pav 2-17 and pav-1) & 7,113,OS275,,O,Sales,no
+ናታን ተረፈ(አቢስንያ ሽቶ),114,OV276,911141375,O,VIP,yes
+ናታን ተረፈ(አቢስንያ ሽቶ),114,OS277,911141375,O,Sales,yes
+ናታን ተረፈ(አቢስንያ ሽቶ),114,OS278,911141375,O,Sales,yes
+ኢኮ ክሎዝ/መንሱር ከማል/ ( mixed with pav1- 34),115,OV279,,O,VIP,yes
+ኢኮ ክሎዝ/መንሱር ከማል/ ( mixed with pav1- 34),115,OS280,,O,Sales,yes
+ኢኮ ክሎዝ/መንሱር ከማል/ ( mixed with pav1- 34),115,OS281,,O,Sales,yes
+ኢኮ ክሎዝ/መንሱር ከማል/ ( mixed with pav1- 34),116,OV282,,O,VIP,yes
+ኢኮ ክሎዝ/መንሱር ከማል/ ( mixed with pav1- 34),116,OS283,,O,Sales,yes
+ኢኮ ክሎዝ/መንሱር ከማል/ ( mixed with pav1- 34),116,OS284,,O,Sales,yes
+ሄቨን ዮሃንስ/ገላግሌ/,117,OV285,,O,VIP,yes
+ሄቨን ዮሃንስ/ገላግሌ/,117,OS286,,O,Sales,yes
+ሄቨን ዮሃንስ/ገላግሌ/,117,OS287,,O,Sales,yes
+ሄቨን ዮሃንስ/ገላግሌ/,118,OV288,,O,VIP,yes
+ሄቨን ዮሃንስ/ገላግሌ/,118,OS289,,O,Sales,yes
+ሄቨን ዮሃንስ/ገላግሌ/,118,OS290,,O,Sales,yes
+ፀጋዬ  ብርሃነ ( mixed with pav1-1),119,OV291,,O,VIP,yes
+ፀጋዬ  ብርሃነ ( mixed with pav1-1),119,OS292,,O,Sales,yes
+ፀጋዬ  ብርሃነ ( mixed with pav1-1),119,OS293,,O,Sales,yes
+ፀጋዬ  ብርሃነ ( mixed with pav1-1),119,OS294,,O,Sales,yes
+ሳሮን ገንዘቤ(ቡና ሰሃን),120,OV295,912710775,O,VIP,no
+ሳሮን ገንዘቤ(ቡና ሰሃን),120,OS296,912710775,O,Sales,no
+ሳሮን ገንዘቤ(ቡና ሰሃን),120,OS297,912710775,O,Sales,no
+ሳሮን ገንዘቤ(ቡና ሰሃን),120,OS298,912710775,O,Sales,no
+ቆንጆ ፉድስ ፒኤል ሲ,121,OV299,926323313,O,VIP,yes
+ቆንጆ ፉድስ ፒኤል ሲ,121,OS300,926323313,O,Sales,yes
+ቆንጆ ፉድስ ፒኤል ሲ,121,OS301,926323313,O,Sales,yes
+ቅርጫንሼ ግሩፕ,122,OV302,902010038,O,VIP,yes
+ቅርጫንሼ ግሩፕ,122,OS303,902010038,O,Sales,yes
+ቅርጫንሼ ግሩፕ,122,OS304,902010038,O,Sales,yes
+ዳግማዊት አስፋው/ኮሌክሽን/,123,OV305,,O,VIP,no
+ዳግማዊት አስፋው/ኮሌክሽን/,123,OS306,,O,Sales,no
+ዳግማዊት አስፋው/ኮሌክሽን/,123,OS307,,O,Sales,no
+ዳግማዊት አስፋው/ኮሌክሽን/,123,OS308,,O,Sales,no
+ሜሮን ግዜ/ኮሌክሽን,124,OV309,,O,VIP,no
+ሜሮን ግዜ/ኮሌክሽን,124,OS310,,O,Sales,no
+ሜሮን ግዜ/ኮሌክሽን,124,OS311,,O,Sales,no
+ሜሮን ግዜ/ኮሌክሽን,124,OS312,,O,Sales,no
+በትረ ሀ/ፅዮን/ትራስ,125,OV313,09 11 66 99 08,O,VIP,yes
+በትረ ሀ/ፅዮን/ትራስ,125,OS314,09 11 66 99 08,O,Sales,yes
+በትረ ሀ/ፅዮን/ትራስ,125,OS315,09 11 66 99 08,O,Sales,yes
+በትረ ሀ/ፅዮን/ትራስ,125,OS316,09 11 66 99 08,O,Sales,yes
+dawit,127,OV317,,O,VIP,no
+dawit,127,OS318,,O,Sales,no
+dawit,127,OS319,,O,Sales,no
+dawit,127,OS320,,O,Sales,no
+ነጻነት ባዬ,128,OV321,923771313,O,VIP,no
+ነጻነት ባዬ,128,OS322,923771313,O,Sales,no
+ነጻነት ባዬ,128,OS323,923771313,O,Sales,no
+ኤፍሬም ተክሌ,129,OV324,922224920,O,VIP,no
+ኤፍሬም ተክሌ,129,OS325,922224920,O,Sales,no
+ኤፍሬም ተክሌ,129,OS326,922224920,O,Sales,no
+ወሊድ ቶፊቅ,130,OV327,911340727,O,VIP,no
+ወሊድ ቶፊቅ,130,OS328,911340727,O,Sales,no
+ወሊድ ቶፊቅ,130,OS329,911340727,O,Sales,no
+ወሊድ ቶፊቅ,131,OV330,911340727,O,VIP,no
+ወሊድ ቶፊቅ,131,OS331,911340727,O,Sales,no
+ወሊድ ቶፊቅ,131,OS332,911340727,O,Sales,no
+ጥላ ጂም,132,OV333,974169678,O,VIP,no
+ጥላ ጂም,132,OS334,974169678,O,Sales,no
+ጥላ ጂም,132,OS335,974169678,O,Sales,no
+አቤል ሙሉጌታ,133,OV336,,O,VIP,yes
+አቤል ሙሉጌታ,133,OS337,,O,Sales,yes
+አቤል ሙሉጌታ,133,OS338,,O,Sales,yes
+ህሊና(ገንቢ ምግብ),134,OV339,944036594,O,VIP,yes
+ህሊና(ገንቢ ምግብ),134,OS340,944036594,O,Sales,yes
+ህሊና(ገንቢ ምግብ),134,OS341,944036594,O,Sales,yes
+ናትናኤል አዳነ,135,OV342,,O,VIP,yes
+ናትናኤል አዳነ,135,OS343,,O,Sales,yes
+ናትናኤል አዳነ,135,OS344,,O,Sales,yes
+ናትናኤል አዳነ,135,OS345,,O,Sales,yes
+wiwi catering/woyneshet,FF,OV346,911190030,O,VIP,yes
 wiwi catering/woyneshet,FF,OS347,911190030,O,Sales,yes
 wiwi catering/woyneshet,FF,OS348,911190030,O,Sales,yes
 wiwi catering/woyneshet,FF,OS349,911190030,O,Sales,yes
@@ -1062,102 +1061,102 @@ wiwi catering/woyneshet,FF,OS357,911190030,O,Sales,yes
 wiwi catering/woyneshet,FF,OS358,911190030,O,Sales,yes
 wiwi catering/woyneshet,FF,OS359,911190030,O,Sales,yes
 wiwi catering/woyneshet,FF,OS360,911190030,O,Sales,yes
-ሰኢድ ከማል,40c,OV361,911437121,O,VIP,yes
-ሰኢድ ከማል,40c,OS362,911437121,O,Sales,yes
-ሰኢድ ከማል,40c,OS363,911437121,O,Sales,yes
-ሰኢድ ከማል,40c,OS364,911437121,O,Sales,yes
-ሰኢድ ከማል,40c,OS365,911437121,O,Sales,yes
-ሰኢድ ከማል,40c,OS366,911437121,O,Sales,yes
-ሰኢድ ከማል,40c,OS367,911437121,O,Sales,yes
-ሰኢድ ከማል,40c,OS368,911437121,O,Sales,yes
-ሰኢድ ከማል,40c,OS369,911437121,O,Sales,yes
-ሰኢድ ከማል,40c,OS370,911437121,O,Sales,yes
-ሰኢድ ከማል,40c,OS371,911437121,O,Sales,yes
-ሰኢድ ከማል,40c,OS372,911437121,O,Sales,yes
-ሰኢድ ከማል,40c,OS373,911437121,O,Sales,yes
-The ጵink ocean trading,A1,OV374,936306533,O,VIP,yes
-The ጵink ocean trading,A1,OS375,936306533,O,Sales,yes
-The ጵink ocean trading,A1,OS376,936306533,O,Sales,yes
-The ጵink ocean trading,A1,OS377,936306533,O,Sales,yes
-nan,A2,OV378,,O,VIP,yes
-nan,A2,OS379,,O,Sales,yes
-nan,A2,OS380,,O,Sales,yes
-nan,A3,OV381,,O,VIP,no
-nan,A3,OS382,,O,Sales,no
-nan,A3,OS383,,O,Sales,no
-nan,A4,OV384,,O,VIP,no
-nan,A4,OS385,,O,Sales,no
-nan,A4,OS386,,O,Sales,no
-nan,A5,OV387,,O,VIP,yes
-nan,A5,OS388,,O,Sales,yes
-nan,A5,OS389,,O,Sales,yes
-nan,B1,OV390,,O,VIP,no
-nan,B1,OS391,,O,Sales,no
-nan,B1,OS392,,O,Sales,no
-nan,B2,OV393,,O,VIP,no
-nan,B2,OS394,,O,Sales,no
-nan,B2,OS395,,O,Sales,no
-nan,B3,OV396,,O,VIP,no
-nan,B3,OS397,,O,Sales,no
-nan,B3,OS398,,O,Sales,no
-nan,B4,OV399,,O,VIP,yes
-nan,B4,OS400,,O,Sales,yes
-nan,B4,OS401,,O,Sales,yes
-ታደሰ ፍለታ,B5,OV402,,O,VIP,yes
-ታደሰ ፍለታ,B5,OS403,,O,Sales,yes
-ታደሰ ፍለታ,B5,OS404,,O,Sales,yes
-ብሩክ ገበየሁ,B6,OV405,,O,VIP,yes
-ብሩክ ገበየሁ,B6,OS406,,O,Sales,yes
-ብሩክ ገበየሁ,B6,OS407,,O,Sales,yes
-ብሩክ ገበየሁ,B7,OV408,,O,VIP,yes
-ብሩክ ገበየሁ,B7,OS409,,O,Sales,yes
-ብሩክ ገበየሁ,B7,OS410,,O,Sales,yes
-ብሩክ ገበየሁ,B8,OV411,,O,VIP,yes
-ብሩክ ገበየሁ,B8,OS412,,O,Sales,yes
-ብሩክ ገበየሁ,B8,OS413,,O,Sales,yes
-ብሩክ ገበየሁ,B8,OS414,,O,Sales,yes
-ብሩክ ገበየሁ,B9,OV415,,O,VIP,yes
-ብሩክ ገበየሁ,B9,OS416,,O,Sales,yes
-ብሩክ ገበየሁ,B9,OS417,,O,Sales,yes
-ብሩክ ገበየሁ,B9,OS418,,O,Sales,yes
-ጤና ዘይት,L1,OV419,,O,VIP,yes
-ጤና ዘይት,L1,OS420,,O,Sales,yes
-ጤና ዘይት,L1,OS421,,O,Sales,yes
-ጤና ዘይት,L1,OS422,,O,Sales,yes
-ጤና ዘይት,L2,OV423,,O,VIP,yes
-ጤና ዘይት,L2,OS424,,O,Sales,yes
-ጤና ዘይት,L2,OS425,,O,Sales,yes
-ጤና ዘይት,L2,OS426,,O,Sales,yes
-nan,L3,OV427,,O,VIP,no
-nan,L3,OS428,,O,Sales,no
-nan,L3,OS429,,O,Sales,no
-nan,L3,OS430,,O,Sales,no
-nan,L4,OV431,,O,VIP,no
-nan,L4,OS432,,O,Sales,no
-nan,L4,OS433,,O,Sales,no
-nan,L4,OS434,,O,Sales,no
-nan,BGI-1,OV435,,O,VIP,yes
-nan,BGI-1,OS436,,O,Sales,yes
-nan,BGI-1,OS437,,O,Sales,yes
-nan,BGI-1,OS438,,O,Sales,yes
-nan,BGI-2,OV439,,O,VIP,yes
-nan,BGI-2,OS440,,O,Sales,yes
-nan,BGI-2,OS441,,O,Sales,yes
-nan,BGI-2,OS442,,O,Sales,yes
-nan,Db,OV443,,O,VIP,yes
-nan,Db,OS444,,O,Sales,yes
-nan,Db,OS445,,O,Sales,yes
-nan,Db,OS446,,O,Sales,yes
-nan,T,OV447,,O,VIP,yes
-nan,T,OS448,,O,Sales,yes
-nan,T,OS449,,O,Sales,yes
-nan,T,OS450,,O,Sales,yes
-አብርሃም ምስጋናው fast food,M,OV451,,O,VIP,yes
-አብርሃም ምስጋናው fast food,M,OS452,,O,Sales,yes
-አብርሃም ምስጋናው fast food,M,OS453,,O,Sales,yes
-አብርሃም ምስጋናው fast food,M,OS454,,O,Sales,yes
-አብርሃም ምስጋናው fast food,M,OS455,,O,Sales,yes
-አብርሃም ምስጋናው fast food,M,OS456,,O,Sales,yes
+wiwi catering/woyneshet,FF,OS361,911190030,O,Sales,yes
+wiwi catering/woyneshet,FF,OS362,911190030,O,Sales,yes
+wiwi catering/woyneshet,FF,OS363,911190030,O,Sales,yes
+wiwi catering/woyneshet,FF,OS364,911190030,O,Sales,yes
+wiwi catering/woyneshet,FF,OS365,911190030,O,Sales,yes
+wiwi catering/woyneshet,FF,OS366,911190030,O,Sales,yes
+wiwi catering/woyneshet,FF,OS367,911190030,O,Sales,yes
+wiwi catering/woyneshet,FF,OS368,911190030,O,Sales,yes
+wiwi catering/woyneshet,FF,OS369,911190030,O,Sales,yes
+wiwi catering/woyneshet,FF,OS370,911190030,O,Sales,yes
+wiwi catering/woyneshet,FF,OS371,911190030,O,Sales,yes
+wiwi catering/woyneshet,FF,OS372,911190030,O,Sales,yes
+wiwi catering/woyneshet,FF,OS373,911190030,O,Sales,yes
+wiwi catering/woyneshet,FF,OS374,911190030,O,Sales,yes
+wiwi catering/woyneshet,FF,OS375,911190030,O,Sales,yes
+ሰኢድ ከማል,40M2,OV376,911437121,O,VIP,no
+ሰኢድ ከማል,40M2,OS377,911437121,O,Sales,no
+ሰኢድ ከማል,40M2,OS378,911437121,O,Sales,no
+ሰኢድ ከማል,40M2,OS379,911437121,O,Sales,no
+ሰኢድ ከማል,40M2,OS380,911437121,O,Sales,no
+ሰኢድ ከማል,40M2,OS381,911437121,O,Sales,no
+ሰኢድ ከማል,40M2,OS382,911437121,O,Sales,no
+ሰኢድ ከማል,40M2,OS383,911437121,O,Sales,no
+ሰኢድ ከማል,40M2,OS384,911437121,O,Sales,no
+ሰኢድ ከማል,40M2,OS385,911437121,O,Sales,no
+ሰኢድ ከማል,40M2,OS386,911437121,O,Sales,no
+ሰኢድ ከማል,40M2,OS387,911437121,O,Sales,no
+ሰኢድ ከማል,40M2,OS388,911437121,O,Sales,no
+The ጵink ocean trading,A1,OV389,936306533,O,VIP,no
+The ጵink ocean trading,A1,OS390,936306533,O,Sales,no
+The ጵink ocean trading,A1,OS391,936306533,O,Sales,no
+The ጵink ocean trading,A1,OS392,936306533,O,Sales,no
+nan,A2,OV393,,O,VIP,no
+nan,A2,OS394,,O,Sales,no
+nan,A2,OS395,,O,Sales,no
+nan,A3,OV396,,O,VIP,no
+nan,A3,OS397,,O,Sales,no
+nan,A3,OS398,,O,Sales,no
+nan,A4,OV399,,O,VIP,no
+nan,A4,OS400,,O,Sales,no
+nan,A4,OS401,,O,Sales,no
+ናትናኤል አዳነ,B0,OV402,,O,VIP,yes
+ናትናኤል አዳነ,B0,OS403,,O,Sales,yes
+ናትናኤል አዳነ,B0,OS404,,O,Sales,yes
+nan,B1,OV405,,O,VIP,no
+nan,B1,OS406,,O,Sales,no
+nan,B1,OS407,,O,Sales,no
+nan,B2,OV408,,O,VIP,no
+nan,B2,OS409,,O,Sales,no
+nan,B2,OS410,,O,Sales,no
+nan,B3,OV411,,O,VIP,no
+nan,B3,OS412,,O,Sales,no
+nan,B3,OS413,,O,Sales,no
+nan,B4,OV414,,O,VIP,no
+nan,B4,OS415,,O,Sales,no
+nan,B4,OS416,,O,Sales,no
+ታደሰ ፍለታ,B5,OV417,,O,VIP,no
+ታደሰ ፍለታ,B5,OS418,,O,Sales,no
+ታደሰ ፍለታ,B5,OS419,,O,Sales,no
+ብሩክ ገበየሁ,B6,OV420,,O,VIP,no
+ብሩክ ገበየሁ,B6,OS421,,O,Sales,no
+ብሩክ ገበየሁ,B6,OS422,,O,Sales,no
+ብሩክ ገበየሁ,B7,OV423,,O,VIP,no
+ብሩክ ገበየሁ,B7,OS424,,O,Sales,no
+ብሩክ ገበየሁ,B7,OS425,,O,Sales,no
+ብሩክ ገበየሁ,B8,OV426,,O,VIP,no
+ብሩክ ገበየሁ,B8,OS427,,O,Sales,no
+ብሩክ ገበየሁ,B8,OS428,,O,Sales,no
+ብሩክ ገበየሁ,B9,OV429,,O,VIP,no
+ብሩክ ገበየሁ,B9,OS430,,O,Sales,no
+ብሩክ ገበየሁ,B9,OS431,,O,Sales,no
+ጤና ዘይት,L1,OV432,,O,VIP,no
+ጤና ዘይት,L1,OS433,,O,Sales,no
+ጤና ዘይት,L1,OS434,,O,Sales,no
+ጤና ዘይት,L2,OV435,,O,VIP,no
+ጤና ዘይት,L2,OS436,,O,Sales,no
+ጤና ዘይት,L2,OS437,,O,Sales,no
+nan,L3,OV438,,O,VIP,no
+nan,L3,OS439,,O,Sales,no
+nan,L3,OS440,,O,Sales,no
+nan,L4,OV441,,O,VIP,no
+nan,L4,OS442,,O,Sales,no
+nan,L4,OS443,,O,Sales,no
+nan,BGI-1,OV444,,O,VIP,yes
+nan,BGI-1,OS445,,O,Sales,yes
+nan,BGI-1,OS446,,O,Sales,yes
+nan,BGI-2,OV447,,O,VIP,yes
+nan,BGI-2,OS448,,O,Sales,yes
+nan,BGI-2,OS449,,O,Sales,yes
+nan,Db,OV450,,O,VIP,no
+nan,Db,OS451,,O,Sales,no
+nan,Db,OS452,,O,Sales,no
+nan,T,OV453,,O,VIP,no
+nan,T,OS454,,O,Sales,no
+nan,T,OS455,,O,Sales,no
+አብርሃም ምስጋናው fast food,M,OV456,,O,VIP,yes
 አብርሃም ምስጋናው fast food,M,OS457,,O,Sales,yes
 አብርሃም ምስጋናው fast food,M,OS458,,O,Sales,yes
 አብርሃም ምስጋናው fast food,M,OS459,,O,Sales,yes
@@ -1170,30 +1169,30 @@ nan,T,OS450,,O,Sales,yes
 አብርሃም ምስጋናው fast food,M,OS466,,O,Sales,yes
 አብርሃም ምስጋናው fast food,M,OS467,,O,Sales,yes
 አብርሃም ምስጋናው fast food,M,OS468,,O,Sales,yes
-Turkey,Tr,OV469,,O,VIP,yes
-Turkey,Tr,OS470,,O,Sales,yes
-Turkey,Tr,OS471,,O,Sales,yes
-Turkey,Tr,OS472,,O,Sales,yes
-Turkey,Tr,OS473,,O,Sales,yes
-Turkey,Tr,OS474,,O,Sales,yes
-Turkey,Tr,OS475,,O,Sales,yes
-Turkey,Tr,OS476,,O,Sales,yes
-Turkey,Tr,OS477,,O,Sales,yes
-Turkey,Tr,OS478,,O,Sales,yes
-Turkey,Tr,OS479,,O,Sales,yes
-Turkey,Tr,OS480,,O,Sales,yes
-Turkey,Tr,OS481,,O,Sales,yes
-Turkey,Tr,OS482,,O,Sales,yes
-Turkey,Tr,OS483,,O,Sales,yes
-Indeans( 2 ድንኻን),In,OV484,,O,VIP,yes
-Indeans( 2 ድንኻን),In,OS485,,O,Sales,yes
-Indeans( 2 ድንኻን),In,OS486,,O,Sales,yes
-Indeans( 2 ድንኻን),In,OS487,,O,Sales,yes
-Indeans( 2 ድንኻን),In,OS488,,O,Sales,yes
-Indeans( 2 ድንኻን),In,OS489,,O,Sales,yes
-Indeans( 2 ድንኻን),In,OS490,,O,Sales,yes
-Indeans( 2 ድንኻን),In,OS491,,O,Sales,yes
-Indeans( 2 ድንኻን),In,OS492,,O,Sales,yes
+አብርሃም ምስጋናው fast food,M,OS469,,O,Sales,yes
+አብርሃም ምስጋናው fast food,M,OS470,,O,Sales,yes
+አብርሃም ምስጋናው fast food,M,OS471,,O,Sales,yes
+አብርሃም ምስጋናው fast food,M,OS472,,O,Sales,yes
+አብርሃም ምስጋናው fast food,M,OS473,,O,Sales,yes
+Unknown,L,OV474,,O,VIP,no
+Unknown,L,OS475,,O,Sales,no
+Unknown,L,OS476,,O,Sales,no
+Turkey,Tr,OV477,,O,VIP,no
+Turkey,Tr,OS478,,O,Sales,no
+Turkey,Tr,OS479,,O,Sales,no
+Turkey,Tr,OS480,,O,Sales,no
+Turkey,Tr,OS481,,O,Sales,no
+Turkey,Tr,OS482,,O,Sales,no
+Turkey,Tr,OS483,,O,Sales,no
+Turkey,Tr,OS484,,O,Sales,no
+Turkey,Tr,OS485,,O,Sales,no
+Turkey,Tr,OS486,,O,Sales,no
+Turkey,Tr,OS487,,O,Sales,no
+Turkey,Tr,OS488,,O,Sales,no
+Turkey,Tr,OS489,,O,Sales,no
+Turkey,Tr,OS490,,O,Sales,no
+Turkey,Tr,OS491,,O,Sales,no
+Indeans( 2 ድንኻን),In,OV492,,O,VIP,yes
 Indeans( 2 ድንኻን),In,OS493,,O,Sales,yes
 Indeans( 2 ድንኻን),In,OS494,,O,Sales,yes
 Indeans( 2 ድንኻን),In,OS495,,O,Sales,yes
@@ -1209,15 +1208,15 @@ Indeans( 2 ድንኻን),In,OS504,,O,Sales,yes
 Indeans( 2 ድንኻን),In,OS505,,O,Sales,yes
 Indeans( 2 ድንኻን),In,OS506,,O,Sales,yes
 Indeans( 2 ድንኻን),In,OS507,,O,Sales,yes
-kids play ground,K,OV508,,O,VIP,yes
-kids play ground,K,OS509,,O,Sales,yes
-kids play ground,K,OS510,,O,Sales,yes
-kids play ground,K,OS511,,O,Sales,yes
-kids play ground,K,OS512,,O,Sales,yes
-kids play ground,K,OS513,,O,Sales,yes
-kids play ground,K,OS514,,O,Sales,yes
-kids play ground,K,OS515,,O,Sales,yes
-kids play ground,K,OS516,,O,Sales,yes
+Indeans( 2 ድንኻን),In,OS508,,O,Sales,yes
+Indeans( 2 ድንኻን),In,OS509,,O,Sales,yes
+Indeans( 2 ድንኻን),In,OS510,,O,Sales,yes
+Indeans( 2 ድንኻን),In,OS511,,O,Sales,yes
+Indeans( 2 ድንኻን),In,OS512,,O,Sales,yes
+Indeans( 2 ድንኻን),In,OS513,,O,Sales,yes
+Indeans( 2 ድንኻን),In,OS514,,O,Sales,yes
+Indeans( 2 ድንኻን),In,OS515,,O,Sales,yes
+kids play ground,K,OV516,,O,VIP,yes
 kids play ground,K,OS517,,O,Sales,yes
 kids play ground,K,OS518,,O,Sales,yes
 kids play ground,K,OS519,,O,Sales,yes
@@ -1226,13 +1225,11 @@ kids play ground,K,OS521,,O,Sales,yes
 kids play ground,K,OS522,,O,Sales,yes
 kids play ground,K,OS523,,O,Sales,yes
 kids play ground,K,OS524,,O,Sales,yes
-NEWtest,NW,OV525,,O,VIP,yes
-NEWtest,NW,OS526,,O,Sales,yes
-NEWtest,NW,OS527,,O,Sales,yes
-NEWtest,NW,OS528,,O,Sales,yes
-NEWtest,NW,OS529,,O,Sales,yes
-NEWtest,NW,OS530,,O,Sales,yes
-NEWtest,NW,OS531,,O,Sales,yes
-NEWtest,NW,OS532,,O,Sales,yes
-NEWtest,NW,OS533,,O,Sales,yes
-NEWtest,NW,OS534,,O,Sales,yes
+kids play ground,K,OS525,,O,Sales,yes
+kids play ground,K,OS526,,O,Sales,yes
+kids play ground,K,OS527,,O,Sales,yes
+kids play ground,K,OS528,,O,Sales,yes
+kids play ground,K,OS529,,O,Sales,yes
+kids play ground,K,OS530,,O,Sales,yes
+kids play ground,K,OS531,,O,Sales,yes
+kids play ground,K,OS532,,O,Sales,yes

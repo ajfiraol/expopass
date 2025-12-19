@@ -344,6 +344,7 @@ def booth_staff_list(request, location, booth_id):
             'printed': staff.printed,
             'sold': staff.sold,
             'qr_url': staff.qr_code_image.url if staff.qr_code_image else None,
+            'photo_url': staff.photo.url if staff.photo else None,
         })
     return JsonResponse({'staff': data})
 
@@ -506,3 +507,46 @@ def create_pass(request):
         )
     
     return JsonResponse({'success': True, 'pass_id': str(pass_obj.id)})
+
+
+@login_required
+@require_POST
+def upload_staff_photo(request, staff_id):
+    """
+    Upload a photo for a staff member. Accepts both file upload and base64 data (from camera).
+    """
+    import base64
+    from django.core.files.base import ContentFile
+    
+    staff = get_object_or_404(Staff, id=staff_id)
+    
+    # Check if photo is provided as base64 (from camera) or file upload
+    photo_data = request.POST.get('photo_data', '')
+    photo_file = request.FILES.get('photo', None)
+    
+    if photo_data:
+        # Handle base64 photo data from camera
+        try:
+            # Remove data URL prefix if present
+            if ',' in photo_data:
+                photo_data = photo_data.split(',')[1]
+            
+            image_data = base64.b64decode(photo_data)
+            photo_file = ContentFile(image_data, name=f'staff_{staff.id}.jpg')
+            staff.photo.save(photo_file.name, photo_file, save=True)
+            return JsonResponse({
+                'success': True,
+                'photo_url': staff.photo.url
+            })
+        except Exception as e:
+            return JsonResponse({'success': False, 'error': f'Error processing photo: {str(e)}'})
+    
+    elif photo_file:
+        # Handle file upload
+        staff.photo.save(photo_file.name, photo_file, save=True)
+        return JsonResponse({
+            'success': True,
+            'photo_url': staff.photo.url
+        })
+    
+    return JsonResponse({'success': False, 'error': 'No photo provided'})

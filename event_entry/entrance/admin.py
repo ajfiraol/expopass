@@ -14,7 +14,14 @@ class PassAdmin(admin.ModelAdmin):
 	qr_preview.short_description = "QR Code"
 
 class StaffAdmin(admin.ModelAdmin):
-    list_display = ('name', 'phone_number', 'staff_type', 'location', 'booth_id', 'qr_code_image', 'printed_status')
+    list_display = ('name', 'phone_number', 'staff_type', 'location', 'booth_id', 'photo_preview', 'qr_code_image', 'printed_status')
+    readonly_fields = ('photo_preview',)
+
+    def photo_preview(self, obj):
+        if obj.photo:
+            return format_html('<img src="{}" width="100" height="100" style="object-fit: cover; border-radius: 4px;" />', obj.photo.url)
+        return "No Photo"
+    photo_preview.short_description = "Photo"
 
     def printed_status(self, obj):
         # Checks if this staff has any Pass with printed=True

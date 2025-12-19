@@ -16,6 +16,23 @@
     .printed-row {background-color:#065f46 !important;} /* green highlight for printed */
   </style>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .btn-camera:hover { background:#1d4ed8 !important; }
+    .modal { display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.8); }
+    .modal-content { background:#1e293b; margin:5% auto; padding:24px; border-radius:8px; max-width:500px; color:#fff; }
+    .modal-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; }
+    .close { color:#fff; font-size:28px; font-weight:bold; cursor:pointer; }
+    .close:hover { color:#9ca3af; }
+    #camera-preview video { width:100%; max-width:400px; border-radius:4px; }
+    #captured-photo img { width:100%; max-width:400px; border-radius:4px; }
+    .camera-controls { margin-top:12px; }
+    .camera-controls button { padding:8px 16px; margin:4px; border-radius:4px; border:none; cursor:pointer; background:#2563eb; color:#fff; }
+    .camera-controls button:hover { background:#1d4ed8; }
+    .camera-controls .btn-success { background:#16a34a; }
+    .camera-controls .btn-success:hover { background:#15803d; }
+    .camera-controls .btn-danger { background:#dc2626; }
+    .camera-controls .btn-danger:hover { background:#b91c1c; }
+  </style>
 </head>
 <body>
   <h1>Event Admin Dashboard</h1>
@@ -72,6 +89,7 @@
       <th class="sortable" data-sort-key="type">Staff Type ▲▼</th>
       <th class="sortable" data-sort-key="name">Name ▲▼</th>
       <th class="sortable" data-sort-key="phone">Phone ▲▼</th>
+      <th>Photo</th>
       <th>QR Code</th>
       <th class="sortable" data-sort-key="printed">Printed ▲▼</th>
       <th class="sortable" data-sort-key="sold">Sold ▲▼</th>
@@ -90,6 +108,15 @@
       <td>{{ s.staff_type }}</td>
       <td>{{ s.name }}</td>
       <td>{{ s.phone_number }}</td>
+      <td>
+        {% if s.photo %}
+          <img src="{{ s.photo.url }}" alt="Photo" style="width:50px;height:50px;object-fit:cover;border-radius:4px;">
+        {% else %}
+          <span style="color:#9ca3af;">No Photo</span>
+        {% endif %}
+        <br>
+        <button class="btn-camera" data-staff-id="{{ s.id }}" style="margin-top:4px;padding:4px 8px;font-size:11px;background:#2563eb;color:#fff;border:none;border-radius:4px;cursor:pointer;">📷 Add Photo</button>
+      </td>
       <td>
         {% if s.qr_code_image %}
           <a href="{% url 'download_qr' s.id %}" class="button">Download QR</a>
@@ -187,7 +214,114 @@
         });
       });
     });
+
+    // Camera capture modal
+    let currentStaffId = null;
+    let cameraStream = null;
+    let capturedPhotoData = null;
+
+    $(document).on('click', '.btn-camera', function(){
+      currentStaffId = $(this).data('staff-id');
+      $('#photo-modal').show();
+      initCameraModal();
+    });
+
+    $('.close').on('click', function(){
+      $('#photo-modal').hide();
+      stopCamera();
+      capturedPhotoData = null;
+    });
+
+    function initCameraModal() {
+      navigator.mediaDevices.getUserMedia({ video: { facingMode: 'user' } })
+        .then(function(stream) {
+          cameraStream = stream;
+          const video = document.getElementById('camera-video');
+          video.srcObject = stream;
+          $('#camera-preview').show();
+          $('#captured-photo').hide();
+          $('#camera-controls').show();
+        })
+        .catch(function(err) {
+          console.error('Camera error:', err);
+          alert('Could not access camera. Please allow camera permissions.');
+        });
+    }
+
+    function stopCamera() {
+      if (cameraStream) {
+        cameraStream.getTracks().forEach(track => track.stop());
+        cameraStream = null;
+      }
+    }
+
+    $('#capture-photo-btn').on('click', function(){
+      const video = document.getElementById('camera-video');
+      const canvas = document.createElement('canvas');
+      canvas.width = video.videoWidth;
+      canvas.height = video.videoHeight;
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(video, 0, 0);
+      
+      capturedPhotoData = canvas.toDataURL('image/jpeg', 0.8);
+      $('#photo-preview').attr('src', capturedPhotoData);
+      $('#camera-preview').hide();
+      $('#captured-photo').show();
+      $('#retake-photo-btn').show();
+      $('#upload-photo-btn').show();
+      stopCamera();
+    });
+
+    $('#retake-photo-btn').on('click', function(){
+      capturedPhotoData = null;
+      $('#captured-photo').hide();
+      $('#retake-photo-btn').hide();
+      $('#upload-photo-btn').hide();
+      initCameraModal();
+    });
+
+    $('#upload-photo-btn').on('click', function(){
+      if (!capturedPhotoData || !currentStaffId) {
+        alert('Please capture a photo first');
+        return;
+      }
+
+      $.post('/api/staff/' + currentStaffId + '/upload-photo/', {
+        'csrfmiddlewaretoken': '{{ csrf_token }}',
+        'photo_data': capturedPhotoData
+      }, function(data){
+        if (data.success) {
+          alert('Photo uploaded successfully!');
+          location.reload();
+        } else {
+          alert('Error uploading photo: ' + (data.error || 'Unknown error'));
+        }
+      }).fail(function(){
+        alert('Error uploading photo');
+      });
+    });
   </script>
+
+  <!-- Photo Upload Modal -->
+  <div id="photo-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Add Staff Photo</h2>
+        <span class="close">&times;</span>
+      </div>
+      <div id="camera-preview" style="display:none;">
+        <video id="camera-video" autoplay playsinline></video>
+      </div>
+      <div id="captured-photo" style="display:none;">
+        <img id="photo-preview" alt="Captured photo">
+      </div>
+      <div class="camera-controls" id="camera-controls" style="display:none;">
+        <button id="capture-photo-btn" class="btn-success">Capture Photo</button>
+        <button id="retake-photo-btn" style="display:none;">Retake</button>
+        <button id="upload-photo-btn" style="display:none;">Upload Photo</button>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
